@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica", "Poppins", sans-serif;
+    color: #000000;
+}
+
+.main-body {
+    display: flex;
+}
+
+/*====== aside bar menu ====== */
+.header-container {
+    width: 20%;
+}
+
+.dashboard-nav {
+    background-color: #e6e6e6;
+}
+
+/* .user-profile {
+  margin: 0 auto;
+} */
+.user-profile {
+    margin: 0px auto;
+    height: 80px;
+    width: 80px;
+
+    border: 2px solid #ff7913;
+    border-radius: 50%;
+}
+
+.user-profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.dashboard-nav ul {
+    padding: 50px 0px;
+}
+
+.dashboard-nav ul li {
+    margin-bottom: 18px;
+}
+
+.dashboard-nav ul li:hover {
+    background-color: #ff7913;
+}
+
+.dashboard-nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 500;
+}
+
+.dashboard-nav ul li button {
+    border: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 500;
+    width: 100%;
+    background-color: transparent;
+}
+
+.dashboard-nav ul li a:hover {
+    color: #ffffff;
+}
+
+.dashboard-nav ul li button:hover {
+    color: #ffffff;
+}
+
+.active-dashboard-nav {
+    background-color: #ff7913;
+    color: #ffffff;
+}
+
+.dashboard-nav-icon {
+    font-size: 20px;
+}
+
+.profile-name {
+    font-style: 14px;
+    font-weight: 600;
+}
+
+.user-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+}
+
+/*======== main container content====== */
+.main-container {
+    width: 80%;
+    padding: 50px;
+}
+
+.my-account {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000d2;
+}
+
+.log-out {
+    color: #ff7913;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    .header-container {
+        width: 0%;
+    }
+
+    /*======== main container content====== */
+    .main-container {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*====== aside bar menu ====== */
+    .header-container {
+        width: 100%;
+    }
+
+    /*======== main container content====== */
+    .main-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
