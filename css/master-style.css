@@ -278,7 +278,7 @@
 
     /* For Minify image issuse */
     .flag-dropdown .uk_flag {
-        background-image: url("../../frontend/UK.svg");
+        background-image: url("{{asset('frontend/UK.svg')}}");
         background-repeat: no-repeat;
         width: 30px;
         height: 17px;
