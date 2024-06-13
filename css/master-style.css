@@ -1,0 +1,386 @@
+
+    /********** Bag popup ************/
+    #bag_popup_body {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        z-index: 9999999;
+        text-align: center;
+        margin: 20px 0px 5px 0px;
+        background: transparent;
+        color: #000;
+    }
+
+    .bag_popup {
+        padding: 20px;
+        border: 1px solid #ddd;
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        background: #d5dce3;
+    }
+
+    .bap_popup_close i {
+        position: absolute;
+        right: 7px;
+        top: 3px;
+        cursor: pointer;
+        font-size: 23px;
+    }
+
+    .bap_popup_desc {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .bap_popup_ptice {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .bap_popup_ptice p {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .bap_popup_ptice p span {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .bap_popup_desc p {
+        font-size: 15px;
+    }
+
+    .bap_popup_btn {
+        margin: 20px 0px 10px 0px;
+    }
+
+    .bap_popup_btn a {
+        background: #383838;
+        padding: 7px 20px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        margin: 0px 10px;
+        border-radius: 5px;
+    }
+
+    /*********** End Bag popup*/
+
+    /******* Popup Css **********/
+    #popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+        background: #fff;
+        display: none;
+        min-height: 200px;
+        min-width: 200px;
+    }
+
+    #overlay_popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Semi-transparent black */
+        z-index: 999999;
+        /* Ensure it sits above other content */
+        display: none;
+        /* Initially hidden */
+    }
+
+    .popup_body {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .popup_close i {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        background: #cbc7bf;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup_text {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 350px;
+        text-align: center;
+    }
+
+    .popup_top h1 {
+        font-size: 17px;
+        font-weight: 500;
+        margin: 30px 0px 25px 0px;
+        text-transform: uppercase;
+        color: #000000;
+        letter-spacing: 1.1px;
+    }
+
+    .popup_mid {
+        margin-bottom: 30px;
+    }
+
+    .popup_mid p {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+    }
+
+    .popup_mid .percent {
+        font-size: 16px;
+    }
+
+    .popup_mid .percent span {
+        font-weight: bolder;
+    }
+
+    .popup_mid .flat {}
+
+    .popup_mid .flat span {
+        font-weight: bolder;
+    }
+
+    .popup_mid .plus {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .popup_code {
+        margin-bottom: 20px;
+    }
+
+    .popup_code h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        letter-spacing: 1.1px;
+        color: #3f3f3f;
+    }
+
+    .popup_note {
+        margin-top: 15px;
+    }
+
+    .popup_note p {
+        letter-spacing: 1.1px;
+        font-size: 14px;
+    }
+
+    .popup_btn span {
+        display: inline-block;
+        background: #242424;
+        color: #fff;
+        padding: 10px 35px;
+        margin-right: 10px;
+        letter-spacing: 1.1px;
+    }
+
+    .popup_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .popup_btn a {
+        background: #fff;
+        color: #000;
+        padding: 10px 35px;
+        letter-spacing: 1.1px;
+    }
+
+    .popup_bottom {
+        margin-top: 25px;
+    }
+
+    .popup_bottom p {
+        font-size: 12px;
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: pointer;
+        letter-spacing: 1.1px;
+    }
+
+    .popup_body img {
+        width: 503px;
+        height: 377px;
+    }
+    @media only screen and (max-width: 767px) {
+
+
+        /********* bag popup *********/
+        .bag_popup {
+            padding: 10px;
+            width: 95%;
+        }
+
+        .bap_popup_desc {
+            width: 100%;
+        }
+        /*********** End Bag popup*/
+    }
+
+    @media (max-width: 575px) {
+        #popup {
+            min-width: 90%;
+            min-height: 377px;
+        }
+
+        .popup_text {
+            top: 39px;
+            width: 100%;
+        }
+
+        .popup_top h1 {
+            font-size: 17px;
+            margin: 15px 0px 25px 0px;
+        }
+
+        .popup_btn span {
+            padding: 6px 15px;
+        }
+
+        .popup_btn a {
+            padding: 6px 15px;
+        }
+
+        .popup_mid {
+            margin-bottom: 20px;
+        }
+
+        .popup_body img {
+            width: 100%;
+            height: 377px;
+        }
+
+    }
+
+    /******* End Popup Css **********/
+
+
+    /* For Minify image issuse */
+    .flag-dropdown .uk_flag {
+        background-image: url("../../frontend/UK.svg");
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 17px;
+        display: inline-block;
+        margin: 5px;
+        vertical-align: top;
+        background-size: cover;
+    }
+
+    /* End For Minify image issuse */
+
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #000000;
+    }
+
+    /*****/
+    .gallerY_cart_btn a {
+        font-size: 12px;
+        color: #fff;
+        background: #000;
+        border: none;
+        text-transform: uppercase;
+        padding: 8px 15px;
+        margin-top: 15px;
+        transition: .3s;
+        display: inline-block;
+    }
+
+    .gallerY_cart_btn a:hover {
+        background: #505050;
+    }
+
+    .cookies_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cookies_left h6 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .cookies_right {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .cookies_right button {
+        margin-left: 15px;
+    }
+
+
+
+    /*** Whats App ****/
+    .whats_app {
+        position: fixed;
+        bottom: 65px;
+        right: 20px;
+    }
+
+    .whats_app a img {
+        width: 48px;
+    }
+
+    /*** End Whats App ****/
+
+    @media (max-width: 575px) {
+        #cookieAccept {
+            height: 150px !important;
+        }
+
+        #cookiee_div {
+            flex-direction: column !important;
+        }
+
+        .cookies_right {
+            margin-top: 10px;
+        }
+
+        .cookies_left h6 {
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+
+    }
+
+    @media only screen and (min-width: 801px) and (max-width: 900px) {
+
+        /********** Bag popup ************/
+        .bap_popup_desc {
+            width: 80%;
+        }
+
+        /*********** End Bag popup*/
+    }
+

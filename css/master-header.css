@@ -1,0 +1,91 @@
+
+    @keyframes vertical {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        25% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        37.5% {
+            opacity: 0;
+            transform: translateY(-90px);
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .nav-menu>li:hover .sub-nav-container {
+        transition: .3s linear;
+        display: flex !important;
+    }
+
+    .verticalflip {
+        text-align: center !important;
+        background-color: #F3F3F3;
+        margin-left: -17%;
+        height: 28px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .verticalflip p {
+        animation: vertical 20s linear infinite;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .verticalflip p:nth-child(2) {
+        animation-delay: 5s;
+    }
+
+    .verticalflip p:nth-child(3) {
+        animation-delay: 10s;
+    }
+
+    .verticalflip p:nth-child(4) {
+        animation-delay: 15s;
+    }
+
+    /* end roaling text */
+
+
+    header {
+        /* position: relative !important; */
+        top: 0;
+        width: 100%;
+        transition: .3s !important;
+        z-index: 999;
+    }
+
+    .fixed {
+        position: fixed !important;
+        transition: .3s !important;
+    }
+
+    .cart-container {
+        z-index: 10005 !important;
+    }
+
+    @media only screen and (max-width: 991px) {
+        .nav-subList .offcanvas.show {
+            visibility: visible;
+            z-index: 10003;
+        }
+
+        #nav-slider {
+            z-index: 10002;
+        }
+    }
+
+    /******* End Count Down  Css**********/

@@ -1,0 +1,75 @@
+
+    .loader_paginate {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 25px 0px;
+        align-items: center;
+        z-index: 99999;
+    }
+
+    .loader {
+        border: 4px solid #000;
+        border-top: 4px solid transparent;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spinloader 1s linear infinite;
+    }
+    .wishlist_price_part .bag_related_products{
+        font-size: 12px;
+        background: #5AB09B;
+        padding: 2px 7px;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 600;
+        display: inline-block;
+        margin-left: 7px;
+    }
+    .wishlist_price_part{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 8px 0px;
+        flex-wrap: wrap;
+    }
+    .wishlist_price_part p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .previous_price{
+        text-decoration: line-through;
+        color: red;
+    }
+    #remove-item-wishlist{
+        font-size: 13px;
+        padding: 3px 10px;
+        border-radius: 10px;
+        color: #000;
+        margin-bottom: 5px;
+        background: transparent;
+        text-decoration: underline;
+    }
+
+    .wishlist_view_btnn a{
+        color: #000;
+        font-size: 13px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-decoration: underline;
+    }
+
+    #remove-item-wishlist i{
+        color: rgb(0, 0, 0);
+    }
+
+    @keyframes spinloader {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }

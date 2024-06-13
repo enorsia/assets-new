@@ -1,0 +1,324 @@
+ /********** Bag popup ************/
+    #bag_popup_body {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        z-index: 99;
+        text-align: center;
+        margin: 20px 0px 5px 0px;
+        background: #fff;
+        color: #000;
+    }
+
+    .bag_popup {
+        padding: 20px;
+        border: 1px solid #ddd;
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .bap_popup_close i {
+        position: absolute;
+        right: 7px;
+        top: 3px;
+        cursor: pointer;
+        font-size: 23px;
+    }
+
+    .bap_popup_desc {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .bap_popup_ptice {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .bap_popup_ptice p {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .bap_popup_ptice p span {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .bap_popup_desc p {
+        font-size: 15px;
+    }
+
+    .bap_popup_btn {
+        margin: 20px 0px 10px 0px;
+    }
+
+    .bap_popup_btn a {
+        background: #383838;
+        padding: 7px 20px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        margin: 0px 10px;
+        border-radius: 5px;
+    }
+
+    /*********** End Bag popup***********/
+
+    /* faq section css start */
+    section.faq__section {
+        background: rgb(242, 242, 242);
+        padding: 40px;
+    }
+
+    .help__box {
+        background: #fff;
+        padding: 32px 32px 40px;
+        margin-bottom: 30px;
+    }
+
+    .help__box h2 {
+        color: rgb(51, 51, 51);
+        font-weight: 600;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 8px;
+        text-align: center;
+        letter-spacing: -0.3px;
+    }
+
+    .help__box p {
+        color: rgb(51, 51, 51);
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin-bottom: 16px;
+    }
+
+    .search {
+        width: 60%;
+        margin-bottom: auto;
+        margin-top: 20px;
+        height: 48px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #8c8c8c;
+    }
+
+    .search-input {
+        color: white;
+        border: 0;
+        outline: 0;
+        background: none;
+        width: 0;
+        margin-top: 5px;
+        caret-color: transparent;
+        line-height: 20px;
+        transition: width 0.4s linear;
+    }
+
+    .search .search-input {
+        padding: 0 10px;
+        width: 100%;
+        caret-color: #101010;
+        font-size: 14px;
+        font-weight: 300;
+        color: black;
+        transition: width 0.4s linear;
+    }
+
+    .search-icon {
+        height: 30px;
+        width: 30px;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+        bottom: 30px;
+        position: relative;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .left__sidebar {
+        background-color: #fff;
+        padding: 32px 0px;
+        width: 35%;
+    }
+
+    .tab-content.right_bar {
+        width: 65%;
+    }
+
+    .right_bar .according__heading {
+        background: #fff;
+        padding: 20px;
+    }
+
+    .right_bar .accordion-header {
+        border-bottom: 1px solid #eee;
+    }
+
+    .right_bar .accordion-item:last-of-type {
+        padding-bottom: 30px;
+    }
+
+    .right_bar .accordion-button {
+        font-weight: 600;
+    }
+
+    .left__sidebar .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        background-color: #ebebeb !important;
+        border: 0 !important;
+    }
+
+    .left__sidebar .nav-pills .nav-link {
+        color: #000;
+        padding: 12px 32px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .left__sidebar .nav h3 {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 22px;
+        padding: 20px 24px;
+    }
+
+    .left__sidebar .nav-link {
+        position: relative;
+    }
+
+    .left__sidebar .nav-link.active::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        display: inline-block;
+        left: 0px;
+        top: 0px;
+        background-color: rgb(56, 56, 56);
+    }
+
+    .contact__box {
+        padding: 20px 24px;
+    }
+
+    .contact__box h3 {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact__box ul li {
+        margin-bottom: 20px;
+    }
+
+    .contact__box ul li a i {
+        font-size: 20px;
+    }
+
+    .contact__box ul li a span {
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    /* faq section css end */
+    /* small device */
+    @media only screen and (max-width: 575px){
+        .help__box {
+            padding: 20px 32px 20px;
+            margin-bottom: 25px;
+        }
+        section.faq__section {
+            padding: 10px;
+        }
+        .help__box h2 {
+            font-size: 22px;
+        }
+        .left__sidebar {
+            padding: 20px 0px;
+        }
+        .left__sidebar h3{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .left__sidebar .nav-pills .nav-link {
+            padding: 7px 20px;
+            font-size: 14px;
+        }
+        .right_bar .according__heading {
+            padding: 0px 20px 20px 20px;
+        }
+        .right_bar .according__heading h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .right_bar .accordion-button {
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        /********* bag popup *********/
+        .bag_popup {
+            padding: 10px;
+            width: 95%;
+        }
+
+        .bap_popup_desc {
+            width: 100%;
+        }
+
+        /* faq start */
+        .left__sidebar {
+            width: 100%;
+        }
+
+        .tab-content.right_bar {
+            width: 100%;
+        }
+
+        .search {
+            width: 100%;
+        }
+    }
+
+    /* medium device */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+        .bap_popup_desc {
+            width: 80%;
+        }
+
+        /* faq start */
+        .left__sidebar {
+            width: 100%;
+        }
+
+        .tab-content.right_bar {
+            width: 100%;
+        }
+
+        .search {
+            width: 100%;
+        }
+
+        /* faq end */
+    }

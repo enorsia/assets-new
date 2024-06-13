@@ -1,0 +1,10 @@
+   .rateyo:not(:disabled) .rateyo-ghost-full,
+    .rateyo:not(:disabled) .rateyo-ghost-half {
+        color: gold;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }

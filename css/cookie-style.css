@@ -1,0 +1,393 @@
+
+    .cookie-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        border-top: 3px solid #CBC7BF;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .cookie-text {
+        max-width: 55%;
+    }
+
+    .cookie-text h6 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #3f3f3f;
+    }
+
+    .cookie-text p {
+        font-size: 17px;
+        color: #3f3f3f;
+    }
+
+    .cookie-text p a {
+        font-size: 18px;
+        color: #111111;
+        font-weight: 600
+    }
+
+    .cookie-buttons {
+        display: flex;
+        gap: 20px;
+        width: 45%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .cookie-buttons button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .manage-cookies {
+        background-color: #627786;
+        color: white;
+    }
+
+    .reject-cookies {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .accept-cookies {
+        background-color: #BDD755;
+        color: rgb(0, 0, 0);
+    }
+
+    /****/
+    .privacy-preference-center {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-end;
+        align-items: center;
+        transition: right 0.7s ease-in-out;
+        z-index: 99999;
+    }
+
+    .privacy-preference-content {
+        background-color: white;
+        padding: 20px;
+        max-width: 450px;
+        height: 100vh;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        right: 0;
+
+    }
+
+    #privecy_manage_body_main {
+        overflow-y: auto;
+        height: 80vh;
+    }
+
+    #privecy_manage_body {
+        margin-top: 10px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    #privecy_manage_body_main::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    #privecy_manage_body_main::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(236, 236, 236, 0.1);
+        border-radius: 6px;
+    }
+
+    #privecy_manage_body_main::-webkit-scrollbar-thumb {
+        background-color: rgb(187, 187, 187);
+        border-radius: 6px;
+    }
+
+    #privecy_manage_body_main::-webkit-scrollbar-button {
+        width: 5px;
+        height: 5px;
+    }
+
+    .privacy_top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        background: #fff;
+    }
+
+    .privacy_top h1 {
+        font-size: 25px;
+        color: #000000;
+    }
+
+    .privacy_top .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .privacy-preference-content h2 {
+        font-size: 23px;
+        margin: 10px 0px 10px 0px;
+        font-weight: 500;
+    }
+
+    .privacy-preference-content p {
+        font-size: 16px;
+        margin: 10px 0px;
+        text-align: justify;
+    }
+
+    .privacy-preference-content p a {
+        font-size: 16px;
+        text-decoration: underline;
+        font-weight: 600;
+        margin: 7px 0px 0px 0px;
+        display: block;
+        color: #5c5c5c;
+    }
+
+    .privacy-preference-content h3 {
+        font-size: 23px;
+        margin: 0px 0px 15px 0px;
+        font-weight: 500;
+    }
+
+    .privacy_checkbox .toggle-switch {
+        position: absolute;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        right: 18px;
+        top: 20px;
+    }
+
+    #toggle-switch_text {
+        width: 120px;
+    }
+
+    #toggle-switch_text h4 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .privacy_checkbox .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(20px);
+    }
+
+    .privacy-preference-content .buttons_list {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        margin-top: 20px;
+        position: fixed;
+        bottom: 17px;
+        background: #fff;
+        flex-direction: column;
+        max-width: 410px;
+        width: 100%;
+    }
+
+    .reject-all,
+    .save-settings {
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        width: 100%;
+        display: block;
+    }
+
+    .reject-all {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .save-settings {
+        background-color: #c4d73b;
+        color: white;
+    }
+
+    /*****/
+
+    .privacy_checkbox {
+        position: relative;
+        border: 1px solid #eee !important;
+        margin-top: -1px;
+    }
+
+    .privacy_checkbox .accordion {
+        border-top: 1px solid #eee !important;
+        font-weight: 600;
+        color: #1a1a1a;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        transition: 0.4s;
+        background: transparent;
+        margin-top: -1px;
+    }
+
+    /* .privacy_checkbox .active,
+   .privacy_checkbox .accordion:hover {
+        background-color: #ccc;
+    } */
+
+    .privacy_checkbox .accordion:after {
+        content: '\002B';
+        color: #000000;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .privacy_checkbox .active:after {
+        content: "\2212";
+    }
+
+    .privacy_checkbox .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border-top: 1px solid #eee;
+        margin-bottom: -1px;
+    }
+    #privecy_manage_body .reject-all{
+        width: 100% !important;
+    }
+
+    @media (max-width: 575px) {
+        .privacy-preference-content {
+            padding: 10px;
+        }
+
+        .cookie-banner {
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+
+        }
+
+        .cookie-text {
+            max-width: 100%;
+        }
+
+        .cookie-buttons {
+            gap: 15px;
+            width: 100%;
+        }
+
+        .cookie-buttons button {
+            width: 100%;
+        }
+
+        .cookie-text h6 {
+            font-size: 18px;
+        }
+
+        .cookie-text p {
+            font-size: 15px;
+        }
+
+        .cookie-text p a {
+            font-size: 16px;
+        }
+
+        .reject-all,
+        .save-settings {
+            width: 90%;
+        }
+
+        .privacy_top h1 {
+            font-size: 20px;
+        }
+
+        .privacy-preference-content h2 {
+            font-size: 18px;
+        }
+
+        .privacy-preference-content p {
+            font-size: 15px;
+        }
+
+        .privacy-preference-content h3 {
+            font-size: 18px;
+        }
+
+        .privacy-preference-content p a {
+            font-size: 15px;
+        }
+
+        .privacy_checkbox .accordion {
+            font-size: 15px;
+        }
+
+        #toggle-switch_text h4 {
+            font-size: 15px;
+        }
+
+        #toggle-switch_text {
+            width: 110px;
+        }
+    }
