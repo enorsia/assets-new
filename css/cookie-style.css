@@ -61,10 +61,18 @@
     }
 
     .accept-cookies {
-        background-color: #BDD755;
+        background-color: #cbc7bf;
         color: rgb(0, 0, 0);
     }
-
+.cookie_close_btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.cookie_close_btn i{
+    font-size: 25px;
+    cursor: pointer;
+}
     /****/
     .privacy-preference-center {
         display: flex;
@@ -260,8 +268,8 @@
     }
 
     .save-settings {
-        background-color: #c4d73b;
-        color: white;
+        background-color: #cbc7bf;
+        color: #000;
     }
 
     /*****/
@@ -318,6 +326,10 @@
     }
 
     @media (max-width: 575px) {
+        .cookie_close_btn{
+            top: 5px;
+            right: 10px;
+        }
         .privacy-preference-content {
             padding: 10px;
         }

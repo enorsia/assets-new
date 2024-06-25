@@ -555,6 +555,9 @@
     .boden_top {
         min-height: 300px;
     }
+    .shop_item_top .img_part {
+        min-height: 269px;
+    }
 
 }
 
@@ -808,6 +811,9 @@
     #cookieAccept {
         min-height: 70px;
     }
+    .cart-product-details{
+        font-size: 13px;
+    }
     #cookieAccept button,
     #cookieAccept p,
     #recent_slider_time_title,
@@ -905,7 +911,10 @@
         height: 100%;
     }
     .sub-nav-container {
-        left: -3% !important;
+        left: 0% !important;
+    }
+    .nav-menu>li>ul {
+        padding: 10px 5px 20px 5px !important;
     }
     #pre_title_btn_part {
         width: 100%;
@@ -1273,7 +1282,7 @@
         font-size: 23px;
     }
     .gallery_view_part {
-        margin: 20px 0 10px;
+        margin: 20px 0px 35px 0px;
     }
     .gallery_section .enorsia-container {
         padding: 0 !important;
@@ -1283,7 +1292,7 @@
     }
     #add_photo_new #add_photo {
         font-size: 14px;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         display: block;
         transition: 0.3s;
     }
@@ -1320,9 +1329,14 @@
     }
     .filter_icon {
         height: 35px;
+        display: inline-block;
+    }
+    .select_body #accordionFlushExample #flush-headingOne button {
+        padding-left: 15px !important;
     }
     .select_body #accordionFlushExample .accordion-item button {
         font-size: 13px;
+        padding: 25px 16px !important;
     }
     .select_body
         #accordionFlushExample
@@ -1339,8 +1353,13 @@
     .select_sort p {
         font-size: 13px;
     }
+    .price_body {
+        height: 50px !important;
+        border-bottom: 1px solid #ddd;
+    }
     .price_body .price_id {
         font-size: 13px;
+        line-height: 50px;
     }
     .price_top p {
         font-size: 13px;
@@ -1348,12 +1367,21 @@
     .price_div .price_input label {
         font-size: 13px;
     }
-
+    .price_body .price_div {
+        margin-top: -1px;
+    }
     .shop_item_top .item_name p {
         font-size: 13px;
     }
     .shop_item_top .item_price p {
         font-size: 13px;
+    }
+    .shop_item_top .img_part .image_two{
+        display: block;
+    }
+
+    .shop_item_top .img_part:hover .image_one {
+        display: block;
     }
     .shop_item_top .img_text p {
         font-size: 11px;
@@ -1393,6 +1421,10 @@
     .subCategory_list ul li a small {
         font-size: 12px;
     }
+    .subCategory_list ul {
+        flex-wrap: nowrap;
+        justify-content: center !important;
+    }
     .subCategory_bottom h4 {
         font-size: 14px;
         margin: 10px 0 5px;
@@ -1413,6 +1445,9 @@
     .prev_size h6 {
         font-size: 14px;
     }
+    /* #prev_color_top{
+        display: none;
+    } */
     .prev_price p {
         font-size: 13px;
     }
@@ -1432,7 +1467,37 @@
         height: 44px;
     }
     .select_body #accordionFlushExample {
-        width: 97.6%;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 10009;
+        left: 0;
+        height: 100%;
+        background: #fff;
+        overflow-y: auto;
+    }
+
+    #phn_view_filter_head{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px 15px 15px;
+    }
+    #flush-headingZero{
+        font-size: 17px;
+    }
+    #close_filter_icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 18px;
+    }
+    .filter_clear {
+        position: absolute;
+        top: 11px;
+        left: 90px;
     }
     .shop_item_top .item_name,
     .shop_item_top .item_price,
@@ -1447,6 +1512,10 @@
     }
     .shop_item_top .item_price {
         margin: 0px 0px 12px 0px;
+    }
+    .prev-custom-modal-width .modal-header {
+        left: 5px;
+        right: auto;
     }
 }
 
@@ -1475,9 +1544,7 @@
     .shop_item_top .item_price {
         flex-wrap: wrap;
     }
-    .shop_item_top .item_price .shop_discount {
-        margin-left: 10px;
-    }
+
     .item_price .previous_price {
         margin-right: 10px !important;
     }

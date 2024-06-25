@@ -83,11 +83,11 @@
 
     /******* End Bag Mobile View ************/
 .bag_related_products{
-    font-size: 12px;
-    background: #5AB09B;
+    font-size: 13px;
+    background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
-    color: #fff;
+    color: green;
     font-weight: 600;
 }
 .bag_releted_dis_price{

@@ -348,7 +348,25 @@ body {
     font-weight: 400;
     margin-left: 8px;
 }
-
+#bag_page_shopmore button {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    text-decoration: underline;
+}
+#bag_page_shopmore button i{
+    font-size: 13px;
+}
+#bag_page_shopmore button::after{
+    display: none !important;
+}
+#bag_page_shopmore ul li a{
+    font-size: 14px;
+}
+#bag_page_shopmore ul{
+    border-radius: 0px !important;
+    inset: 0px auto auto -78px !important;
+}
 .back-icon {
     display: inline-block;
     transform: rotate(90deg);
@@ -726,5 +744,13 @@ body {
     }
     .shop_discount p, .wishlist-content p{
         font-size: 15px;
+    }
+    .color-img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+    .color-actives {
+        height: 2rem !important;
+        width: 2rem !important;
     }
 }

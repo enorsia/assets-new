@@ -638,11 +638,11 @@ footer #contact_title {
 }
 
 .single_product_off {
-    font-size: 12px;
-    background: #5AB09B;
+    font-size: 15px;
+    background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
-    color: #fff;
+    color: green;
     font-weight: bolder;
     margin-left: 5px;
 }
@@ -1172,14 +1172,20 @@ footer #contact_title {
 .imgSlide,
 .left-align-slides .slick-next,
 .left-align-slides .slick-prev,
-.shop_item_top .img_part .image_two,
-.shop_item_top .img_part:hover .image_one,
 dl.flag-dropdown dt span:nth-child(3) {
-    display: none
+    display: none;
+}
+
+.shop_item_top .img_part .image_two{
+    display: none;
+}
+
+.shop_item_top .img_part:hover .image_one {
+    display: none;
 }
 
 .single-product-img::-webkit-scrollbar {
-    display: none
+    display: none;
 }
 
 .single-product-img li img {
@@ -1406,15 +1412,17 @@ dl.flag-dropdown dt span:nth-child(3) {
 .releted_products_text {
     font-size: 14px;
 }
-
+.related_pro_now_price{
+    padding-right: 7px;
+}
 .related_item_offer {
-    font-size: 12px;
-    background: #5AB09B;
-    padding: 2px 7px;
+    font-size: 13px;
+    background: transparent;
+    padding: 2px 0px;
     border-radius: 10px;
-    color: #fff;
+    color: green;
     font-weight: bolder;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .text-ellipsis {
@@ -2971,7 +2979,17 @@ dl.flag-dropdown dt span:nth-child(2) {
 .all_top_category {
     margin: 20px 0 15px
 }
-
+.subCategory_list{
+    position: relative;
+}
+#subCategory_list_next{
+    position: absolute;
+    left: 0;
+}
+#subCategory_list_prev{
+    position: absolute;
+    right: 0;
+}
 .subCategory_list ul {
     width: 100%;
     overflow-x: auto;
@@ -2987,7 +3005,6 @@ dl.flag-dropdown dt span:nth-child(2) {
 
 .subCategory_list ul:active {
     cursor: grabbing;
-    /* Change cursor to a grabbing icon when clicked */
 }
 
 .subCategory_list ul li {
@@ -2995,6 +3012,8 @@ dl.flag-dropdown dt span:nth-child(2) {
     height: 120px;
     display: inline-block;
 }
+
+
 
 .subCategory_list ul li a {
     display: flex;
@@ -3336,13 +3355,21 @@ dl.flag-dropdown dt span:nth-child(2) {
 .select_sort select option {
     cursor: pointer;
 }
-
+#flush-headingOne button::after{
+display: none !important;
+}
 .select_body #accordionFlushExample {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+.select_body #accordionFlushExample #phn_view_filter_head{
+    display: none;
+}
+#close_filter_icon{
+    display: none;
 }
 
 .filter_clear button {
@@ -3428,6 +3455,9 @@ dl.flag-dropdown dt span:nth-child(2) {
     font-size: 14px;
     height: 40px;
     color: #333;
+}
+.select_body #accordionFlushExample #flush-headingOne button{
+    padding-left: 0px !important;
 }
 
 .select_body #accordionFlushExample .collapsing {
@@ -3611,7 +3641,20 @@ dl.flag-dropdown dt span:nth-child(2) {
 .shop_item_top .img_text {
     width: 100%;
     text-align: center;
-    background: #f7f4ef
+    background: #CBC7BF;
+}
+.shop_item_top .new_in {
+    background: #f7f4ef;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.shop_item_top .new_in p {
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
 }
 
 .shop_item_top .img_part {
@@ -3663,17 +3706,17 @@ dl.flag-dropdown dt span:nth-child(2) {
 .shop_item_top .item_price p {
     font-size: 14px;
 }
-
-.shop_item_top .item_price .shop_discount {
-    margin-left: 20px;
+.shop_item_top .item_price .now_price {
+    margin-right: 15px;
 }
 
+
 .shop_item_top .item_price .shop_discount p {
-    font-size: 12px;
-    background: #5AB09B;
-    padding: 2px 7px;
+    font-size: 13px;
+    background: transparent;
+    padding: 2px 0px;
     border-radius: 10px;
-    color: #fff;
+    color: green;
     font-weight: bolder;
 }
 
@@ -3732,7 +3775,33 @@ dl.flag-dropdown dt span:nth-child(2) {
 .prev_body #carouselExampleControls {
     width: 50%;
 }
-
+/* .prev_body #carouselExampleControls .carousel-control-next-icon {
+    color: #000;
+}
+.prev_body #carouselExampleControls .carousel-control-prev-icon {
+    color: #000;
+} */
+ .prev_body #carouselExampleControls .carousel-control-next-icon {
+    background-image: none !important;
+}
+.prev_body #carouselExampleControls .carousel-control-prev-icon {
+    background-image: none !important;
+}
+.prev_body #carouselExampleControls .carousel-control-next-icon i {
+    color: #000;
+    font-size: 30px;
+}
+.prev_body #carouselExampleControls .carousel-control-prev-icon i {
+    color: #000;
+    font-size: 30px;
+}
+/*.prev_body #carouselExampleControls .carousel-control-next, .prev_body #carouselExampleControls .carousel-control-prev {
+    color: rgba(146, 146, 146, .8);
+    font-size: 30px;
+    background: 0 0;
+    z-index: 10;
+    border-color: transparent;
+} */
 .prev_body .carousel-item img {
     width: 100%;
 }
@@ -3772,6 +3841,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .prev_price p {
@@ -3789,11 +3859,11 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 .prev_price .discount {
-    font-size: 12px;
-    background: #5AB09B;
+    font-size: 13px;
+    background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
-    color: #fff;
+    color: green;
     font-weight: bolder;
     margin-left: 15px;
 }
@@ -3824,6 +3894,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     width: 25px;
     height: 25px;
     padding: 1px;
+    margin: 1px;
 }
 
 .prev_color_item {
@@ -3834,10 +3905,38 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 .prev_color_item.active {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     /* Example background color */
     border-color: black;
     /* Example border color */
+}
+.prev_color{
+     margin: 5px 0px 13px 0px;
+     display: flex;
+     align-items: center;
+}
+.prev_color h6{
+    font-size: 15px;
+    display: inline-block;
+}
+.prev_color p{
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+
+.prev_fit{ margin: 5px 0px 15px 0px;}
+.prev_fit h6{
+    margin: 0px 0px 10px 0px;
+    font-size: 15px;
+    display: inline-block;
+}
+.prev_fit_body button{
+    border: 1px solid #ddd;
+    font-size: 15px;
+    padding: 6px 15px;
+    background: transparent;
 }
 
 .prev_size {

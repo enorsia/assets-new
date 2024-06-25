@@ -276,19 +276,6 @@
     /******* End Popup Css **********/
 
 
-    /* For Minify image issuse */
-    .flag-dropdown .uk_flag {
-        background-image: url("{{asset('frontend/UK.svg')}}");
-        background-repeat: no-repeat;
-        width: 30px;
-        height: 17px;
-        display: inline-block;
-        margin: 5px;
-        vertical-align: top;
-        background-size: cover;
-    }
-
-    /* End For Minify image issuse */
 
     #btn-back-to-top {
         position: fixed;

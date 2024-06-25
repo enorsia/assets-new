@@ -17,11 +17,11 @@
         animation: spinloader 1s linear infinite;
     }
     .wishlist_price_part .bag_related_products{
-        font-size: 12px;
-        background: #5AB09B;
+        font-size: 14px;
+        background: transparent;
         padding: 2px 7px;
         border-radius: 10px;
-        color: #fff;
+        color: green;
         font-weight: 600;
         display: inline-block;
         margin-left: 7px;
