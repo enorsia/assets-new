@@ -1326,6 +1326,7 @@
     }
     .filter_icon i {
         height: 35px;
+        font-size: 14px;
     }
     .filter_icon {
         height: 35px;
@@ -1422,8 +1423,19 @@
         font-size: 12px;
     }
     .subCategory_list ul {
-        flex-wrap: nowrap;
-        justify-content: center !important;
+        /* flex-wrap: nowrap;
+        justify-content: center !important; */
+    }
+    #subCategory_list_icon{
+        position: absolute;
+        right: -23px;
+        top: 21px;
+        font-size: 20px;
+    }
+    .subCategory_list {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
     }
     .subCategory_bottom h4 {
         font-size: 14px;

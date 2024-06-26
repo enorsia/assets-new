@@ -1423,6 +1423,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     color: green;
     font-weight: bolder;
     margin-left: 0px;
+    display: inline-block;
 }
 
 .text-ellipsis {
@@ -3036,7 +3037,9 @@ dl.flag-dropdown dt span:nth-child(2) {
     margin-top: 5px;
     color: #424242
 }
-
+/* #subCategory_list_icon{
+    display: none;
+} */
 .subCategory_bottom {
     width: 100%;
     display: flex;
