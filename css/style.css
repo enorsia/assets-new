@@ -810,7 +810,11 @@ footer #contact_title {
 .nav-cart-icon label i {
     cursor: pointer;
     font-size: 25px;
-    padding: 0 5px
+    padding: 0 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .wishlist_icon a{
     margin-top: 5px;
@@ -821,9 +825,9 @@ footer #contact_title {
 }
 .cart-count {
     position: absolute;
-    top: 30%;
-    right: 38%;
-    cursor: pointer
+    top: 28%;
+    cursor: pointer;
+    font-style: normal;
 }
 
 .cart-container {
@@ -3940,6 +3944,7 @@ display: none !important;
     font-size: 15px;
     padding: 6px 15px;
     background: transparent;
+    cursor: auto;
 }
 
 .prev_size {
