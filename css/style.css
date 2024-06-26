@@ -671,7 +671,7 @@ footer #contact_title {
 }
 
 .product-side-content li a:hover {
-    color: #696969 !important
+    color: #000 !important
 }
 
 .nav-checkout-btn,
@@ -688,7 +688,8 @@ footer #contact_title {
     border-left: 1px solid #dee2e6;
     border-right: 1px solid #dee2e6;
     border-top: 1px solid #dee2e6;
-    border-radius: 0 !important
+    border-radius: 0 !important;
+    cursor: auto;
 }
 
 .details_color,
@@ -3762,7 +3763,7 @@ display: none !important;
 }
 
 .prev-custom-modal-width {
-    max-width: 1000px;
+    max-width: 1035px;
 }
 
 .prev-custom-modal-width .modal-header {
