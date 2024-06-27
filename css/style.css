@@ -446,7 +446,24 @@ footer #contact_title {
 #large_video {
     min-height: 640px
 }
-
+.video_text{
+    position: absolute;
+    z-index: 1;
+    bottom: 27px;
+    /* transform: translate(-50%, -50%); */
+    /* left: 50%; */
+    right: 35px;
+}
+.video_text h1{
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 55px;
+    color: #fff;
+    /* text-shadow: 5px 1px #787070; */
+    font-weight: 600;
+}
 .copy-right,
 .size-guide-text {
     font-size: 14px !important
@@ -631,6 +648,11 @@ footer #contact_title {
 #product_price span {
     text-decoration: line-through;
     margin-right: 10px;
+    font-weight: bolder;
+}
+.single_product_price #regular_price{
+    font-weight: bolder;
+    font-size: 17px;
 }
 
 .right-side-product .single-product-form {
@@ -638,7 +660,7 @@ footer #contact_title {
 }
 
 .single_product_off {
-    font-size: 15px;
+    font-size: 17px;
     background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
@@ -1415,13 +1437,17 @@ dl.flag-dropdown dt span:nth-child(3) {
 }
 
 .releted_products_text {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bolder !important;
+}
+.releted_products_text span{
+    font-weight: bolder !important;
 }
 .related_pro_now_price{
     padding-right: 7px;
 }
 .related_item_offer {
-    font-size: 13px;
+    font-size: 12px;
     background: transparent;
     padding: 2px 0px;
     border-radius: 10px;
@@ -3712,7 +3738,8 @@ display: none !important;
 }
 
 .shop_item_top .item_price p {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bolder;
 }
 .shop_item_top .item_price .now_price {
     margin-right: 15px;
@@ -3853,17 +3880,19 @@ display: none !important;
 }
 
 .prev_price p {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bolder;
 }
 
 .prev_price .previous_price {
-    color: red !important;
+    color: #000 !important;
     text-decoration: line-through;
     margin-right: 15px !important;
 }
 
 .prev_price .now_price {
     color: #000;
+    font-weight: bolder;
 }
 
 .prev_price .discount {
@@ -3877,9 +3906,10 @@ display: none !important;
 }
 
 .item_price .previous_price {
-    color: red !important;
+    color: black !important;
     text-decoration: line-through;
     margin-right: 15px !important;
+    font-weight: bolder;
 }
 
 .prev_color {

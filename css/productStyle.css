@@ -232,13 +232,19 @@ body {
 #color_part{
     align-items: center;
 }
-.color-actives {
-    cursor: pointer;
+.color_same_div{
+    border: 1px solid transparent;
     height: 1.7rem !important;
     width: 1.7rem !important;
+    cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.color-actives {
+
     border: 1px solid;
 }
 
