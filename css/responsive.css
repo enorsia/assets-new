@@ -1549,6 +1549,7 @@
     }
     .shop_items .shop_item {
         margin-bottom: 20px;
+        overflow: hidden;
     }
     .shop_item_top .item_name p {
         margin: 10px 0px 12px 0px;

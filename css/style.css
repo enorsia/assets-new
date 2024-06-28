@@ -3644,6 +3644,7 @@ display: none !important;
 
 .shop_items .shop_item {
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .shop_item a {
