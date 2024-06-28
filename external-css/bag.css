@@ -99,6 +99,13 @@
     font-size: 14px;
 }
 
+/******* bag loader *******/
+.bag_loader_spiner .spinner-grow{
+    width: 15px !important;
+    height: 15px !important;
+}
+/******* End bag loader *******/
+
     @media (max-width: 575px) {
         .shopping-cart-items-container {
             overflow-x: scroll !important;

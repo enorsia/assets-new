@@ -802,6 +802,9 @@
     .advertisement_active::after {
         width: 65px;
     }
+    .nav-cart-icon label i {
+        margin-top: 15px;
+    }
     /************ End Header **************/
     .boden_items img,
     .custom-slideshow-container,
@@ -1154,7 +1157,7 @@
         gap: 15px;
     }
     .single-product-form button[type="submit"] {
-        padding: 5px 10px;
+        padding: 10px 10px;
     }
     .product-side-content li a {
         font-size: 13px;
@@ -1466,6 +1469,18 @@
     }
     .subCategory_bottom ul li {
         margin: 5px 5px;
+    }
+    #details_color_group {
+        flex-direction: column;
+    }
+    .details_color_name {
+        margin-bottom: 7px;
+    }
+    .prev_color {
+        flex-wrap: wrap;
+    }
+    .prev_size {
+        margin: 0px 0px 10px 0px;
     }
     .prev_name p {
         font-size: 16px;

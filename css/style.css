@@ -630,7 +630,26 @@ footer #contact_title {
     height: 620px;
     overflow: hidden
 }
-
+#product_details_color{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#details_color_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#select_color_part_body{
+    margin-right: 25px;
+}
+.details_color_name{
+    margin-right: 25px;
+}
 .right-side-product {
     width: 60%
 }
@@ -3953,6 +3972,15 @@ display: none !important;
      display: flex;
      align-items: center;
 }
+.prev_color_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#prev_color_name_body{
+    margin-right: 25px;
+}
 .prev_color h6{
     font-size: 15px;
     display: inline-block;
@@ -4033,6 +4061,7 @@ display: none !important;
     display: block;
     width: 100%;
     font-weight: 600;
+    padding: 10px 0px !important;
 }
 
 .prev_btn button:hover {
