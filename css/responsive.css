@@ -378,7 +378,9 @@
 
 @media (max-width: 1024px) {
 
-
+    .nav-submenu {
+        max-height: 360px;
+    }
     .slider-container {
         margin: 0 0 10px;
     }
@@ -422,10 +424,25 @@
 }
 
 @media (max-width: 991px) {
-
+    .sub-nav-container {
+        max-height: 500px;
+        overflow-y: auto
+    }
+    .nav-submenu {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        max-height: 100%;
+    }
     .subCategory_list ul {
         flex-wrap: nowrap;
         justify-content: flex-start !important;
+    }
+    .nav-submenu {
+        max-height: 200px;
+    }
+    .nav-submenu li{
+        margin-right: 25px;
     }
     /************************************************************************** Search ****************************************************/
     .searchForm {
@@ -562,6 +579,17 @@
 }
 
 @media (max-width: 767px) {
+
+    .nav-submenu {
+        margin-top: 12px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-height: 100%;
+    }
+    .nav-submenu li{
+        width: 100%;
+    }
     /************************************************************************** Search ****************************************************/
     .searchForm {
         display: none;
@@ -770,6 +798,17 @@
 
 @media (max-width: 575px) {
     /************ Header **************/
+    #uk_flag_body{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #for_mobile_device{
+        display: none;
+    }
+    .sub-nav-container {
+         overflow-y: hidden;
+    }
     #header_left {
         position: relative;
         left: 50%;
@@ -782,7 +821,7 @@
     #search_icon {
         left: 60px;
         position: absolute;
-        border: 1px solid #ddd;
+        /* border: 1px solid #ddd; */
         padding: 0px 10px;
         border-radius: 5px;
     }
@@ -886,9 +925,7 @@
     .nav-submenu-img {
         padding-top: 0;
     }
-    .nav-submenu {
-        margin-top: 12px !important;
-    }
+
     .nav-menu > li > span {
         padding: 10px !important;
         font-size: 13px !important;
@@ -1476,11 +1513,19 @@
     .details_color_name {
         margin-bottom: 7px;
     }
+    .prev_colour_main_body .prev_color {
+        justify-content: flex-start;
+    }
     .prev_color {
         flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
     }
     .prev_size {
         margin: 0px 0px 10px 0px;
+    }
+    .prev_color ul {
+        margin-bottom: 10px;
     }
     .prev_name p {
         font-size: 16px;

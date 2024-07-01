@@ -1020,7 +1020,12 @@ footer #contact_title {
     transition: .3s linear;
     text-decoration: underline
 }
-
+.nav-submenu {
+    max-height: 530px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .nav-submenu li a {
     font-weight: 400
 }
@@ -1044,7 +1049,7 @@ footer #contact_title {
 }
 
 .sub-nav-container {
-    max-height: 500px;
+
     overflow-y: auto
 }
 
@@ -3981,6 +3986,7 @@ display: none !important;
 }
 #prev_color_name_body{
     margin-right: 25px;
+    min-width: 150px;
 }
 .prev_color h6{
     font-size: 15px;
