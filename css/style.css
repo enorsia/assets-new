@@ -1021,15 +1021,16 @@ footer #contact_title {
     text-decoration: underline
 }
 .nav-submenu {
-    max-height: 530px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .nav-submenu li a {
     font-weight: 400
 }
-
+/* .nav-menu li ul li:nth-child(10){
+    margin-top: 50px;
+} */
 .nav-menu>li:hover>a {
     transition: .3s linear;
     background: #fff;
