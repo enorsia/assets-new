@@ -214,8 +214,8 @@
     }
     .filter_clear {
         position: absolute;
-        top: -30px;
-        left: 90px;
+        top: 7px;
+        left: 110px;
     }
     #phn_view_filter_head {
         display: flex !important;
@@ -1398,7 +1398,10 @@
     }
     .filter_icon i {
         height: 35px;
-        font-size: 14px;
+        font-size: 14px !important;
+    }
+    #flush-headingOne {
+        padding-left: 0px !important;
     }
     .filter_icon {
         height: 35px;
@@ -1589,7 +1592,7 @@
         padding: 15px 15px 15px 15px;
     }
     #flush-headingZero{
-        font-size: 17px;
+        font-size: 17px !important;
     }
     #close_filter_icon {
         display: flex;

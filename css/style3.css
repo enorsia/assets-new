@@ -3984,6 +3984,7 @@ display: none !important;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 #prev_color_name_body{
     margin-right: 25px;
