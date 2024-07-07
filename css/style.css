@@ -69,16 +69,32 @@ input[type="number"] {
     color: #fff;
 }
 
-.scroll_right ul li:first-child {
+.scroll_right ul li {
     margin-right: 20px;
     position: relative;
 }
-
-.scroll_right ul li:first-child::after {
+.scroll_right .flag-dropdown .uk_flag {
+    margin: 0px 5px 0px 0px !important;
+}
+.scroll_right ul li::after {
     position: absolute;
     content: "";
     height: 16px;
     width: 1px;
+    background: #fff;
+    right: -10px;
+    bottom: 3px;
+}
+.scroll_right ul li:nth-child(3) {
+    margin-right: 20px;
+    position: relative;
+}
+
+.scroll_right ul li:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 0px;
     background: #fff;
     right: -10px;
     bottom: 3px;
@@ -98,28 +114,48 @@ input[type="number"] {
 
 
 /************************************************************************** Search ****************************************************/
+#main_header_body{
+    background-color: #cbc7bf;
+}
 .searchForm {
     z-index: 9999;
     overflow: hidden;
-    max-width: 500px;
     position: absolute;
     background: #fff;
-    top: 50px;
+    top: 106px;
     margin: 0 auto;
     left: 0;
     right: 0;
+    width: 100%;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    padding: 15px 0px;
+    display: none;
 }
-
+#largeSearchButton i{
+    cursor: pointer;
+    font-size: 18px;
+}
+#uk_flag_body{
+    display: none;
+}
 .searchForm .search_body {
     max-width: 500px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    border-radius: 5px;
+
 }
 
 .search_close_btn {
     display: none;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    cursor: pointer;
 }
-
+.search_close_btn span{
+    font-size: 14px;
+}
 .form_input_part {
     display: flex;
     flex-direction: row;
@@ -836,7 +872,7 @@ footer #contact_title {
     border: 1px solid #000 !important;
     font-weight: 500;
     font-size: 14px;
-    background: #fff !important;
+    background: #CBC7BF !important;
     border-radius: 20px
 }
 
@@ -846,7 +882,7 @@ footer #contact_title {
 }
 
 .nav-checkout-btn:disabled {
-    background: #fff !important
+    background: transparent !important
 }
 
 .nav-cart-icon label i {
@@ -944,7 +980,13 @@ footer #contact_title {
     display: none;
     position: absolute
 }
-
+#header_category_menu{
+    position: absolute;
+    top: 71px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
 #nav-slider {
     position: relative;
     z-index: 1000;
@@ -993,9 +1035,10 @@ footer #contact_title {
     background: #fff;
     padding: 10px;
     position: absolute;
-    top: 32px;
-    left: 0;
-    width: 500px
+    top: 25px;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%, 10px);
 }
 
 .nav-menu li ul li {
@@ -1622,7 +1665,7 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 @media only screen and (min-width:768px) and (max-width:991px) {
     .nav-menu>li>ul {
-        left: -2%;
+
         width: 700px
     }
 
@@ -1682,7 +1725,6 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
     .nav-menu>li>ul {
-        left: 2%;
         width: 900px
     }
 
@@ -1750,7 +1792,6 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 @media only screen and (min-width:1200px) {
     .nav-menu>li>ul {
-        left: 10%;
         width: 1000px
     }
 
@@ -1818,8 +1859,8 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 @media only screen and (min-width:1800px) {
     .sub-nav-container {
-        max-height: 100vh !important;
-        overflow-y: hidden
+        max-height: 55vh !important;
+        overflow-y: auto;
     }
 }
 
@@ -4293,3 +4334,35 @@ display: none !important;
     color: #ffffff;
     /* White text */
 }
+
+/******* Bag policy *****/
+.bag_policy{
+    border: 1px solid #dee2e6;
+    padding:10px 15px;
+}
+.bag_policy_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 7px 0px;
+}
+.bag_policy_item_icon{
+    margin-right: 15px;
+}
+.bag_policy_item_icon i{
+    font-size: 16px;
+}
+#bag_policy_item_text_sub_child p i{
+    margin-right: 3px;
+}
+.bag_policy_item_text p{
+    font-size: 15px;
+}
+.bag_policy_item_text a{
+    text-decoration: underline;
+}
+.bag_policy_item_text a:hover{
+    color: blue;
+}
+/******* End Bag policy *****/

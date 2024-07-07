@@ -13,6 +13,10 @@
         font-size: 15px;
         color: red;
     }
+    #checkout_search_btn button{
+        background: #98A6B3;
+        color: #fff;
+    }
 
     .oder_edit a {
         font-size: 13px;
