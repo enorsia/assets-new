@@ -1859,7 +1859,7 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 @media only screen and (min-width:1800px) {
     .sub-nav-container {
-        max-height: 55vh !important;
+        max-height: 75vh !important;
         overflow-y: auto;
     }
 }
