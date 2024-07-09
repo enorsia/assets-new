@@ -48,7 +48,7 @@ input[type="number"] {
 }
 
 .toast_success {
-    background: #198754;
+    background: #98A6B3;
 }
 
 /************************************************************************** Header Top Scrolling Text ****************************************************/
@@ -115,7 +115,8 @@ input[type="number"] {
 
 /************************************************************************** Search ****************************************************/
 #main_header_body{
-    background-color: #cbc7bf;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 .searchForm {
     z-index: 9999;
@@ -872,7 +873,7 @@ footer #contact_title {
     border: 1px solid #000 !important;
     font-weight: 500;
     font-size: 14px;
-    background: #CBC7BF !important;
+    background: transparent !important;
     border-radius: 20px
 }
 
@@ -1035,7 +1036,7 @@ footer #contact_title {
     background: #fff;
     padding: 10px;
     position: absolute;
-    top: 25px;
+    top: 27px;
     width: 500px;
     left: 50%;
     transform: translate(-50%, 10px);
@@ -1077,7 +1078,8 @@ footer #contact_title {
 .nav-menu>li:hover>a {
     transition: .3s linear;
     background: #fff;
-    color: #000 !important
+    color: #000 !important;
+    border-bottom: 1px solid #000;
 }
 
 .nav-menu>li:hover>span {

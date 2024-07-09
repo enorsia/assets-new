@@ -371,7 +371,7 @@ body {
 }
 #bag_page_shopmore ul{
     border-radius: 0px !important;
-    inset: 0px auto auto -78px !important;
+    inset: 0px auto auto -20px !important;
 }
 .back-icon {
     display: inline-block;
