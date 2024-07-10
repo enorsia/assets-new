@@ -1012,13 +1012,7 @@
         margin-top: -3px !important;
         min-height: 50px;
     }
-    .video_text {
-        bottom: 6px;
-        /* transform: translate(-50%, -50%); */
-         left: 10px;
-        right: auto;
-        width: 53%;
-    }
+
     .video_text h1 {
         font-size: 30px;
         text-align: start;
@@ -1364,6 +1358,7 @@
         margin: 10px 7px 0;
         min-height: 40px;
     }
+
     .boden_same_text_part {
         width: 95%;
         min-height: 40px;
@@ -1640,6 +1635,12 @@
         height: 100%;
         background: #fff;
         overflow-y: auto;
+    }
+    #bag_page_shopmore ul {
+        inset: 0px auto auto -78px !important;
+    }
+    .wish_list_dropdown   #bag_page_shopmore ul {
+        inset: 0px auto auto -20px !important;
     }
     .bag_policy {
        margin-bottom: 10px;

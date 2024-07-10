@@ -1012,13 +1012,7 @@
         margin-top: -3px !important;
         min-height: 50px;
     }
-    .video_text {
-        bottom: 6px;
-        /* transform: translate(-50%, -50%); */
-         left: 10px;
-        right: auto;
-        width: 53%;
-    }
+
     .video_text h1 {
         font-size: 30px;
         text-align: start;

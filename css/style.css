@@ -486,20 +486,38 @@ footer #contact_title {
 .video_text{
     position: absolute;
     z-index: 1;
-    bottom: 27px;
-    /* transform: translate(-50%, -50%); */
-    /* left: 50%; */
-    right: 35px;
+    bottom: 10px;
+     transform: translate(-50%, -50%);
+     left: 50%;
+     width: 100%;
+     text-align: center;
+    /* right: 35px; */
 }
 .video_text h1{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 55px;
+    font-size: 40px;
     color: #fff;
     /* text-shadow: 5px 1px #787070; */
-    font-weight: 600;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: cinzel;
+}
+.video_text h1 em{
+    font-weight: normal;
+    font-style: italic;
+    margin: 0px 8px;
+}
+.video_text a{
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 500;
 }
 .copy-right,
 .size-guide-text {

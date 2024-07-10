@@ -48,7 +48,7 @@ input[type="number"] {
 }
 
 .toast_success {
-    background: #198754;
+    background: #98A6B3;
 }
 
 /************************************************************************** Header Top Scrolling Text ****************************************************/
@@ -115,7 +115,8 @@ input[type="number"] {
 
 /************************************************************************** Search ****************************************************/
 #main_header_body{
-    background-color: #cbc7bf;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 .searchForm {
     z-index: 9999;
@@ -485,20 +486,38 @@ footer #contact_title {
 .video_text{
     position: absolute;
     z-index: 1;
-    bottom: 27px;
-    /* transform: translate(-50%, -50%); */
-    /* left: 50%; */
-    right: 35px;
+    bottom: 10px;
+     transform: translate(-50%, -50%);
+     left: 50%;
+     width: 100%;
+     text-align: center;
+    /* right: 35px; */
 }
 .video_text h1{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 55px;
+    font-size: 40px;
     color: #fff;
     /* text-shadow: 5px 1px #787070; */
-    font-weight: 600;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: cinzel;
+}
+.video_text h1 em{
+    font-weight: normal;
+    font-style: italic;
+    margin: 0px 8px;
+}
+.video_text a{
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 500;
 }
 .copy-right,
 .size-guide-text {
@@ -872,7 +891,7 @@ footer #contact_title {
     border: 1px solid #000 !important;
     font-weight: 500;
     font-size: 14px;
-    background: #CBC7BF !important;
+    background: transparent !important;
     border-radius: 20px
 }
 
@@ -1035,7 +1054,7 @@ footer #contact_title {
     background: #fff;
     padding: 10px;
     position: absolute;
-    top: 25px;
+    top: 27px;
     width: 500px;
     left: 50%;
     transform: translate(-50%, 10px);
@@ -1077,7 +1096,8 @@ footer #contact_title {
 .nav-menu>li:hover>a {
     transition: .3s linear;
     background: #fff;
-    color: #000 !important
+    color: #000 !important;
+    border-bottom: 1px solid #000;
 }
 
 .nav-menu>li:hover>span {
