@@ -369,6 +369,10 @@ body {
 #bag_page_shopmore ul li a{
     font-size: 14px;
 }
+.bag_list_dropdown #bag_page_shopmore ul{
+    border-radius: 0px !important;
+    inset: 0px auto auto -78px !important;
+}
 #bag_page_shopmore ul{
     border-radius: 0px !important;
     inset: 0px auto auto -20px !important;

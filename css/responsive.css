@@ -1364,6 +1364,7 @@
         margin: 10px 7px 0;
         min-height: 40px;
     }
+
     .boden_same_text_part {
         width: 95%;
         min-height: 40px;
@@ -1640,6 +1641,12 @@
         height: 100%;
         background: #fff;
         overflow-y: auto;
+    }
+    #bag_page_shopmore ul {
+        inset: 0px auto auto -78px !important;
+    }
+    .wish_list_dropdown   #bag_page_shopmore ul {
+        inset: 0px auto auto -20px !important;
     }
     .bag_policy {
        margin-bottom: 10px;
