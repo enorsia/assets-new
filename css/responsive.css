@@ -1108,7 +1108,7 @@
         font-size: 15px;
     }
     #header_category_menu {
-        top: 15px;
+        top: 16px;
     }
     #recent_main_title_sm,
     .collection-img-section h4,
@@ -1121,7 +1121,7 @@
         top: 48px;
     }
     .logo-nav {
-        padding: 0 15px;
+        padding: 4px 15px;
     }
     .category-img {
         overflow: hidden;
@@ -1738,7 +1738,7 @@
 }
 @media (max-width: 365px) {
     #header_category_menu {
-        top: 15px;
+        top: 16px;
     }
 }
 @media (max-width: 350px) {
