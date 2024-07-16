@@ -2846,7 +2846,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 
 .gallery_items .gallery_item {
     transition: .5s;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .gallery_img .img_part {
