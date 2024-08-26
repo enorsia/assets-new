@@ -103,6 +103,9 @@
     } */
 }
 @media (max-width: 1430px){
+    .video_text {
+        left: 24%;
+    }
     .select_body #accordionFlushExample {
         grid-template-columns: repeat(1, 1fr);
         z-index: 999;
@@ -295,6 +298,15 @@
 }
 
 @media (max-width: 1199px) {
+    .video_text h1 {
+        font-size: 40px;
+    }
+    .video_text p {
+        font-size: 35px;
+    }
+    .video_text a {
+        font-size: 18px;
+    }
     #uk_flag_body{
         display: block;
     }
@@ -620,6 +632,18 @@
 }
 
 @media (max-width: 767px) {
+    .video_text {
+        bottom: -25px;
+    }
+    .video_text h1 {
+        font-size: 23px;
+    }
+    .video_text a {
+        font-size: 15px;
+    }
+    .video_text p {
+        font-size: 20px;
+    }
     #largeSearchButton{
         display: none;
     }
@@ -919,6 +943,38 @@
         margin-top: 15px;
     }
     /************ End Header **************/
+
+    .home_banner img {
+        width: 100%;
+        height: auto;
+    }
+    .video_text {
+        bottom: -135px;
+        left: 50%;
+        padding: 100px 0px 40px;
+        width: 100%;
+        background: linear-gradient(180deg, hsla(0, 0%, 80.8%, 0) -2%, rgba(0, 0, 0, .75) 80%);
+        top: auto;
+    }
+    .video_text h1 {
+        font-size: 25px;
+    }
+    .video_text p {
+        font-size: 20px;
+    }
+    .video_text a {
+        font-size: 15px;
+        color: #000000;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        background: #fff;
+        border-radius: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        transition: .3s;
+    }
     .boden_items img,
     .custom-slideshow-container,
     body {
@@ -1020,10 +1076,7 @@
         min-height: 50px;
     }
 
-    .video_text h1 {
-        font-size: 30px;
-        text-align: start;
-    }
+
     #discount_banner img {
         width: 100%;
         height: 100%;
