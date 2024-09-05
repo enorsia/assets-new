@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .large-img-fit img {
     height: 100%
 }
@@ -486,30 +488,43 @@ footer #contact_title {
 .video_text {
     position: absolute;
     z-index: 1;
-    /* bottom: 10px; */
+    bottom: 10px;
     transform: translate(-50%, -50%);
-    left: 20%;
+    left: 50%;
     width: 100%;
     text-align: center;
-    top: 50%;
+    /* top: 50%; */
 }
 .home_banner img{
     width: 100%;
     height: auto;
 }
 .video_text h1{
+    word-spacing: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 50px;
+    font-size: 40px;
+    letter-spacing: 0.5rem;
     color: #fff;
-    font-weight: 600;
+    font-weight: lighter;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     /* font-family: cinzel; */
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 3px -1px 4px rgba(0, 0, 0, 1);
 }
-.video_text p{
+.video_text h1 em{
+    /* font-weight: 400;
+    margin: 0px 10px; */
+    /* text-transform: capitalize; */
+    /* font-size: 40px; */
+}
+/* .video_text p{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -520,23 +535,31 @@ footer #contact_title {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    /* font-family: cinzel; */
-}
+    font-family: cinzel;
+} */
 .video_text a {
-    font-size: 20px;
+    word-spacing: 3px;
+    font-size: 16px;
     color: #000000;
     text-align: center;
-    text-decoration: none;
-    font-weight: 500;
+    /* text-decoration: underline; */
+    font-weight: 300;
     background: #fff;
-    border-radius: 20px;
+    font-family: "Open Sans";
+    /* font-family: cinzel; */
+    /* border-radius: 20px; */
     font-weight: 600;
     text-transform: uppercase;
-    padding: 10px 30px;
+    padding: 13px 40px;
     transition: .3s;
+    letter-spacing: 3.5px;
+    border: 1px solid #FFFFFF;
+    /* text-shadow: 3px -1px 4px rgba(0, 0, 0, 1); */
 }
 .video_text a:hover{
-    background: #d6d6d6;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transition: all 0.3s;
 }
 .copy-right,
 .size-guide-text {
