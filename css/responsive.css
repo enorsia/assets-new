@@ -27,6 +27,10 @@
     #large_video {
         min-height: 520px;
     }
+    #with_animation #large_video {
+        height: 850px !important;
+        z-index: 2;
+    }
 }
 
 @media (min-width: 1900px) {
@@ -66,6 +70,10 @@
 @media (max-width: 1599px) {
     #large_video {
         min-height: 440px;
+    }
+    #with_animation #large_video {
+        height: 640px !important;
+        z-index: 2;
     }
     .category-img {
         height: 393px;
@@ -243,6 +251,9 @@
     #large_video {
         min-height: 400px;
     }
+    #with_animation #large_video {
+        height: 573px !important;
+    }
     .category-img img {
         object-fit: cover;
         width: 100%;
@@ -296,8 +307,15 @@
         padding: 10px 16px !important;
     }
 }
-
+@media (max-width: 1200px) {
+    #with_animation #large_video {
+        height: 537px !important;
+    }
+}
 @media (max-width: 1199px) {
+    #with_animation #large_video {
+        height: 499px !important;
+    }
     .video_text h1 {
         font-size: 40px;
     }
@@ -416,11 +434,25 @@
     .nav-submenu {
         max-height: 360px;
     }
+    .nav-logo {
+        padding-bottom: 10px;
+    }
     .slider-container {
         margin: 0 0 10px;
     }
     #large_video {
         min-height: 320px;
+    }
+
+    #with_animation #large_video {
+        height: 444px !important;
+    }
+    .text-animate h2 {
+        font-size: 35px;
+    }
+    .text-animate p {
+        font-size: 20px;
+        margin-bottom: 30px;
     }
     .custom-slick-button-next {
         right: 9px;
@@ -512,6 +544,20 @@
     }
     #large_video {
         min-height: 255px;
+    }
+    #with_animation #large_video {
+        height: 345px !important;
+    }
+    .text-animate a {
+        font-size: 14px;
+    }
+
+    .text-animate h2 {
+        font-size: 25px;
+    }
+    .text-animate p {
+        font-size: 17px;
+        word-spacing: 5px;
     }
     .item__filter {
         margin: 15px 0;
@@ -638,11 +684,21 @@
     .video_text h1 {
         font-size: 23px;
     }
+    #with_animation #large_video {
+        height: 257px !important;
+    }
+    .text-animate h2 {
+        font-size: 20px;
+    }
     .video_text a {
         font-size: 15px;
     }
     .video_text p {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .text-animate p {
+        font-size: 13px;
+        word-spacing: 5px;
     }
     #largeSearchButton{
         display: none;
@@ -943,7 +999,107 @@
         margin-top: 15px;
     }
     /************ End Header **************/
+    .text_container_phn {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 77px;
+    }
+    .text-animate_phn {
+        position: absolute;
+        white-space: nowrap;
+        font-size: 24px;
+        animation: textMove2 12s infinite;
+        opacity: 0;
+        color: #ffffff;
+        text-align: center;
+        font-family: "Libre Baskerville", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-animate_phn h2 {
+        font-size: 22px;
+        word-spacing: 10px;
+        margin-bottom: 5px;
+    }
+    .text-animate_phn p {
+        font-size: 13px;
+        word-spacing: 5px;
+        margin-bottom: 20px;
+        white-space: initial;
+    }
+    .text-animate_phn a {
+        color: #000000;
+        font-size: 14px;
+        background: #fff;
+        padding: 5px 25px;
+        text-transform: capitalize;
+    }
+    .text-animate_phn a:hover {
+        text-decoration: underline;
+    }
 
+    .text-animate_phn:nth-child(1) {
+        animation-delay: 0s;
+        background: #a8745c;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-animate_phn:nth-child(2) {
+        animation-delay: 4s;
+        background: #3e0a16;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-animate_phn:nth-child(3) {
+        animation-delay: 8s;
+        background: #182a47;
+        width: 100%;
+        height: 100%;
+    }
+
+    @keyframes textMove2 {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        5% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        34% {
+            transform: translateX(0);
+            opacity: 1; /* Stay visible for 3 seconds (25% of 12s = 3s) */
+        }
+        40% {
+            opacity: 0; /* Start disappearing after 3 seconds */
+        }
+        100% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+
+    #phn_hide{
+        display: none !important;
+    }
+    #large_hide{
+        display: block;
+        position: relative;
+        height: 155px;
+    }
+
+    #with_animation .video {
+        width: 100%;
+        overflow: hidden;
+    }
     .home_banner img {
         width: 100%;
         height: auto;
