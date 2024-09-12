@@ -1094,6 +1094,7 @@
         display: block;
         position: relative;
         height: 155px;
+        overflow: hidden;
     }
 
     #with_animation .video {
