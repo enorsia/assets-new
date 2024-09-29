@@ -189,11 +189,11 @@ input[type="number"] {
         transform: translateX(0);
         opacity: 1;
     }
-    34% {
+    36% {
         transform: translateX(0);
         opacity: 1;
     }
-    40% {
+    42% {
         opacity: 0;
     }
     100% {
