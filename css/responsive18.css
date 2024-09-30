@@ -1007,6 +1007,9 @@
         margin-top: 15px;
     }
     /************ End Header **************/
+    #phn_hide {
+        padding-bottom: 74.035%;
+    }
     .text_container_phn {
         width: 100%;
         overflow: hidden;
