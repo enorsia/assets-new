@@ -1009,6 +1009,7 @@
     /************ End Header **************/
     #phn_hide {
         padding-bottom: 74.035%;
+        min-height: 200px;
     }
     .text_container_phn {
         width: 100%;
@@ -1615,7 +1616,19 @@
         margin-top: 0px;
     }
     #boden_body {
-        min-height: 200vh;
+        min-height: 100vh;
+    }
+    .boden_same_part{
+        min-height: 200px;
+    }
+    .boden_same_img_part {
+       min-height: 200px;
+    }
+    .boden_items {
+       min-height: 200px;
+    }
+    .boden_bottom, .boden_middle, .boden_top, .boden_one, .boden_three {
+       min-height: 200px;
     }
     .boden_same_text_part a {
         font-size: 14px;
@@ -1634,6 +1647,7 @@
         grid-gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
+        min-height: 200px;
     }
     .boden_same_text_part {
         width: 95%;
@@ -1683,6 +1697,7 @@
     }
     .gallery_section .enorsia-container {
         padding: 0 !important;
+        min-height: 200px;
     }
     .modal_body_img {
         min-height: 500px;
