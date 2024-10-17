@@ -681,6 +681,100 @@ input[type="number"] {
     display: none;
 }
 
+/****** Role page css*******/
+#role_body .accordion-item{
+    border-radius: 5px;
+}
+#role_body .accordion-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #111827;
+
+}
+#role_body .accordion-header button{
+    /* width: 80%; */
+    background: #111827;
+    color: #fff;
+}
+#role_body .accordion-button:not(.collapsed) {
+    color: #b9b9b9;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+#role_body .accordion-button:focus {
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
+#role_body .accordion-header .form-switch{
+    width: 0%;
+    z-index: 9;
+}
+#role_body .accordion-button::after {
+    width: 0px !important;
+}
+#role_body .form-check-input{
+    margin-top: 5px !important;
+    height: .6em !important;
+    width: 1.3em !important;
+    margin-left: -2em !important;
+}
+.role_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.role_top h4{
+    font-size: 18px;
+}
+#role_body .accordion-body ul li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+#role_body .accordion-body ul li:last-child{
+    margin-bottom: 0px;
+}
+#role_body .accordion-body ul{
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 0px;
+}
+#role_body .accordion-body ul::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+#role_body .accordion-body {
+    background: #0f1114 !important;
+}
+#role_body .accordion-body ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+#role_body .accordion-body ul::-webkit-scrollbar-thumb {
+    background-color: rgb(99, 99, 99);
+    border-radius: 4px;
+}
+
+#role_body .accordion-body ul::-webkit-scrollbar-button {
+    width: 3px;
+    height: 3px;
+}
+#role_body .accordion-body ul li{
+    color: #b9b9b9;
+}
+#role_body .accordion-body ul li .form-check-input {
+    margin-top: 4px !important;
+    height: 1em !important;
+    width: 2em !important;
+    margin-left: -35px !important;
+}
+/****** End Role page css*******/
+
 /******** Responsive*********/
 @media (max-width: 1599px) {
     .filter_section {
@@ -733,6 +827,13 @@ input[type="number"] {
     .card-dark {
         padding: 20px 0px;
         margin-top: 30px;
+    }
+    .role_top {
+        justify-content: center;
+    }
+    #accordionFlushExample {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
