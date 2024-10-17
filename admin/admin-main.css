@@ -9623,7 +9623,7 @@ button,
     margin-right: auto;
 }
 .closed-sidebar.fixed-sidebar .app-main__outer {
-    padding-left: 0px;
+    padding-left: 75px;
 }
 .closed-sidebar.fixed-header:not(.fixed-sidebar) .app-sidebar .app-header__logo {
     visibility: hidden;
