@@ -3986,7 +3986,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     -webkit-transition: width 0.8s;
     transition: width 0.8s;
     cursor: pointer;
-    z-index: 99;
+    z-index: 9;
 }
 
 .img_part .shop_discount {
