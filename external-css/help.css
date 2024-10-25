@@ -156,6 +156,10 @@
         padding: 32px 0px;
         width: 35%;
     }
+    .left__sidebar h3{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
 
     .tab-content.right_bar {
         width: 65%;
@@ -164,6 +168,10 @@
     .right_bar .according__heading {
         background: #fff;
         padding: 20px;
+    }
+    .right_bar .according__heading h3{
+        font-size: 22px;
+        margin-bottom: 5px;
     }
 
     .right_bar .accordion-header {

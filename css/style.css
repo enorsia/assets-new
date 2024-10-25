@@ -22,6 +22,13 @@ ul {
     padding: 0;
 }
 
+/* @font-face {
+    font-family: 'TimesCustom';
+    src: url('./fonts/TIMESS__.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
 .modal {
     z-index: 999999 !important;
     /* Custom z-index for all modals */
@@ -55,17 +62,8 @@ input[type="number"] {
 }
 
 /************************************************************************** Header Top Scrolling Text ****************************************************/
-#phn_hide {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: 44.035%;
-}
-.text_container-c {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
+
+
 .scroll_right {
     position: absolute;
     right: 20px;
@@ -119,11 +117,67 @@ input[type="number"] {
 #main_header {
     justify-content: space-between;
     width: 100%;
+    height: 70px;
+}
+#header_left h3{
+    letter-spacing: 3.5px;
+    font-size: 25px;
+    /* text-shadow: 2px 2px 2px rgba(96, 96, 96, 0.6); */
+    font-weight: 600;
+    color: #000000;
+    /* font-family: 'TimesCustom', serif; */
 }
 
 /************************************************************************** End Header****************************************************/
+.text_container{
+    position: relative;
+    overflow: hidden;
+}
+.text-animate img.responsive {
+    min-height: calc(74vh - 100px);
+    width: 100%;
+    object-fit: cover;
+  }
+.festive_part{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.festive_part h1{
+    text-transform: uppercase;
+    color: #FFED00;
+    font-size: 85px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.text_container a{
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: #fff;
+    color: #262525;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 30px;
+    margin: 10px 10px 0;
+    display: inline-block;
+    transition: .3s;
+    text-align: center;
 
-
+}
+.text_container a:hover{
+    background: #9c9c9c;
+}
+.text-animate img{
+    width: 100%;
+    height: auto;
+}
 #with_animation {
     width: 100%;
     display: flex;
@@ -150,69 +204,21 @@ input[type="number"] {
     align-items: center;
     display: flex; */
 }
-.text-animate {
-    position: absolute;
-    font-size: 24px;
-    animation: textMove 12s infinite;
-    opacity: 0;
-}
 
-.text-animate a{
-    display: block;
-    width: 100%;
-}
-.text-animate img{
-    width: 100%;
-    height: auto;
-}
-.text-animate:nth-child(1) {
-    animation-delay: 0s;
-    width: 100%;
-}
-
-.text-animate:nth-child(2) {
-    animation-delay: 4s;
-    width: 100%;
-}
-
-.text-animate:nth-child(3) {
-    animation-delay: 8s;
-    width: 100%;
-}
-
-@keyframes textMove {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    5% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    36% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    42% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-}
 
 /************************************************************************** Search ****************************************************/
 #main_header_body {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
+    position: relative;
+    z-index: 9;
 }
 .searchForm {
     z-index: 9999;
     overflow: hidden;
     position: absolute;
     background: #fff;
-    top: 106px;
+    top: 65px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -432,7 +438,7 @@ input[type="number"] {
 .collection-img-section h4,
 .slider-title,
 footer #contact_title {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Helvetica, Poppins, sans-serif;
 }
 
 #recent_view_title,
@@ -446,6 +452,7 @@ footer #contact_title {
 body {
     font-family: Helvetica, Poppins, sans-serif;
     color: #000;
+    font-family: 'TimesCustom', serif;
 }
 
 li {
@@ -572,15 +579,35 @@ footer #contact_title {
 #large_video {
     min-height: 640px;
 }
+.video_body{
+    position: relative;
+}
 .video_text {
     position: absolute;
     z-index: 1;
-    bottom: 10px;
+    bottom: -15px;
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
     text-align: center;
+    color: #fff;
     /* top: 50%; */
+}
+.video_body .video_text h2{
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.video_body .video_text a{
+    color: #fff !important;
+    border: none !important;
+    background: transparent !important;
+    margin-top: 0px;
+    display: block;
+    text-decoration: underline;
+    padding: 10px 0px;
+}
+.video_body .video_text a:hover{
+    text-decoration: none;
 }
 .home_banner img {
     width: 100%;
@@ -794,7 +821,34 @@ footer #contact_title {
     width: 100%;
     height: 100%;
 }
-
+.discount_video{
+    position: relative;
+    cursor: pointer;
+}
+.discount_video a{
+    cursor: pointer;
+}
+.discount_v_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discount_v_text p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
 #four_part_img,
 .boden_top {
     min-height: 400px;
@@ -1143,7 +1197,7 @@ footer #contact_title {
     top: 71px;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999;
+    z-index: 99;
 }
 #nav-slider {
     position: relative;
@@ -1689,6 +1743,13 @@ dl.flag-dropdown dt span:nth-child(3) {
     text-overflow: ellipsis;
     margin-top: 5px;
 }
+.MsoNormal span{
+    font-size: 14px !important;
+}
+.description span{
+    font-size: 14px !important;
+}
+
 
 #search-suggestion-container {
     width: 350px;
@@ -2843,7 +2904,8 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 #boden_body {
-    min-height: 500px;
+    min-height: 450px;
+    margin-top: -4px;
 }
 
 .boden_items {
@@ -2883,10 +2945,10 @@ dl.flag-dropdown dt span:nth-child(2) {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    padding: 16px 30px;
+    padding: 8px 15px;
     margin: 10px 10px 0;
     display: inline-block;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .boden_same_text_part h6 {
@@ -2915,20 +2977,19 @@ dl.flag-dropdown dt span:nth-child(2) {
     min-height: 150px;
 }
 .boden_three{
-    margin: 40px 0px 30px 0px;
+   min-height: 150px;
 }
-.boden_three_title h1{
+.boden_three_title h1 {
     font-size: 35px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin: 25px 0px 15px 0px;
+    color: #424242;
 }
 .boden_three_body {
     background: #F7F8FA;
     min-height: 200px;
     display: grid;
-    grid-gap: 25px;
     grid-template-columns: repeat(3, 1fr);
-    padding: 25px;
 }
 .boden_bottom,
 .boden_middle {
@@ -2950,7 +3011,6 @@ dl.flag-dropdown dt span:nth-child(2) {
 
 .gallery_title {
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
 }
 
 .gallery_title h2 {
@@ -2958,11 +3018,13 @@ dl.flag-dropdown dt span:nth-child(2) {
     margin-bottom: 10px;
 }
 
-.gallery_title p,
+
 .modal_ins_name_icon i {
     font-size: 20px;
 }
-
+.gallery_title p {
+    font-size: 18px;
+}
 .gallery_menu ul {
     width: 100%;
     display: flex;
