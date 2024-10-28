@@ -2978,6 +2978,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 .boden_three{
    min-height: 150px;
+   z-index: 2;
 }
 .boden_three_title h1 {
     font-size: 35px;
@@ -2996,6 +2997,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     min-height: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    z-index: 2;
 }
 
 .gallery_section .enorsia-container {
