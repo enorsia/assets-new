@@ -117,6 +117,8 @@
         z-index: 999;
         position: relative;
         display: none;
+        top: -40px;
+        border: 1px solid #ddd !important;
     }
     .filter_icon {
         display: flex;
@@ -186,7 +188,7 @@
         /* margin-right: -1px; */
     }
     .price_body .price_div {
-        width: 100.3%;
+        width: 100.1%;
     }
     .price_body .price_id {
         padding-left: 20px;
@@ -986,6 +988,9 @@
     #header_left h3 {
         font-size: 20px;
     }
+    .offcanvas-header h3{
+        font-size: 20px;
+    }
     #for_mobile_device {
         display: none;
     }
@@ -1308,9 +1313,12 @@
         padding: 0 10px 5px;
         margin-top: -8px !important;
     }
-    #footer_icon_part,
+
     .enorsia-container {
         padding: 10px 15px 0;
+    }
+     #footer_icon_part {
+        padding: 10px 0px 15px 0px;
     }
     #accordionExample .accordion-item .accordion-body,
     #subscribe_body {
