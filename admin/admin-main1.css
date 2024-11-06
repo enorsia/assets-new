@@ -9246,6 +9246,7 @@ button,
     color: #dddddd;
     white-space: nowrap;
     position: relative;
+    height: 20px;
 }
 .sidebar-mobile-overlay {
     display: none;
@@ -9263,6 +9264,9 @@ button,
     padding: 0;
     position: relative;
     list-style: none;
+}
+.vertical-nav-menu li{
+    min-height: 40px;
 }
 .vertical-nav-menu::after {
     content: " ";
@@ -9296,8 +9300,7 @@ button,
 }
 .vertical-nav-menu li a {
     display: block;
-    line-height: 2.4rem;
-    height: 2.4rem;
+    /* line-height: 2.4rem; */
     padding: 0 1.5rem 0 45px;
     position: relative;
     border-radius: 0.25rem;
@@ -9327,6 +9330,7 @@ button,
     color: #fff;
     background: #111827;
     font-weight: bold;
+    line-height: 2.2rem;
 }
 .vertical-nav-menu i.metismenu-state-icon,
 .vertical-nav-menu i.metismenu-icon {
@@ -9357,7 +9361,7 @@ button,
     height: 100%;
     opacity: 1;
     width: 3px;
-    background: #e0f3ff;
+    background: #111826;
     position: absolute;
     left: 20px;
     top: 0;
@@ -9365,7 +9369,6 @@ button,
 }
 .vertical-nav-menu ul > li > a {
     color: #6c757d;
-    height: 2rem;
     line-height: 2rem;
     padding: 0 .5rem 0;
 }
