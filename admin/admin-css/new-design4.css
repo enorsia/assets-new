@@ -683,6 +683,27 @@ input[type="number"] {
 .quick-size-card tr:first-child .delete-row {
     display: none;
 }
+.create_selling_chart_tbl .error {
+    font-size: 11px;
+}
+.table .new_select_field .select2 {
+    height: 30px !important;
+}
+.table .new_select_field .select2-container .select2-selection--single {
+    height: 30px !important;
+}
+.table .new_select_field .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 27px !important;
+    font-size: 13px;
+}
+.table .new_select_field .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px !important;
+}
+.table .new_select_field .form-control {
+    height: 30px !important;
+    padding: 0 8px;
+    font-size: 13px;
+}
 
 /****** Role page css*******/
 #role_body .accordion-item{
@@ -910,12 +931,24 @@ input[type="number"] {
     .new_table table thead tr th {
         min-width: 100px;
     }
+    .top_title {
+        padding: 15px;
+    }
+    .top_title h6 {
+        font-size: 16px;
+    }
+    .top_title .tlt-btn, .filter_button button,
+    .reset_button button, .reset_button a {
+        height: 40px;
+        padding: 0px 12px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 575px) {
     .card-dark {
-        padding: 20px 0px;
-        margin-top: 30px;
+        padding: 20px;
+        margin-top: 25px;
     }
 
     .role_search {
