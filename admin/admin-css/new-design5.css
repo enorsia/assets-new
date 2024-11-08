@@ -62,10 +62,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .flex-center {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
-
+.filter_button.new_same_item {
+    margin: 0px 15px 0px 0px !important;
+}
 /******* For Top Title*****/
 
 .top_title {
@@ -223,6 +225,12 @@ input[type="number"]::-webkit-inner-spin-button {
 .new_same_item .fa-filter{
     height: .8em !important;
     margin-right: 6px !important;
+}
+.reset_button.new_same_item a {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 /***** Select 2*****/
 .new_select_field .select2 {
