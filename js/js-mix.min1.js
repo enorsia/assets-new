@@ -351,7 +351,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 /*=====================
 cart's selected product
 =====================*/
-var productsPrice = document.querySelectorAll(".selected-product-price");
+var productsPrice = document.querySelectorAll(".selected-product-price1");
 var itemCountInCart = document.querySelectorAll(".itemCountInCart");
 var productTotalPrice = document.getElementById("cart-product-total-price");
 
@@ -388,8 +388,8 @@ if (productTotalPrice) {
   \*****************************************/
 /***/ (() => {
 
-/*============================= 
-product count increase/decrease 
+/*=============================
+product count increase/decrease
 =============================*/
 var sum = 1;
 function handleCountDecrease(e) {
@@ -20189,7 +20189,7 @@ return jQuery;
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -20203,17 +20203,17 @@ return jQuery;
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
@@ -20223,9 +20223,9 @@ return jQuery;
 /******/ 			return module;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./public/frontend/js/app.js");
@@ -20240,6 +20240,6 @@ return jQuery;
 /******/ 	__webpack_require__("./public/frontend/js/jquery.lazyload.min.js");
 /******/ 	__webpack_require__("./public/frontend/js/lazysizes.min.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./public/frontend/js/slick.js");
-/******/ 	
+/******/
 /******/ })()
 ;

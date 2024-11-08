@@ -421,6 +421,7 @@ body {
 
 .shopping-product-items-img img {
     width: 100%;
+    min-height: 80px;
 }
 
 .shopping-item-name {
