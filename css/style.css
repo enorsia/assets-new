@@ -3328,11 +3328,12 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 .subCategory_list ul {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: initial;
     cursor: grab;
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin: 0 auto;
 }
 
 .subCategory_list ul::-webkit-scrollbar {

@@ -36,8 +36,8 @@
     }
 
     .bag_other_item select {
-        min-width: 130px !important;
-        padding: 5px 4px 5px 10px !important;
+        min-width: 145px !important;
+        padding: 5px 4px 5px 5px !important;
         font-size: 13px;
     }
 
