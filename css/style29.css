@@ -3318,6 +3318,9 @@ dl.flag-dropdown dt span:nth-child(2) {
 .subCategory_list {
     position: relative;
 }
+#subCategory_list_icon, #subCategory_list_icon_left{
+    display: none;
+}
 #subCategory_list_next {
     position: absolute;
     left: 0;
