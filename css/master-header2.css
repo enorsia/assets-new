@@ -47,7 +47,6 @@
 
     .verticalflip p:nth-child(2) {
         animation-delay: 5s;
-        font-size: 12px;
     }
 
     .verticalflip p:nth-child(3) {
@@ -88,5 +87,11 @@
             z-index: 10002;
         }
     }
+    @media only screen and (max-width: 575px) {
+        .verticalflip p:nth-child(2) {
+            font-size: 12px;
+        }
+    }
+
 
     /******* End Count Down  Css**********/
