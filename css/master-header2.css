@@ -87,11 +87,6 @@
             z-index: 10002;
         }
     }
-    @media only screen and (max-width: 575px) {
-        .verticalflip p:nth-child(2) {
-            font-size: 12px;
-        }
-    }
-
+  
 
     /******* End Count Down  Css**********/
