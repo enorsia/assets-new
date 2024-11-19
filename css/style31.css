@@ -968,7 +968,9 @@ footer #contact_title {
 .nav-menu > li > span {
     color: #000 !important;
 }
-
+.nav-pills .nav-link{
+    border: 1px solid transparent;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     background-color: #fff !important;
@@ -1093,7 +1095,10 @@ footer #contact_title {
     background: transparent !important;
     border-radius: 20px;
 }
-
+.cart-details .nav-checkout-btn{
+    border-radius: 0px;
+    padding: 5px 15px;
+}
 .nav-checkout-btn:hover {
     transition: 0.3s linear;
     background: #015757;
@@ -1136,11 +1141,6 @@ footer #contact_title {
     display: none;
 }
 
-.cart-body {
-    height: 243px;
-    overflow-y: auto;
-}
-
 .cart-body::-webkit-scrollbar {
     height: 10px;
     width: 8px;
@@ -1166,21 +1166,15 @@ footer #contact_title {
     cursor: pointer;
 }
 
-.cart-footer div:first-child,
-.cart-header {
-    border-bottom: 1px solid grey;
-}
 
 .view-bag-btn {
     padding: 5px 15px;
     font-weight: 500;
     font-size: 14px;
-    border-radius: 20px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
 }
 
-.cart-product-img img {
-    width: 50px;
-}
 
 .cart-product-details,
 .cart-product-price,
@@ -4641,10 +4635,10 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 /******* Bag policy *****/
-.bag_policy {
+/* .bag_policy {
     border: 1px solid #dee2e6;
     padding: 10px 15px;
-}
+} */
 .bag_policy_item {
     display: flex;
     flex-direction: row;

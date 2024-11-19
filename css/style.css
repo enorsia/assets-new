@@ -968,7 +968,9 @@ footer #contact_title {
 .nav-menu > li > span {
     color: #000 !important;
 }
-
+.nav-pills .nav-link{
+    border: 1px solid transparent;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     background-color: #fff !important;
