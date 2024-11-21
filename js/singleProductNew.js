@@ -75,7 +75,8 @@ function showSuperImage(n) {
 // ==================================================
 
 // small image slider
-let smImgContainer = document.querySelector(".single-product-img");
+function smallImageFunc(){
+    let smImgContainer = document.querySelector(".single-product-img");
 let smImgNextBtn = document.querySelector(".sm-img-next");
 let smImgPrevBtn = document.querySelector(".sm-img-prev");
 let lrgImgNextBtn = document.querySelector(".product-btn-next");
@@ -127,4 +128,6 @@ lrgImgPrevBtn.addEventListener("click", function () {
         smImgContainer.scrollBy(0, -190);
     }
 });
+}
+smallImageFunc();
 // ==================================================
