@@ -21,6 +21,10 @@
 
     .bag_mobile_img .shop-more {
         font-size: 14px;
+        text-decoration: none;
+    }
+    .bag_mobile_img .shop-more:hover{
+        text-decoration: underline;
     }
 
     .bag_mobile_bottom {
@@ -152,7 +156,7 @@
         }
 
         .shopping-total-price p {
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 600;
         }
     }
