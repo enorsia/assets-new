@@ -114,6 +114,10 @@
 .qty_price .fw_medium {
     font-weight: 600;
 }
+.cart-footer .cart_footer_price span, .cart-footer .cart_footer_price p{
+    font-weight: 600;
+    font-size: 16px;
+}
 .cart-product-details {
     margin-left: 10px;
     display: flex;
@@ -162,7 +166,7 @@
     justify-content: space-between;
 }
 .cart-product-img img {
-    width: 73px;
+    width: 73px !important;
 }
 .cart-footer div:first-child {
     border-bottom: 1px solid #ddd;
