@@ -403,7 +403,10 @@
         padding: 10px 5px;
         font-size: 15px;
     }
-
+    .nav-submenu-img .nav-img img {
+        margin-left: 0 !important;
+        width: 100%;
+    }
     .video_text h1 {
         font-size: 40px;
     }
@@ -656,7 +659,7 @@
 
     #header_category_menu {
         position: relative;
-        top: 18px;
+        top: 20px;
         background: #cbc7bf;
     }
 
@@ -664,7 +667,9 @@
         max-height: 500px;
         overflow-y: auto;
     }
-
+    .nav-submenu-img .nav-img img {
+        width: 75%;
+    }
     .nav-submenu {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr);
@@ -676,7 +681,15 @@
         flex-wrap: wrap;
         justify-content: center !important;
     }
-
+    .nav-menu > li > ul {
+        top: 30px;
+    }
+    .nav-menu > li {
+        height: 40px;
+    }
+.medium_height{
+    height: 0px !important;
+}
     .nav-submenu {
         max-height: 200px;
     }
@@ -684,7 +697,27 @@
     .nav-submenu li {
         margin-right: 25px;
     }
+    #nav-slider {
+        padding: 0px 0px !important;
+    }
+    .nav-submenu-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-submenu-img img,
+    .shop-category-img img {
+        height: 100%;
+        width: 87%;
+    }
 
+    .nav-submenu-img_item {
+        width: 100%;
+    }
+    #for_mobile_device {
+        width: 100%;
+        margin: 0 auto;
+        position: initial;
+    }
     /************************************************************************** Search ****************************************************/
     .searchForm {
         z-index: 10003;
@@ -882,6 +915,22 @@
     .video_text h1 {
         font-size: 29px;
     }
+    .footer_body .accordion {
+        --bs-accordion-bg: transparent !important;
+    }
+    #accordionExample .accordion-item button::after {
+        width: 0px !important;
+        height: 0px !important;
+    }
+
+    #accordionExample .accordion-item button i{
+        color: #fff;
+        position: absolute;
+        right: 10px;
+    }
+    #accordionExample .accordion-button:not(.collapsed) i {
+        transform: rotate(-180deg);
+    }
 }
 
 @media (max-width: 767px) {
@@ -949,11 +998,18 @@
     .nav-submenu li {
         width: 100%;
     }
-
+    #for_mobile_device {
+        width: 100%;
+        margin: 0 auto;
+        position: initial;
+        /* top: -24px; */
+    }
     .nav-menu > li > a {
         font-size: 14px;
     }
-
+    .nav-submenu-img .nav-img img {
+        width: 85%;
+    }
     .nav-menu > li > span {
         font-size: 14px;
     }
@@ -1252,6 +1308,7 @@
     #details_youtube_icon {
         color: #f70000;
     }
+
 }
 
 @media (max-width: 575px) {
@@ -1297,6 +1354,12 @@
         position: relative;
         left: 50%;
         transform: translate(-50%, 0%);
+    }
+    .nav-menu > li {
+        height: 30px;
+    }
+    #nav-slider li {
+        white-space: wrap;
     }
     #header_cart_bag .itemCountInCart {
         position: absolute;
@@ -1570,7 +1633,8 @@
     }
 
     .nav-logo {
-        height: 100%;
+        height: auto;
+        width: 130px;
     }
 
     #nav-slider li a:last-child,
@@ -1677,7 +1741,7 @@
 
     .nav-menu > li > ul {
         padding: 10px 5px 20px 5px !important;
-        top: 20px;
+        top: 26px;
     }
 
     #pre_title_btn_part {
@@ -1771,7 +1835,7 @@
     }
 
     #header_category_menu {
-        top: 16px;
+        top: 18px;
         position: relative;
         z-index: 9;
     }
@@ -1898,12 +1962,18 @@
 
     .footer-signu-container {
         background-color: #000;
-        padding-top: 10px !important;
-        padding-bottom: 15px !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
     }
 
     .copyright-container {
-        padding: 0;
+        padding: 0px 0px 0px 6px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .copyright-container .copy_right_text{
+        text-align: center;
+        width: 100%;
     }
 
     .pay-securely,
@@ -1935,6 +2005,7 @@
         font-size: 14px;
         margin-bottom: 0 !important;
     }
+
 
     .payment-container-f {
         display: flex;
@@ -2692,13 +2763,14 @@
     }
 }
 
-@media (max-width: 367px) {
+@media (max-width: 355px) {
+    .nav-menu > li {
+        height: 25px;
+    }
     #header_category_menu {
-        top: 29px;
+        top: 28px;
     }
 }
-
-
 @media (max-width: 350px) {
     .collection-img-section .collection_img_body {
         height: 250px;
@@ -2747,7 +2819,7 @@
 
 @media (max-width: 320px) {
     #header_category_menu {
-        top: 27px;
+        top: 28px;
     }
 }
 

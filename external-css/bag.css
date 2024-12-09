@@ -82,7 +82,8 @@
     }
 
     .bag_if_empty p {
-        font-size: 15px;
+        font-size: 14px;
+        font-weight: 600;
     }
 
     /******* End Bag Mobile View ************/
