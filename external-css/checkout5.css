@@ -1,0 +1,354 @@
+.checkout_title h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #494949;
+}
+
+.devivery_required label {
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-weight: 600;
+}
+.devivery_required label i {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+.new_delivery input,
+.new_delivery button,
+.new_delivery select,
+#cupon-section input,
+#cupon-section button {
+    height: 45px;
+}
+.new_delivery select {
+    border: 1px solid #949494;
+}
+.new_delivery input,
+.new_delivery button,
+.new_delivery select,
+#cupon-section input,
+#cupon-section button {
+    border-radius: 0px !important;
+}
+#delivery_type input {
+    height: 15px;
+}
+.form-control:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+#cupon-section button {
+    background: #627786;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+#delivery_type p {
+    font-size: 14px;
+    font-weight: 600;
+}
+#delivery_type label {
+    font-size: 15px;
+}
+.home-delivery-details {
+    padding: 30px;
+}
+.next_day span {
+    display: block;
+    margin-left: 15px;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.devivery_required small {
+    color: #ff7913;
+    margin-left: 3px;
+}
+.checkout_terms label {
+    font-size: 15px;
+}
+.v-error {
+    padding: 8px 5px 5px 0px;
+    font-size: 13px;
+    color: red;
+}
+.error_border {
+    border: 1px solid red !important;
+}
+#invalid-cupon {
+    font-size: 13px;
+    color: red;
+}
+#checkout_search_btn button {
+    background: #627786;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.oder_edit a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 7px;
+    color: #3f3f3f;
+}
+.oder_edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart_product_body,
+.qty_price {
+    display: flex;
+    flex-direction: row;
+}
+.qty_price .fw_medium span,
+.qty_price .fw_medium {
+    font-weight: 600;
+}
+.cart-footer .cart_footer_price span, .cart-footer .cart_footer_price p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.cart-product-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.cart-header p i {
+    font-size: 25px;
+    margin-left: 10px;
+}
+.cart-header p span {
+    margin-left: 7px;
+    font-size: 19px;
+    font-weight: 600;
+}
+.cart-product-details p {
+    font-size: 14px;
+    color: #454545;
+}
+.qty_price{
+    margin-top: 5px;
+}
+.cart-product-details a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #454545;
+
+    display: block;
+}
+
+.cart-body {
+    max-height: 475px;
+    overflow-y: auto;
+}
+.qty_price_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+.qty_item{
+    margin-left: 25px;
+}
+.qty_price {
+    justify-content: space-between;
+}
+.cart-product-img img {
+    width: 73px !important;
+}
+.cart-footer div:first-child {
+    border-bottom: 1px solid #ddd;
+}
+.cart-header {
+    border-bottom: 0px;
+}
+
+.oder_edit #bag_page_shopmore {
+    margin-left: 10px;
+}
+.oder_edit #bag_page_shopmore button {
+    color: #3f3f3f;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.oder_edit #bag_page_shopmore ul {
+    inset: 0px auto auto -25px !important;
+}
+.oder_edit #bag_page_shopmore ul li a {
+    text-decoration: none;
+    font-weight: normal;
+    margin-left: 0px;
+}
+
+.oder_edit a:hover {
+    color: blue;
+}
+
+.bi-check-circle {
+    margin-left: 10px;
+    color: #157347;
+    font-weight: bold;
+    font-size: 17px;
+}
+.delivery-footer p {
+    font-weight: 600;
+    color: #606060;
+    font-size: 15px;
+}
+.total_to_pay p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+/***** UK Phn numbrt code with flag ****/
+.phn_number_flag {
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.flag_part {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 100px; */
+    background: transparent;
+    margin: 0px 5px 0px 5px;
+    border-right: 1px solid #787272;
+    padding-right: 5px;
+}
+
+.flag_part img {
+    margin-right: 5px;
+}
+
+.phn_number_flag input {
+    padding-left: 75px;
+}
+.phn_text {
+    display: none;
+}
+
+/***** End UK Phn numbrt code with flag ****/
+@media (max-width: 1115px) {
+    #checkout_search_btn button {
+        padding: 0px 0px;
+    }
+}
+@media (max-width: 1113px) {
+    .home-delivery-details {
+        padding: 20px;
+    }
+
+    .phn_text {
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-delivery-details {
+        padding: 15px;
+    }
+    .cart-body {
+        max-height: 350px;
+    }
+    .qty_price {
+        margin-top: 3px;
+    }
+    .phn_text h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .checkout_title h1 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    .checkout_note_text {
+        font-size: 14px;
+    }
+    .cart-header p span {
+        font-size: 17px;
+    }
+    #shipping_address_selector_section {
+        margin-bottom: 23px !important;
+    }
+    .checkout_note_text span {
+        margin-left: 0px !important;
+    }
+    .devivery_required label {
+        margin-bottom: 5px !important;
+        font-size: 16px;
+    }
+    .cart-product-details p {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    .cart-product-details a {
+        font-size: 15px;
+    }
+    .delivery-footer p {
+        font-size: 16px;
+    }
+    .total_to_pay p {
+        font-size: 18px !important;
+    }
+    .continue-to-payment {
+        width: 100%;
+    }
+    .continue-to-payment button {
+        width: 100%;
+    }
+    #checkout_search_btn button {
+        font-size: 14px;
+        padding: 8px 0px;
+        margin-top: 27px !important;
+    }
+    .next_day span {
+        font-size: 16px;
+    }
+    #delivery_type input {
+        height: 12px;
+    }
+
+    .devivery_required label {
+        margin-bottom: 5px !important;
+    }
+
+    .devivery_required small {
+        margin-left: 3px;
+        font-size: 13px;
+    }
+    .delivery_type p {
+        font-size: 16px !important;
+    }
+    .delivery_type label {
+        font-size: 16px !important;
+    }
+    #delivery_type p {
+        font-size: 16px;
+    }
+    .new_delivery input, .new_delivery input::placeholder{
+        font-size: 16px;
+    }
+}
+@media (max-width: 320px) {
+    .home-delivery-details {
+        padding: 10px;
+    }
+}
