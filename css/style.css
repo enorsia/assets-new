@@ -186,6 +186,10 @@ input[type="number"] {
     width: 100%;
     object-fit: cover;
 }
+#christmas{
+    overflow: hidden;
+    z-index: 3;
+}
 .festive_part {
     position: absolute;
     top: 50%;
@@ -3126,6 +3130,8 @@ dl.flag-dropdown dt span:nth-child(2) {
 .shop_item_top .img_part img {
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 3;
 }
 
 .boden_top {
@@ -3187,13 +3193,16 @@ dl.flag-dropdown dt span:nth-child(2) {
     min-height: 150px;
     z-index: 2;
 }
+#For_video{
+    margin-top: -2px;
+}
 .boden_three_title h1 {
     font-size: 35px;
     font-weight: 700;
     margin: 25px 0px 15px 0px;
     color: #424242;
     /* height: 100px; */
-    margin-top: -3px;
+    margin-top: -4px;
     z-index: 33;
     /* position: relative; */
     background: #fff;
