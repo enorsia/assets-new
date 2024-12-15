@@ -176,6 +176,10 @@ input[type="number"] {
     color: #000000;
 }
 
+.header_landing_url{
+    display: none;
+}
+
 /************************************************************************** End Header****************************************************/
 .text_container {
     position: relative;
@@ -185,6 +189,10 @@ input[type="number"] {
     min-height: calc(74vh - 100px);
     width: 100%;
     object-fit: cover;
+}
+#christmas{
+    overflow: hidden;
+    z-index: 3;
 }
 .festive_part {
     position: absolute;
@@ -251,6 +259,29 @@ input[type="number"] {
     align-items: center;
     display: flex; */
 }
+
+
+/*********** Banner Top Text ****************/
+#banner_top_body_bg{
+    background: #17282F;
+    padding: 7px 0px;
+}
+.top_banner_text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_banner_text_part p{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1.05px;
+    text-align: center;
+}
+.top_banner_text_part p span{
+    color: #DCB403;
+}
+/*********** End Banner Top Text ****************/
 
 /************************************************************************** Search ****************************************************/
 #main_header_body {
@@ -1116,6 +1147,13 @@ footer #contact_title {
 .details_color,
 .single-product-details h6 {
     font-size: 15px !important;
+}
+.dbz_text{
+margin: 15px 0px 5px 0px;
+}
+.dbz_text h6{
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .social-icon i {
@@ -3096,6 +3134,8 @@ dl.flag-dropdown dt span:nth-child(2) {
 .shop_item_top .img_part img {
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 3;
 }
 
 .boden_top {
@@ -3113,6 +3153,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     margin-right: auto;
     width: 75%;
     text-align: center;
+    z-index: 5;
 }
 
 .boden_same_text_part a {
@@ -3147,7 +3188,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 .boden_same_img_part {
-    width: 100%;
+    width: 101%;
     overflow: hidden;
 }
 .boden_one {
@@ -3157,11 +3198,20 @@ dl.flag-dropdown dt span:nth-child(2) {
     min-height: 150px;
     z-index: 2;
 }
+#For_video{
+    margin-top: -2px;
+}
 .boden_three_title h1 {
     font-size: 35px;
     font-weight: 700;
     margin: 25px 0px 15px 0px;
     color: #424242;
+    /* height: 100px; */
+    margin-top: -4px;
+    z-index: 33;
+    /* position: relative; */
+    background: #fff;
+    padding: 25px 0px 10px 0px;
 }
 .boden_three_body {
     background: #f7f8fa;

@@ -645,6 +645,18 @@
     .header-1ges7jt {
         right: 26px;
     }
+    .header_landing_url{
+        display: block;
+        margin-top: 25px;
+
+        text-decoration: underline;
+        color: #C87F26 !important;
+    }
+    #nav-slider .sub-nav-container .header_landing_url a{
+        color: #C87F26 !important;
+        font-size: 14px !important;
+    }
+
     #toggoler_btn i {
         font-size: 28px !important;
         padding: 2px 0px !important;

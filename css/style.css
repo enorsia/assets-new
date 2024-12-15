@@ -176,6 +176,10 @@ input[type="number"] {
     color: #000000;
 }
 
+.header_landing_url{
+    display: none;
+}
+
 /************************************************************************** End Header****************************************************/
 .text_container {
     position: relative;
