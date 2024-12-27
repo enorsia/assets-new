@@ -707,7 +707,7 @@ footer #contact_title {
 .video_image_text {
     position: absolute;
     z-index: 1;
-    bottom: -15px;
+    bottom: 15px;
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
@@ -718,6 +718,21 @@ footer #contact_title {
 .video_image_text h2 {
     letter-spacing: 2px;
     font-size: 30px;
+}
+.video_btn_same_as_bottom{
+    border: none;
+    background: #fff;
+    color: #262525;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 15px;
+    display: inline-block;
+    transition: 0.3s;
+    letter-spacing: 1.1px;
+}
+.video_btn_same_as_bottom:hover{
+    background: #d3d3d3;
 }
 .text_container .video_image_text_link {
     color: #fff !important;
@@ -3188,7 +3203,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 .boden_same_img_part {
-    width: 101%;
+    width: 100%;
     overflow: hidden;
 }
 .boden_one {
