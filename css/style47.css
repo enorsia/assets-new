@@ -968,8 +968,8 @@ padding:2px 0px 2px 4px;
 #sub_menu{
     background: rgb(255, 255, 255) !important;
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
 }
 #sub_menu li{
     /* background: #fff; */
@@ -981,8 +981,8 @@ padding:2px 0px 2px 4px;
     /* position: absolute;
     z-index: 99; */
     color: #333;
-    width: 100%;
-
+    width: 95%;
+margin-left: 5%;
 }
 #menu ul li ul li a {
     color: #686868;
@@ -995,8 +995,9 @@ padding:2px 0px 2px 4px;
     padding: 10px 0px 5px 0px;
 }*/
 #menu ul li ul li:last-child a{
-    padding: 5px 0px 15px 5px;
+    padding: 10px 0px 10px 5px;
     /* border-bottom: 1px solid #ccc; */
+    margin: 5px 0px;
 }
 #menu a.prett {
     padding: 2px 27px 2px 4px;
@@ -1048,7 +1049,7 @@ padding:2px 0px 2px 4px;
     right: 9px; */
 }
 #menu ul li ul li a:hover {
-    background: #bababa;
+    border: 1px dashed;
 }
 
 /************ mobile menu*********/
