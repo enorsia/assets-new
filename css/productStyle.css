@@ -18,6 +18,10 @@
     width: 25%;
     height: 100%;
 }
+.loader_paginate img{
+    width: 40px;
+    height: 40px;
+}
 
 .wishlist-img img {
     width: 100%;

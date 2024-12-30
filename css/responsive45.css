@@ -79,7 +79,6 @@
     .subCategory_bottom h4 {
         margin: 30px 0 5px;
     }
-
 }
 
 @media (max-width: 1599px) {
@@ -645,15 +644,15 @@
     .header-1ges7jt {
         right: 26px;
     }
-    .header_landing_url{
+    .header_landing_url {
         display: block;
         margin-top: 15px;
 
         text-decoration: underline;
-        color: #C87F26 !important;
+        color: #c87f26 !important;
     }
-    #nav-slider .sub-nav-container .header_landing_url a{
-        color: #C87F26 !important;
+    #nav-slider .sub-nav-container .header_landing_url a {
+        color: #c87f26 !important;
         font-size: 14px !important;
     }
 
@@ -699,9 +698,9 @@
     .nav-menu > li {
         height: 40px;
     }
-.medium_height{
-    height: 0px !important;
-}
+    .medium_height {
+        height: 0px !important;
+    }
     .nav-submenu {
         max-height: 200px;
     }
@@ -935,7 +934,7 @@
         height: 0px !important;
     }
 
-    #accordionExample .accordion-item button i{
+    #accordionExample .accordion-item button i {
         color: #fff;
         position: absolute;
         right: 10px;
@@ -1320,7 +1319,6 @@
     #details_youtube_icon {
         color: #f70000;
     }
-
 }
 
 @media (max-width: 575px) {
@@ -1329,6 +1327,10 @@
     }
 
     /************ Header **************/
+
+    .nav-subList .offcanvas.show {
+        width: 100%;
+    }
     #main_header_body {
         z-index: 99;
     }
@@ -1351,7 +1353,7 @@
     }
 
     .offcanvas-header h3 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #for_mobile_device {
@@ -1379,15 +1381,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 12px;
-    } #header_cart_bag_img img {
+    }
+    #header_cart_bag_img img {
         width: 26px;
-    }  #header_cart_bag {
+    }
+    #header_cart_bag {
         margin-left: 0px;
         margin-right: 0px;
     }
     #header_cart_bag .itemCountInCart {
         top: 62%;
-    }  #toggoler_btn i {
+    }
+    #toggoler_btn i {
         margin-top: 0px !important;
     }
     .christmas_banner_link {
@@ -1397,11 +1402,11 @@
         position: absolute;
         left: 5px;
     }
-    #banner_top_body_bg{
+    #banner_top_body_bg {
         padding: 5px 0px;
     }
 
-    .top_banner_text_part p{
+    .top_banner_text_part p {
         font-size: 12px;
         padding: 0px 5px;
     }
@@ -1453,7 +1458,6 @@
         min-height: 100px;
     }
 
-
     #phn_hide {
         padding-bottom: 74.035%;
         min-height: 200px;
@@ -1484,7 +1488,11 @@
         left: 50%;
         padding: 63px 0 19px;
         width: 100%;
-        background: linear-gradient(180deg, hsla(0, 0%, 80.8%, 0) -2%, rgba(0, 0, 0, .75) 80%);
+        background: linear-gradient(
+            180deg,
+            hsla(0, 0%, 80.8%, 0) -2%,
+            rgba(0, 0, 0, 0.75) 80%
+        );
         top: auto;
     }
     .text-animate_phn {
@@ -1992,7 +2000,7 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .copyright-container .copy_right_text{
+    .copyright-container .copy_right_text {
         text-align: center;
         width: 100%;
     }
@@ -2026,7 +2034,6 @@
         font-size: 14px;
         margin-bottom: 0 !important;
     }
-
 
     .payment-container-f {
         display: flex;
@@ -2229,7 +2236,6 @@
 
     .text-animate a {
         font-size: 14px;
-        min-width: 190px;
         padding: 6px 15px;
     }
 
@@ -2755,7 +2761,7 @@
         height: 325px;
     }
     .nav-menu > li > span {
-        padding: 10px 6px !important;
+        padding: 10px 10px !important;
     }
     .category-img {
         height: 240px;
@@ -2779,21 +2785,17 @@
 }
 @media (max-width: 399px) {
     .nav-menu > li > span {
-        padding: 10px 6px !important;
+        padding: 5px 10px !important;
     }
 }
-@media (max-width: 367px) {
-    #header_category_menu {
-        top: 33px;
-    }
-}
+
 
 @media (max-width: 355px) {
     .nav-menu > li {
         height: 25px;
     }
     #header_category_menu {
-        top: 28px;
+        top: 16px;
     }
 }
 @media (max-width: 350px) {
@@ -2835,24 +2837,14 @@
         margin-top: 20px;
     }
 }
-
-@media (max-width: 323px) {
-    #header_category_menu {
-        top: 28px;
-    }
-}
-
 @media (max-width: 320px) {
-    #header_category_menu {
-        top: 28px;
+    .nav-menu > li > ul {
+        top: 21px;
     }
 }
+
 
 @media (max-width: 313px) {
-    #header_category_menu {
-        top: 29px;
-    }
-
     .extra-mergin {
         margin-top: 150px !important;
     }
