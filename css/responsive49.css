@@ -136,6 +136,14 @@
 }
 
 @media (max-width: 1430px) {
+    .video_body .video_text a {
+        margin: 10px 0px;
+        padding: 10px 0px;
+        font-size: 40px;
+    }
+    .video_text h1 {
+        font-size: 55px;
+    }
     .select_body #accordionFlushExample {
         grid-template-columns: repeat(1, 1fr);
         z-index: 999;
@@ -926,6 +934,14 @@
     .video_text h1 {
         font-size: 29px;
     }
+    .video_body .video_text .video_text_btn_grp {
+        width: 340px;
+    }
+    .video_body .video_text a {
+        margin: 0px 0px 20px 0px;
+        padding: 10px 0px;
+        font-size: 25px;
+    }
     .footer_body .accordion {
         --bs-accordion-bg: transparent !important;
     }
@@ -945,9 +961,7 @@
 }
 
 @media (max-width: 767px) {
-    .video_text {
-        bottom: -25px;
-    }
+
 
     .video_text h1 {
         font-size: 23px;
@@ -1606,24 +1620,46 @@
     }
 
     .video_text {
-        bottom: -67px;
         left: 50%;
-        padding: 68px 0px 10px;
+        padding: 0px 0px 0px;
         width: 100%;
-        background: linear-gradient(
-            180deg,
-            hsla(0, 0%, 80.8%, 0) -2%,
-            rgba(0, 0, 0, 0.75) 80%
-        );
+        background: linear-gradient(180deg, hsla(0, 0%, 80.8%, 0) -2%, rgba(0, 0, 0, 0.75) 80%);
         top: auto;
+        bottom: 0%;
+        transform: translate(-50%, 0%);
+        height: 45%;
     }
-
+    .video_body .video_text a {
+        color: #ffffff;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px;
+        font-size: 20px;
+        text-shadow: 3px -1px 4px rgb(63, 63, 63);
+    }
+    .video_body .video_text a:hover {
+        color: rgb(255, 255, 255);
+    }
+    .video_body .video_text .video_text_btn_grp a {
+        letter-spacing: 0.5px;
+        font-size: 13px;
+        padding: 6px 10px;
+        margin-bottom: 0px;
+        text-shadow: none;
+    }
     .video_body .video_text h2 {
         font-size: 20px;
     }
 
     .video_text h1 {
         font-size: 25px;
+        color: #fff;
+        margin-bottom: 20px;
+        text-shadow: 3px -1px 4px rgb(63, 63, 63);
+    }
+    .video_body .video_text .video_text_btn_grp {
+        width: 90%;
+        justify-content: center;
+        gap: 30px;
     }
 
     .video_text h1 em {
@@ -2275,7 +2311,10 @@
         margin: 10px 7px 0;
         min-height: 20px;
     }
-
+    .boden_same_btn_top_text h2 {
+        font-size: 25px;
+        margin: 0px 0px 0px 0px;
+    }
     .boden_three_title h1 {
         font-size: 20px;
         margin: 0px 0px 10px 0px;
@@ -2799,6 +2838,9 @@
     }
 }
 @media (max-width: 350px) {
+    .video_text {
+        height: 50%;
+    }
     .collection-img-section .collection_img_body {
         height: 250px;
     }
