@@ -3498,7 +3498,9 @@ dl.flag-dropdown dt span:nth-child(2) {
     text-align: center;
     z-index: 5;
 }
-
+#boden_same_mul_btn {
+    width: 100%;
+}
 .boden_same_text_part a {
     border: none;
     background: #fff;

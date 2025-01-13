@@ -1127,7 +1127,7 @@ footer #contact_title {
     margin-bottom: 10px;
 }
 #menu .offcanvas_landing_other_url_title:last-child{
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 #menu .offcanvas_landing_other_url_title h6{
@@ -1311,7 +1311,7 @@ footer #contact_title {
 }
 .boden_same_btn {
     min-height: 50px;
-    justify-content: space-evenly;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -3494,11 +3494,13 @@ dl.flag-dropdown dt span:nth-child(2) {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 95%;
     text-align: center;
     z-index: 5;
 }
-
+#boden_same_mul_btn {
+    width: 100%;
+}
 .boden_same_text_part a {
     border: none;
     background: #fff;

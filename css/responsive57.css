@@ -85,7 +85,9 @@
     #large_video {
         min-height: 440px;
     }
-
+    #boden_same_mul_btn .boden_same_btn a {
+        min-width: 160px;
+    }
     #with_animation #large_video {
         height: 575px !important;
         z-index: 2;
@@ -389,6 +391,12 @@
     .christmas_banner_link {
         bottom: 13px;
     }
+    #boden_same_mul_btn .boden_same_btn a {
+        min-width: 135px;
+    }
+    #boden_same_mul_btn .boden_same_btn a {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -438,7 +446,15 @@
     .video_text p {
         font-size: 35px;
     }
-
+    #boden_same_mul_btn {
+        width: 100%;
+    }
+    #boden_same_mul_btn .boden_same_btn a {
+        font-size: 12px;
+    }
+    #boden_same_mul_btn .boden_same_btn a {
+        min-width: 115px;
+    }
     .video_text a {
         font-size: 18px;
     }
@@ -692,6 +708,9 @@
     }
     .nav-submenu-img .nav-img img {
         width: 100%;
+    }
+    #boden_same_mul_btn .boden_same_btn a {
+        min-width: 100px;
     }
 
 
@@ -2302,7 +2321,9 @@
     .boden_three {
         min-height: 150px;
     }
-
+#boden_same_mul_btn .boden_same_btn a{
+    min-width: 140px;
+}
     .boden_same_text_part a {
         font-size: 14px;
         padding: 6px 20px;
@@ -2849,6 +2870,12 @@
 
     .dynamicslider-2 .category-img {
         height: 258px;
+    }
+    #boden_same_mul_btn .boden_same_btn a {
+        min-width: 125px;
+    }
+    #boden_same_mul_btn .boden_same_btn a {
+        font-size: 12px;
     }
 }
 
