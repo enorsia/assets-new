@@ -179,6 +179,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* margin-left: 10px; */
 }
 .special_body_btn {
     background: #fff;
@@ -228,7 +229,7 @@
     display: block;
     margin-bottom: 18px;
 }
-#category_women .landing_same_title .same_title ,#category_men .landing_same_title .same_title{
+#top_category .landing_same_title .same_title {
     text-align: center;
     width: 100%;
     margin-bottom: 25px;
@@ -1159,12 +1160,10 @@
         height: 70px;
     }
 
-    #category_women .landing_same_title .same_title {
+    #top_category .landing_same_title .same_title {
         margin-bottom: 15px;
     }
-    #category_men .landing_same_title .same_title {
-        margin-bottom: 15px;
-    }
+
     #many_list_women .marquee__content {
         width: 455% !important;
     }
@@ -1184,7 +1183,11 @@
     }
     #special_middle {
         padding: 40px 5px;
+        margin-left: 0px;
     }
+    /* .special_body_item_same:first-child{
+        margin-bottom: 15px;
+    } */
     .list-inline li {
         width: 200px;
         align-items: flex-start;
