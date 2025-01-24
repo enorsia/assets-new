@@ -179,6 +179,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* margin-left: 10px; */
 }
 .special_body_btn {
     background: #fff;
@@ -242,11 +243,11 @@
     text-align: center;
 }
 
-.category_item:hover .category_item_title h6 {
+.category_item:hover .category_item_title .category_item_heading {
     text-decoration: underline;
 }
 
-.category_item_title h6 {
+.category_item_title .category_item_heading {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -515,7 +516,7 @@
     display: block;
 }
 
-.name_category_item_title h6 {
+.name_category_item_title .name_category_item_title_text {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
@@ -533,7 +534,7 @@
         text-align: center; */
 }
 
-.name_category_item_title h6:hover {
+.name_category_item_title .name_category_item_title_text:hover {
     text-decoration: underline;
 }
 
@@ -810,7 +811,7 @@
         margin: 0px 20px;
     }
 
-    .name_category_item_title h6 {
+    .name_category_item_title .name_category_item_title_text {
         font-size: 18px;
     }
 
@@ -894,7 +895,7 @@
             overflow: hidden;
         } */
 
-    .category_item_title h6 {
+    .category_item_title .category_item_heading {
         font-size: 12px;
         font-weight: 600;
         text-transform: uppercase;
@@ -969,7 +970,7 @@
         font-size: 20px;
     }
 
-    .name_category_item_title h6 {
+    .name_category_item_title .name_category_item_title_text {
         font-size: 16px;
     }
 
@@ -1182,7 +1183,11 @@
     }
     #special_middle {
         padding: 40px 5px;
+        margin-left: 0px;
     }
+    /* .special_body_item_same:first-child{
+        margin-bottom: 15px;
+    } */
     .list-inline li {
         width: 200px;
         align-items: flex-start;
@@ -1221,7 +1226,7 @@
         align-items: center;
     }
 
-    .name_category_item_title h6 {
+    .name_category_item_title .name_category_item_title_text {
         font-size: 15px;
         letter-spacing: 1.5px;
     }

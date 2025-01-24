@@ -161,19 +161,21 @@ input[type="number"] {
     width: 100%;
     height: 70px;
 }
-#header_left h3 {
+#header_left .logo_text {
     letter-spacing: 3.5px;
     font-size: 25px;
     /* text-shadow: 2px 2px 2px rgba(96, 96, 96, 0.6); */
     font-weight: 600;
     color: #000000;
+    cursor: pointer;
     /* font-family: 'TimesCustom', serif; */
 }
-.offcanvas-header h3 {
+.offcanvas-header .mobile_logo_txt {
     letter-spacing: 3.5px;
     font-size: 25px;
     font-weight: 600;
     color: #000000;
+    cursor: pointer;
 }
 
 .header_landing_url {
@@ -911,7 +913,7 @@ footer #contact_title {
 .offcanvas_category_title {
     text-transform: uppercase;
     position: relative;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     letter-spacing: 1.1px;
     margin-bottom: 10px;
@@ -1486,17 +1488,19 @@ footer #contact_title {
 }
 
 .details_color,
-.single-product-details h6 {
+.single-product-details .details_color {
     font-size: 15px !important;
 }
 .dbz_text {
     margin: 15px 0px 5px 0px;
 }
-.dbz_text h6 {
+.dbz_text .dbz_text_title {
     font-size: 15px;
     font-weight: 600;
 }
-
+.products_also_like{
+    font-size: 17px;
+}
 .social-icon i {
     font-size: 20px;
     cursor: pointer;
@@ -2296,10 +2300,10 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 .releted_products_text {
     font-size: 12px;
-    font-weight: bolder !important;
+    font-weight: bold !important;
 }
 .releted_products_text span {
-    font-weight: bolder !important;
+    font-weight: bold !important;
 }
 .related_pro_now_price {
     padding-right: 7px;
@@ -3498,7 +3502,9 @@ dl.flag-dropdown dt span:nth-child(2) {
     text-align: center;
     z-index: 5;
 }
-
+#boden_same_mul_btn {
+    width: 100%;
+}
 .boden_same_text_part a {
     border: none;
     background: #fff;
@@ -3593,8 +3599,9 @@ dl.flag-dropdown dt span:nth-child(2) {
 .modal_ins_name_icon i {
     font-size: 20px;
 }
-.gallery_title p {
+.gallery_title .share_photo_txt {
     font-size: 18px;
+    font-weight: 400;
 }
 .gallery_menu ul {
     width: 100%;
@@ -3933,10 +3940,12 @@ dl.flag-dropdown dt span:nth-child(2) {
     border: 1px solid #ddd;
 }
 
-.subCategory_list ul li a small {
+.subCategory_list ul li a .micro_category_list_name {
     font-size: 13px;
     margin-top: 5px;
     color: #424242;
+    font-weight: 400;
+    line-height: 20px;
 }
 /* #subCategory_list_icon{
     display: none;
@@ -3949,7 +3958,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     align-items: center;
 }
 
-.subCategory_bottom h4 {
+.subCategory_bottom .sub_category_size_txt {
     font-size: 18px;
     font-weight: 500;
     color: #424242;
