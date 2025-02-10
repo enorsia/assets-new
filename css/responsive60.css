@@ -305,6 +305,12 @@
 }
 
 @media (max-width: 1300px) {
+    #home_bg_middle .boden_middle {
+        width: 85%;
+    }
+    #home_bg_multibuy #mul_heading h2 {
+        font-size: 30px;
+    }
     .category-img {
         height: 335px;
     }
@@ -570,7 +576,7 @@
     }
 
     .gallery_section .enorsia-container {
-        padding-top: 10px !important;
+        padding-top: 20px !important;
     }
 
     .shop_items {
@@ -712,7 +718,13 @@
     #boden_same_mul_btn .boden_same_btn a {
         min-width: 100px;
     }
-
+    .boden_same_text_part a {
+        padding: 8px 10px;
+        margin: 10px 5px 0;
+    }
+    #home_bg_middle .boden_middle {
+        width: 95%;
+    }
 
     .subCategory_list ul {
         flex-wrap: wrap;
@@ -960,6 +972,9 @@
         margin: 0px 0px 20px 0px;
         padding: 10px 0px;
         font-size: 25px;
+    }
+    #sme{
+        order: 2;
     }
     .footer_body .accordion {
         --bs-accordion-bg: transparent !important;
@@ -1436,7 +1451,12 @@
     #banner_top_body_bg {
         padding: 5px 0px;
     }
-
+    #home_bg_multibuy .boden_three_body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #home_bg_top {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .top_banner_text_part p {
         font-size: 12px;
         padding: 0px 5px;
@@ -1691,6 +1711,21 @@
         font-size: 13px;
         padding: 10px 30px;
     }
+    #home_bg_middle .boden_middle {
+        width: 100%;
+    }
+    #home_bg_middle {
+        padding: 10px 10px;
+    }
+    #home_bg_middle #home_bg_middle_left {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        margin-bottom: 10px;
+    }
+    #home_bg_middle #home_bg_middle_left .boden_same_text_part {
+        bottom: 15px;
+    }
 
     .boden_items img,
     .custom-slideshow-container,
@@ -1852,6 +1887,10 @@
         padding: 10px 15px 0;
     }
 
+    #sme img {
+        width: 250px;
+        margin-top: 20px;
+    }
     #footer_icon_part {
         padding: 10px 0px 15px 0px;
     }
@@ -2907,6 +2946,10 @@
 @media (max-width: 320px) {
     .nav-menu > li > ul {
         top: 21px;
+    }
+    .boden_same_text_part a {
+        padding: 6px 12px;
+        margin: 10px 7px 0;
     }
 }
 

@@ -2947,6 +2947,10 @@
     .nav-menu > li > ul {
         top: 21px;
     }
+    .boden_same_text_part a {
+        padding: 6px 12px;
+        margin: 10px 7px 0;
+    }
 }
 
 

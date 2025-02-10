@@ -4846,7 +4846,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     align-items: flex-start;
     height: auto;
     justify-content: center;
-    padding: 50px;
+    padding: 30px 50px 0px 50px;
 }
 
 .shop_item_top .item_name,
