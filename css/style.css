@@ -1135,6 +1135,7 @@ footer #contact_title {
     margin: 10px 0px 10px 0px;
     display: block;
     text-decoration: underline;
+    text-underline-offset: 5px;
     padding: 10px 0px;
     font-size: 40px;
     text-shadow: 3px -1px 4px rgb(69, 69, 69);
@@ -1515,7 +1516,9 @@ footer #contact_title {
     /* top: -66px; */
     /* max-height: 65vh; */
 }
-
+.mobile_nav_submenu{
+    display: none;
+}
 .nav-submenu-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

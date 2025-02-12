@@ -588,8 +588,9 @@ dl.flag-dropdown dt span:nth-child(2) {
 
 /*********** Banner Top Text ****************/
 #banner_top_body_bg {
-    background: #17282f;
-    padding: 7px 0px;
+    background: #F2F3F0;
+    padding: 5px 0px;
+    z-index: 2;
 }
 .top_banner_text {
     width: 100%;
@@ -598,12 +599,19 @@ dl.flag-dropdown dt span:nth-child(2) {
     align-items: center;
 }
 .top_banner_text_part p {
-    color: #fff;
-    font-size: 14px;
+    color: #000000;
+    font-size: 13px;
     letter-spacing: 1.05px;
     text-align: center;
 }
-.top_banner_text_part p span {
+.top_banner_text_part p span a{
+    color: #dcb403;
+}
+.top_banner_text_part p span a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.top_banner_text_part p span{
     color: #dcb403;
 }
 /*********** End Banner Top Text ****************/
@@ -892,7 +900,7 @@ a {
 
 .nav-menu > li:hover .sub-nav-container {
     transition: 0.3s linear;
-    display: flex !important;
+    /* display: flex !important; */
 }
 
 .large-img-fit {
@@ -1127,6 +1135,7 @@ footer #contact_title {
     margin: 10px 0px 10px 0px;
     display: block;
     text-decoration: underline;
+    text-underline-offset: 5px;
     padding: 10px 0px;
     font-size: 40px;
     text-shadow: 3px -1px 4px rgb(69, 69, 69);
@@ -1507,7 +1516,9 @@ footer #contact_title {
     /* top: -66px; */
     /* max-height: 65vh; */
 }
-
+.mobile_nav_submenu{
+    display: none;
+}
 .nav-submenu-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1559,6 +1570,7 @@ footer #contact_title {
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
+    text-underline-offset: 4px;
     margin: 0px 0px 5px 0px;
     display: block;
 }
@@ -1568,6 +1580,7 @@ footer #contact_title {
 }
 .nav_img_bottom_title_link:hover {
     text-decoration: none !important;
+
 }
 
 .nav-submenu-img p a {
@@ -2215,16 +2228,27 @@ footer #contact_title {
 /* .nav-menu li ul li:nth-child(10){
     margin-top: 50px;
 } */
-.nav-menu > li:hover > a {
+/* .nav-menu > li:hover > a {
     transition: 0.3s linear;
     background: #fff;
     color: #000 !important;
     border-bottom: 1px solid #000;
+} */
+
+.nav-menu > li:hover {
+    transition: 0.3s linear;
+    color: #000 !important;
+    border-bottom: 1px solid #000;
 }
+
+
+
+
+
 
 .nav-menu > li:hover > span {
     transition: 0.3s linear;
-    background: #fff !important;
+    /* background: #fff !important; */
     color: #000 !important;
 }
 
@@ -4846,7 +4870,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     align-items: flex-start;
     height: auto;
     justify-content: center;
-    padding: 50px;
+    padding: 30px 50px 0px 50px;
 }
 
 .shop_item_top .item_name,
