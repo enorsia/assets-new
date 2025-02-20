@@ -1374,6 +1374,9 @@
     }
 
     /************ Header **************/
+    .verticalflip p {
+        font-size: 15px;
+    }
     .nav-submenu li a {
         font-weight: 600;
         font-size: 13px;
@@ -2139,7 +2142,7 @@
     }
 
     .payment-container-f li img {
-        width: 27px;
+        width: 100%;
         height: 20px;
         object-fit: contain;
     }
@@ -2154,9 +2157,11 @@
     }
 
     .payment-container-f {
-        display: flex;
+        /* display: flex;
         flex-flow: row wrap;
-        gap: 0;
+        gap: 0; */
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
         margin-bottom: 20px;
     }
 
@@ -2759,7 +2764,7 @@
         font-size: 16px;
     }
 
-    .prev_size h6 {
+    .prev_size .select_size_part_title {
         font-size: 14px;
     }
 
@@ -2969,6 +2974,9 @@
     }
 }
 @media (max-width: 320px) {
+    .verticalflip p {
+        font-size: 14px;
+    }
     .nav-menu > li > ul {
         top: 21px;
     }
