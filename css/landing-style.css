@@ -251,20 +251,10 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 10px;
-
-    /* width: 200px; */
-    /* Set a fixed width to see wrapping effect */
     word-wrap: break-word;
-    /* Enables wrapping of long words */
     overflow-wrap: break-word;
-    /* Modern equivalent for wrapping */
     white-space: normal;
 
-    /* width: 100%;
-        white-space: normal;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        text-align: center; */
 }
 
 .marquee {
@@ -534,6 +524,7 @@
         word-wrap: break-word;
         overflow-wrap: break-word;
         text-align: center; */
+        text-underline-offset: 4px;
 }
 
 .name_category_item_title .name_category_item_title_text:hover {
@@ -1266,6 +1257,9 @@
     width: 115%;
 }
 #women .slider_items_body .Womens_Contrast img{
+    width: 115%;
+}
+#women .slider_items_body .Floral_Printed img{
     width: 110%;
 }
 #girl .slider_items_body .Square_Neck img{

@@ -251,20 +251,10 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 10px;
-
-    /* width: 200px; */
-    /* Set a fixed width to see wrapping effect */
     word-wrap: break-word;
-    /* Enables wrapping of long words */
     overflow-wrap: break-word;
-    /* Modern equivalent for wrapping */
     white-space: normal;
 
-    /* width: 100%;
-        white-space: normal;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        text-align: center; */
 }
 
 .marquee {
@@ -534,6 +524,7 @@
         word-wrap: break-word;
         overflow-wrap: break-word;
         text-align: center; */
+        text-underline-offset: 4px;
 }
 
 .name_category_item_title .name_category_item_title_text:hover {
@@ -782,6 +773,9 @@
 #men .vdo_img_body {
     background: #998783;
 }
+#boy .vdo_img_body {
+    background: #C2D0EB;
+}
 .vdo_img_body {
     width: 100%;
     height: 100%;
@@ -855,6 +849,24 @@
 #men .vdo_img_img_items .image_one img {
     width: 110%;
 }
+/* #girl #men .vdo_img_img_items {
+    padding: 10px 20px 10px 20px;
+} */
+#girl .vdo_img_img_items .image_one {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#girl .vdo_img_img_items .image_two {
+    display: flex;
+    justify-content: flex-start;
+}
+#girl .vdo_img_img_item {
+    width: 40%;
+}
+#girl #men .vdo_img_img_items .image_three img {
+    width: 120%;
+}
 .vdo_img_img_item {
     width: 50%;
     margin: 0 auto;
@@ -915,6 +927,38 @@
 }
 .vdo_img_img_items .image_four img {
     width: 100%;
+}
+
+#boy .vdo_img_img_items_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#boy .vdo_img_img_items_body_left{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+#boy .vdo_img_img_items_body_right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#boy .vdo_img_img_item {
+    width: 100%;
+}
+#boy .vdo_img_img_items .image_three {
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+}
+#boy .vdo_img_img_items .image_one img {
+    width: 110%;
 }
 /****** End Video with image ******/
 
@@ -1103,6 +1147,9 @@
 #men .slider_items {
     background: #A1B292;
 }
+#boy .slider_items{
+    background: #B3AF70;
+}
 .slider_body img {
     width: 100%;
     height: auto;
@@ -1154,6 +1201,14 @@
     justify-content: center;
     transform: scale(0.8);
     transition: all 0.4s ease-in-out;
+    margin: 0 auto;
+}
+.center-slider .slick-slide a{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .center-slider .slick-slide,
 .center-slider
@@ -1195,6 +1250,27 @@
     /* color: #000; */
     font-size: 26px;
 }
+#women .slider_items_body .Silver_Sequin img{
+    width: 120%;
+}
+#women .slider_items_body .Women_Knot img{
+    width: 115%;
+}
+#women .slider_items_body .Womens_Contrast img{
+    width: 115%;
+}
+#women .slider_items_body .Floral_Printed img{
+    width: 110%;
+}
+#girl .slider_items_body .Square_Neck img{
+    width: 85%;
+}
+#girl .slider_items_body .Garden_Printed img{
+    width: 110%;
+}
+#girl .slider_items_body .Girls_Printed img{
+    width: 110%;
+}
 /****** End Slider **********/
 
 /******* Responsive******/
@@ -1227,6 +1303,9 @@
     }
     #men .vdo_img_img_items .image_two img {
         width: 90%;
+    }
+    #girl #men .vdo_img_img_items .image_one img {
+        width: 100%;
     }
     .slider_text_top {
         font-size: 25px;
@@ -1279,6 +1358,14 @@
         margin-right: 23%;
         top: auto;
     }
+    #boy .vdo_img_img_items .image_one img {
+        width: 100%;
+    }
+}
+@media (max-width: 1430px) {
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 100%;
+    }
 }
 @media (max-width: 1350px) {
     #women_influencer .gallery_img .img_part img {
@@ -1323,8 +1410,21 @@
     #men .vdo_img_img_items .image_three img {
         width: 57%;
     }
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 95%;
+    }
+    #men .vdo_img_img_items .image_two img {
+        width: 88%;
+    }
 }
-
+@media (max-width: 1300px){
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 85%;
+    }
+    #men .vdo_img_img_items .image_two img {
+        width: 90%;
+    }
+}
 @media (max-width: 1200px) {
     /* .category_item {
             width: 125px;
@@ -1351,6 +1451,15 @@
     }
     #men .vdo_img_img_items {
         padding: 20px 20px 20px 20px;
+    }
+    #men .vdo_img_img_items .image_one img {
+        width: 100%;
+    }
+    #girl #men .vdo_img_img_items .image_two img {
+        width: 80%;
+    }
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 80%;
     }
     .featuring_text .featuring_text {
         font-size: 14px;
@@ -1431,7 +1540,16 @@
         height: 100%;
         margin-right: 0%;
     }
-
+    #girl #men .vdo_img_img_items .image_two img {
+        width: 80%;
+    }
+    #girl #men .vdo_img_img_items .image_one img {
+        width: 100%;
+    }
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 75%;
+    }
+  
     .vdo_text_title {
         font-size: 25px;
     }
@@ -1578,6 +1696,15 @@
         width: 38%;
         margin: auto;
         display: flex;
+    }
+    #girl #men .vdo_img_img_items .image_two img {
+        width: 80%;
+    }
+    #girl #men .vdo_img_img_items .image_one img {
+        width: 100%;
+    }
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 60%;
     }
     .vdo_img_img_items {
         padding: 0px 15px 0px 15px;
@@ -1768,6 +1895,9 @@
     }
     #men .vdo_img_img_items .image_three img {
         width: 40%;
+    }
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 45%;
     }
 }
 
@@ -1977,6 +2107,22 @@
     }
     #men .vdo_img_img_item {
         width: 45%;
+    }
+    #girl #men .vdo_img_img_items .image_two img {
+        width: 100%;
+    }
+    #girl #men .vdo_img_img_items .image_one img {
+        width: 105%;
+    }
+    #girl #men .vdo_img_img_items .image_three img {
+        width: 80%;
+    }
+    #boy .vdo_img_img_items .image_one img {
+        width: 100%;
+        padding-right: 10px;
+    }
+    #boy .vdo_img_img_items .image_two img {
+        width: 100%;
     }
     .vdo_img_img_items .image_four {
         margin: -20% 0px 0px 16%;
