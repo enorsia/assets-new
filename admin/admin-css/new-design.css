@@ -171,11 +171,19 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    margin: 4px 3px 0px 3px;
+    margin: 0px 3px 0px 3px;
 }
 .top_title_breadcrumb span {
     color: #bababa;
     text-transform: lowercase;
+}
+.top_title_breadcrumb a{
+    color: #bababa;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.top_title_breadcrumb a:hover{
+    text-decoration: none;
 }
 .top_title_breadcrumb span a:hover{
     color: #bababa;
@@ -690,9 +698,9 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 100% !important;
 }
 
-#selling_chart_table table input {
+/* #selling_chart_table table input {
     height: auto !important;
-}
+} */
 
 #selling_chart_table .table-responsive {
     overflow-x: auto;
@@ -1087,7 +1095,14 @@ input[type="number"] {
         padding: 20px;
         margin-top: 25px;
     }
-
+    .top_title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top_title .tlt-btn {
+        margin-top: 15px;
+        margin-left: 55px;
+    }
     .role_search {
         width: 95%;
         margin: 15px 0px;
