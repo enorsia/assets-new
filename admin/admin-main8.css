@@ -9,7 +9,7 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
  /********* Poppins *********/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
  .border-primary {
     border-color: #3f6ad8;
 }
@@ -1581,7 +1581,7 @@ pre code {
 }
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #e9ecef;
+    border: 2px solid #e9ecef;
 }
 .table tbody + tbody {
     border-top: 2px solid #e9ecef;
@@ -8990,7 +8990,7 @@ button,
 .app-header__logo {
     padding: 0 1.5rem;
     height: 60px;
-    width: 280px;
+    width: 270px;
     display: flex;
     align-items: center;
     transition: width 0.2s;
@@ -9178,45 +9178,44 @@ button,
     background: url(assets/images/logo-inverse.png);
 }
 .app-sidebar {
-    width: 280px;
+    width: 270px;
     display: flex;
     z-index: 11;
     overflow: hidden;
-    min-width: 280px;
+    min-width: 270px;
     position: relative;
-    flex: 0 0 280px;
+    flex: 0 0 270px;
     margin-top: -60px;
     padding-top: 60px;
     transition: all 0.2s;
 }
 .app-sidebar .app-sidebar__inner {
-    padding: 2px 1.5rem 1.5rem;
+    padding: 2px 1rem 1rem;
 }
 .app-sidebar .scrollbar-sidebar {
     z-index: 15;
     width: 100%;
 }
-.app-sidebar__inner {
-    overflow-y: scroll;
-    height: 90vh;
+#sideBar {
+    overflow-y: auto;
 }
 
-.app-sidebar .app-sidebar__inner::-webkit-scrollbar {
+.app-sidebar .scrollbar-sidebar::-webkit-scrollbar {
     width: 6px;
     height: 6px;
 }
 
-.app-sidebar .app-sidebar__inner::-webkit-scrollbar-track {
+.app-sidebar .scrollbar-sidebar::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
 
-.app-sidebar .app-sidebar__inner::-webkit-scrollbar-thumb {
+.app-sidebar .scrollbar-sidebar::-webkit-scrollbar-thumb {
     background-color: rgb(99, 99, 99);
     border-radius: 4px;
 }
 
-.app-sidebar .app-sidebar__inner::-webkit-scrollbar-button {
+.app-sidebar .scrollbar-sidebar::-webkit-scrollbar-button {
     width: 3px;
     height: 3px;
 }
@@ -9246,7 +9245,7 @@ button,
 .app-sidebar__heading {
     text-transform: uppercase;
     font-size: 0.8rem;
-    margin: 10px 0px 0px 0px;
+    margin: 13px 0px 0px 0px;
     font-weight: bold;
     color: #dddddd;
     white-space: nowrap;
@@ -9305,7 +9304,7 @@ button,
 }
 .vertical-nav-menu li a {
     display: block;
-    line-height: 2.2rem;
+    /* line-height: 2.4rem; */
     padding: 0 1.5rem 0 35px;
     position: relative;
     border-radius: 0.25rem;
@@ -9369,7 +9368,7 @@ button,
     width: 3px;
     background: #111826;
     position: absolute;
-    left: 15px;
+    left: 12px;
     top: 0;
     border-radius: 15px;
 }
@@ -9511,7 +9510,7 @@ button,
 }
 .fixed-sidebar .app-main .app-main__outer {
     z-index: 9;
-    padding-left: 280px;
+    padding-left: 270px;
 }
 .fixed-sidebar.fixed-header .app-sidebar .app-header__logo {
     display: none;
@@ -9520,7 +9519,7 @@ button,
     display: flex;
 }
 .fixed-sidebar:not(.fixed-header) .app-header {
-    margin-left: 280px;
+    margin-left: 270px;
 }
 .fixed-sidebar:not(.fixed-header) .app-header .app-header__logo {
     display: none;
@@ -9580,8 +9579,8 @@ button,
     height: 0;
 }
 .closed-sidebar .app-sidebar:hover {
-    flex: 0 0 280px !important;
-    width: 280px !important;
+    flex: 0 0 270px !important;
+    width: 270px !important;
 }
 .closed-sidebar .app-sidebar:hover .app-sidebar__inner .app-sidebar__heading {
     text-indent: initial;
@@ -9605,10 +9604,10 @@ button,
     visibility: visible;
 }
 .closed-sidebar .app-sidebar:hover .app-sidebar__inner ul.mm-show {
-    padding: 0.5em 0 0 2rem;
+    padding: 0.5em 0 0 1rem;
 }
 .closed-sidebar .app-sidebar:hover .app-sidebar__inner ul.mm-show > li > a {
-    height: 2.3em;
+    height: 2.8em;
 }
 .closed-sidebar .app-sidebar:hover .app-sidebar__inner ul ul li a {
     padding-left: 1em;
@@ -9661,7 +9660,7 @@ button,
     display: none;
 }
 .closed-sidebar.closed-sidebar-mobile .app-sidebar:hover .app-header__logo {
-    width: 280px;
+    width: 270px;
 }
 .closed-sidebar.closed-sidebar-mobile .app-sidebar:hover .app-header__logo .logo-src {
     width: 97px;
@@ -9686,7 +9685,7 @@ button,
     z-index: 12;
 }
 .app-main .app-main__inner {
-    padding: 30px 30px 0;
+    padding: 20px 20px 0;
     flex: 1;
     min-height: 87vh;
 }
@@ -9736,7 +9735,7 @@ button,
     z-index: 7;
 }
 .fixed-footer .app-footer .app-footer__inner {
-    margin-left: 280px;
+    margin-left: 270px;
     box-shadow: 0.3rem -0.46875rem 2.1875rem rgba(4, 9, 20, 0.02), 0.3rem -0.9375rem 1.40625rem rgba(4, 9, 20, 0.02), 0.3rem -0.25rem 0.53125rem rgba(4, 9, 20, 0.04), 0.3rem -0.125rem 0.1875rem rgba(4, 9, 20, 0.02);
 }
 .fixed-footer .app-main .app-main__outer {
@@ -9929,7 +9928,7 @@ button,
     width: 330px;
 }
 .search-wrapper.active .input-holder {
-    width: 290px;
+    width: 270px;
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.05);
     transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
@@ -17008,7 +17007,7 @@ legend {
     content: "\f54b";
 }
 .fa-shopping-bag:before {
-    content: "\f290";
+    content: "\f270";
 }
 .fa-shopping-basket:before {
     content: "\f291";
@@ -20149,9 +20148,9 @@ a.fc-more:hover {
         display: none;
     }
     .app-sidebar {
-        flex: 0 0 280px !important;
-        width: 310px !important;
-        transform: translateX(-310px);
+        flex: 0 0 270px !important;
+        width: 270px !important;
+        transform: translateX(-270px);
         position: fixed;
     }
     .app-sidebar .app-header__logo {

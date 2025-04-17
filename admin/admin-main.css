@@ -1581,7 +1581,7 @@ pre code {
 }
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #e9ecef;
+    border: 2px solid #e9ecef;
 }
 .table tbody + tbody {
     border-top: 2px solid #e9ecef;

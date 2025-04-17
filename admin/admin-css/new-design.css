@@ -1,3 +1,107 @@
+/******** Button design ********/
+.fa_edit{
+    color: #bababa;
+    font-size: 17px;
+}
+.bi_active{
+    color: #3AC47D;
+    font-size: 17px;
+}
+.bi_inactive{
+    color: #D92550;
+    font-size: 17px;
+}
+.bi_return{
+    color: #D92550;
+    font-size: 18px;
+}
+.bi_delete{
+    color: #bababa;
+    font-size: 17px;
+}
+.bi_view{
+    color: #bababa;
+    font-size: 18px;
+}
+.bi_save{
+    color: #bababa;
+    font-size: 18px;
+}
+.bi_send{
+    color: #bababa;
+    font-size: 18px;
+}
+.bi_reply{
+    color: #bababa;
+    font-size: 18px;
+}
+.bi_label{
+    color: #bababa;
+    font-size: 18px;
+}
+.bi_qr_code{
+    color: #bababa;
+    font-size: 17px;
+}
+.bi_truck{
+    color: #bababa;
+    font-size: 18px;
+}
+.bi_update{
+    color: #bababa;
+    font-size: 17px;
+}
+.bi_invoice{
+    color: #bababa;
+    font-size: 18px;
+}
+
+.toggle_item {
+    display: none;
+    position: absolute;
+    background: #1F2937;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    z-index: 999;
+    border-radius: 5px;
+    right: 3px;
+    top: 35px;
+}
+.toggle_item li{
+    color: #bababa;
+}
+.toggle_item li a{
+    color: #bababa;
+}
+.toggle_item ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.toggle_items {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.toggle_icon{
+    background: #1F2937;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%
+}
+/******** Button design ********/
+
+
 .new_search .form-control::-webkit-file-upload-button {
     background-color: #374151;
     color: #cecccc;
@@ -105,7 +209,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 45px;
     padding: 0px 25px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
     border-color: #696e76;
     display: inline-flex;
     align-items: center;
@@ -136,7 +240,7 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 .top_title_body_left {
     display: flex;
@@ -204,8 +308,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .filter_section,
 .card-dark {
     background: #1f2937;
-    padding: 30px 20px;
-    margin-top: 30px;
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
     color: #c5c5c5;
     font-size: 15px;
 }
@@ -309,7 +414,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /***** Select 2*****/
 .new_select_field .select2 {
-    height: 45px !important;
+    /* height: 45px !important; */
     width: 100% !important;
     background: #374151;
 }
@@ -460,7 +565,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /****** New table ***********/
 .new_table {
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .new_table table {
@@ -1015,6 +1120,9 @@ input[type="number"] {
     #accordionFlushExample .role_items {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 25px;
+    }
+    .reset_button button, .reset_button a {
+        padding: 0 15px;
     }
 }
 
