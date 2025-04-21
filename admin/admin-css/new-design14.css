@@ -19,6 +19,10 @@
     color: #bababa;
     font-size: 17px;
 }
+.bi_print{
+    color: #bababa;
+    font-size: 17px;
+}
 .bi_view{
     color: #bababa;
     font-size: 18px;
@@ -55,6 +59,14 @@
     color: #bababa;
     font-size: 18px;
 }
+.bi_repeat{
+    color: #bababa;
+    font-size: 17px;
+}
+.bi_stock{
+    color: #bababa;
+    font-size: 17px;
+}
 
 .toggle_item {
     display: none;
@@ -72,6 +84,10 @@
 }
 .toggle_item li a{
     color: #bababa;
+}
+.bi_undo{
+    color: #bababa;
+    font-size: 18px;
 }
 .toggle_item ul{
     list-style: none;
