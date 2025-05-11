@@ -1699,7 +1699,7 @@
         color: #ffffff;
         margin: 0px 0px 0px 0px;
         padding: 0px 0px;
-        font-size: 16px;
+        font-size: 14px;
         text-shadow: 3px -1px 4px rgb(63, 63, 63);
     }
     .video_body .video_text a:hover {
@@ -1717,7 +1717,7 @@
     }
 
     .video_text h1 {
-        font-size: 25px;
+        font-size: 20px;
         color: #fff;
         margin-bottom: 5px;
         text-shadow: 3px -1px 4px rgb(63, 63, 63);
@@ -2989,6 +2989,9 @@
     }
 }
 @media (max-width: 320px) {
+     .video_text h1 {
+        font-size: 18px;
+    }
     .verticalflip p {
         font-size: 14px;
     }

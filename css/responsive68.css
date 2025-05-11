@@ -96,9 +96,7 @@
     .category-img {
         height: 393px;
     }
-    .video_text {
-        top: 70%;
-    }
+
     .category-img img,
     .dynamicslider-2 .category-img a img {
         object-fit: cover;
@@ -141,12 +139,12 @@
 
 @media (max-width: 1430px) {
     .video_body .video_text a {
-        margin: 10px 0px;
-        padding: 10px 0px;
-        font-size: 40px;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        font-size: 16px;
     }
     .video_text h1 {
-        font-size: 55px;
+        font-size: 40px;
     }
     .select_body #accordionFlushExample {
         grid-template-columns: repeat(1, 1fr);
@@ -317,6 +315,8 @@
 
     #large_video {
         min-height: 400px;
+    }.video_text h1 {
+        font-size: 30px;
     }
 
     #with_animation #large_video {
@@ -409,9 +409,7 @@
     #with_animation #large_video {
         height: 530px !important;
     }
-    .video_text {
-        top: 65%;
-    }
+
 }
 
 @media (max-width: 1199px) {
@@ -434,7 +432,7 @@
         width: 100%;
     }
     .video_text h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .text-animate h2 {
@@ -675,7 +673,9 @@
     .header-1ges7jt {
         right: 26px;
     }
-
+    .video_text{
+        bottom: 0%;
+    }
     #nav-slider .sub-nav-container .header_landing_url a {
         color: #c87f26 !important;
         font-size: 14px !important;
@@ -726,7 +726,7 @@
         margin-top: 20px !important;
         padding-left: 0px !important;
     }
-    .mobile_nav_submenu{
+    .mobile_nav_submenu {
         display: block;
     }
     .mobile_nav_submenu .nav-submenu-img {
@@ -970,15 +970,15 @@
     }
 
     .video_text h1 {
-        font-size: 29px;
+        font-size: 35px;
     }
     .video_body .video_text .video_text_btn_grp {
         width: 340px;
     }
     .video_body .video_text a {
-        margin: 0px 0px 20px 0px;
-        padding: 10px 0px;
-        font-size: 25px;
+        margin: 0px 0px 0px 0px;
+        padding: 10px 0px 0px 0px;
+        font-size: 20px;
     }
     #sme {
         order: 2;
@@ -1372,7 +1372,9 @@
     #main_content {
         min-height: 200px;
     }
-
+    .video_text{
+        bottom: 0%;
+    }
     /************ Header **************/
     .verticalflip p {
         font-size: 15px;
@@ -1560,7 +1562,7 @@
         min-height: 100px;
     }
     .video_image_text {
-        bottom: -54px;
+        bottom: -77px;
         left: 50%;
         padding: 63px 0 19px;
         width: 100%;
@@ -1690,16 +1692,14 @@
             hsla(0, 0%, 80.8%, 0) 2%,
             rgba(0, 0, 0, 0.75) 100%
         );
-        top: auto;
-        bottom: 0%;
         transform: translate(-50%, 0%);
-        height: 45%;
+        height: 20%;
     }
     .video_body .video_text a {
         color: #ffffff;
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 0px 0px;
         padding: 0px 0px;
-        font-size: 20px;
+        font-size: 14px;
         text-shadow: 3px -1px 4px rgb(63, 63, 63);
     }
     .video_body .video_text a:hover {
@@ -1717,9 +1717,9 @@
     }
 
     .video_text h1 {
-        font-size: 25px;
+        font-size: 20px;
         color: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         text-shadow: 3px -1px 4px rgb(63, 63, 63);
     }
     .video_body .video_text .video_text_btn_grp {
@@ -2109,7 +2109,9 @@
     #subscribe_body {
         margin-bottom: -15px !important;
     }
-
+.sme_logo{
+    margin: 0 auto;
+}
     .footer-signu-container {
         background-color: #000;
         padding-top: 25px !important;
@@ -2927,7 +2929,7 @@
 }
 @media (max-width: 350px) {
     .video_text {
-        height: 50%;
+        height: 25%;
     }
     .collection-img-section .collection_img_body {
         height: 250px;
@@ -2972,8 +2974,24 @@
     .all_product_top {
         margin-top: 20px;
     }
+    .save_btn_part {
+        width: 100%;
+        margin: 15px 0px 0px 0px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .save_btn {
+        margin: 5px 5px;
+        font-size: 13px;
+        padding: 5px 15px;
+        text-align: center;
+    }
 }
 @media (max-width: 320px) {
+     .video_text h1 {
+        font-size: 18px;
+    }
     .verticalflip p {
         font-size: 14px;
     }
