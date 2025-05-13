@@ -1,4 +1,37 @@
 /******** Button design ********/
+#toggleFilterBtn{
+    background: #111827;
+    border: none;
+    border: 1px solid #696e76;
+    height: 45px;
+    width: 45px;;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#toggleFilterBtn i{
+    color: #bababa;
+    font-size: 17px;
+}
+#filterSection{
+    display: none;
+}
+/* #filterSection{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+#filterSection.show {
+    max-height: 30px;
+    opacity: 1;
+}
+.hidden {
+    display: none !important;
+} */
+.bi_receive{
+    color: #bababa;
+    font-size: 17px;
+}
 .fa_discount{
     color: #bababa;
     font-size: 17px;
@@ -887,7 +920,7 @@ input[type="number"]::-webkit-inner-spin-button {
 #selling_chart_table table {
     width: 120% !important;
     border-collapse: collapse;
-    table-layout: fixed;
+    /* table-layout: fixed; */
 }
 
 #selling_chart_table th,
@@ -1259,6 +1292,15 @@ input[type="number"] {
 }
 
 @media (max-width: 575px) {
+    #no_other_button{
+        flex-direction: column !important;
+    }
+    #toggleFilterBtn {
+        margin-top: 15px;
+    }
+   .no_other_btn #toggleFilterBtn {
+        margin-top: 0px;
+    }
     .card-dark {
         padding: 20px;
         margin-top: 25px;
@@ -1267,10 +1309,14 @@ input[type="number"] {
         flex-direction: column;
         align-items: flex-start;
     }
-    .top_title .tlt-btn {
+     .no_other_btn {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    /* .top_title .tlt-btn {
         margin-top: 15px;
         margin-left: 55px;
-    }
+    } */
     .role_search {
         width: 95%;
         margin: 15px 0px;

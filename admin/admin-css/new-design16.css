@@ -1,4 +1,49 @@
 /******** Button design ********/
+#toggleFilterBtn{
+    background: #111827;
+    border: none;
+    border: 1px solid #696e76;
+    height: 45px;
+    width: 45px;;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#toggleFilterBtn i{
+    color: #bababa;
+    font-size: 17px;
+}
+#filterSection{
+    display: none;
+}
+/* #filterSection{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+#filterSection.show {
+    max-height: 30px;
+    opacity: 1;
+}
+.hidden {
+    display: none !important;
+} */
+.bi_receive{
+    color: #bababa;
+    font-size: 17px;
+}
+.fa_discount{
+    color: #bababa;
+    font-size: 17px;
+}
+.fa_ean_num{
+    color: #bababa;
+    font-size: 17px;
+}
+.fa_copy{
+    color: #bababa;
+    font-size: 18px;
+}
 .fa_edit{
     color: #bababa;
     font-size: 17px;
@@ -116,7 +161,31 @@
     border-radius: 50%
 }
 /******** Button design ********/
-
+.bg-head {
+    border: 1px dotted #16aaff;
+    color: #dadada;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #4669a11c;
+    padding: 0px 15px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 18px !important;
+}
+.bg-subhead {
+    color: #dadada;
+    border: 1px dotted #8c97ae;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 15px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 18px !important;
+}
 
 .new_search .form-control::-webkit-file-upload-button {
     background-color: #374151;
@@ -432,7 +501,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .new_select_field .select2 {
     /* height: 45px !important; */
     width: 100% !important;
-    background: #374151;
+    background: #374151 !important;
 }
 
 .new_select_field .form-control {
@@ -851,7 +920,7 @@ input[type="number"]::-webkit-inner-spin-button {
 #selling_chart_table table {
     width: 120% !important;
     border-collapse: collapse;
-    table-layout: fixed;
+    /* table-layout: fixed; */
 }
 
 #selling_chart_table th,
@@ -985,6 +1054,12 @@ input[type="number"] {
 }
 .role_accordion_body .accordion-item {
     border: 0px !important;
+
+}
+#role_body .accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: transparent;
+     border: none;
 }
 #role_body .accordion-header {
     display: flex;
@@ -993,7 +1068,7 @@ input[type="number"] {
     align-items: center;
     width: 100%;
     background: #111827;
-    min-height: 70px;
+    min-height: 80px;
 }
 #role_name input {
     background: #111827;
@@ -1023,6 +1098,7 @@ input[type="number"] {
 #role_body .accordion-header .form-switch {
     width: 0%;
     z-index: 9;
+    margin-right: 10px;
 }
 #role_body .accordion-button::after {
     width: 0px !important;
@@ -1216,6 +1292,15 @@ input[type="number"] {
 }
 
 @media (max-width: 575px) {
+    #no_other_button{
+        flex-direction: column !important;
+    }
+    #toggleFilterBtn {
+        margin-top: 15px;
+    }
+   .no_other_btn #toggleFilterBtn {
+        margin-top: 0px;
+    }
     .card-dark {
         padding: 20px;
         margin-top: 25px;
@@ -1224,10 +1309,14 @@ input[type="number"] {
         flex-direction: column;
         align-items: flex-start;
     }
-    .top_title .tlt-btn {
+     .no_other_btn {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    /* .top_title .tlt-btn {
         margin-top: 15px;
         margin-left: 55px;
-    }
+    } */
     .role_search {
         width: 95%;
         margin: 15px 0px;

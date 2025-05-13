@@ -1577,17 +1577,17 @@ pre code {
 .table td {
     padding: 0.55rem;
     vertical-align: top;
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid #c5c5c5;
 }
 .table thead th {
     vertical-align: bottom;
-    border: 2px solid #e9ecef;
+    border: 1px solid #c5c5c5;
 }
 .table tbody + tbody {
-    border-top: 2px solid #e9ecef;
+    border-top: 2px solid #c5c5c5;
 }
 .table .table {
-    background-color: #fff;
+    background-color: #c5c5c5;
 }
 .table-sm th,
 .table-sm td {
@@ -5870,6 +5870,7 @@ a.close.disabled {
     border-right-color: transparent;
     border-radius: 50%;
     animation: spinner-border 0.75s linear infinite;
+    margin-bottom: 3px;
 }
 .spinner-border-sm {
     width: 1rem;
@@ -6013,7 +6014,8 @@ button.bg-alternate:focus {
     background-color: transparent !important;
 }
 .border {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #4f5154 !important;
+
 }
 .border-top {
     border-top: 1px solid #dee2e6 !important;
@@ -9304,7 +9306,7 @@ button,
 }
 .vertical-nav-menu li a {
     display: block;
-    /* line-height: 2.4rem; */
+    line-height: 2.2rem;
     padding: 0 1.5rem 0 35px;
     position: relative;
     border-radius: 0.25rem;
@@ -9550,8 +9552,8 @@ button,
 .closed-sidebar .app-sidebar .app-sidebar__inner .app-sidebar__heading::before {
     content: "";
     position: absolute;
-    top: 0%;
-    left: 3px;
+    top: -20%;
+    left: 0px;
     width: 100%;
     height: 1px;
     background: #e0f3ff;
@@ -9580,7 +9582,7 @@ button,
 }
 .closed-sidebar .app-sidebar:hover {
     flex: 0 0 270px !important;
-    width: 270px !important;
+    width: 285px !important;
 }
 .closed-sidebar .app-sidebar:hover .app-sidebar__inner .app-sidebar__heading {
     text-indent: initial;
@@ -9594,6 +9596,9 @@ button,
 .closed-sidebar .app-sidebar:hover .app-sidebar__inner ul li a {
     text-indent: initial;
     padding: 0 1.5rem 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .closed-sidebar .app-sidebar:hover .app-sidebar__inner .metismenu-icon {
     text-indent: initial;
@@ -20181,10 +20186,10 @@ a.fc-more:hover {
         display: block;
     }
     .sidebar-mobile-open .app-sidebar .app-sidebar__inner ul ul li a {
-        padding-left: 1em;
+        padding-left: 1rem;
     }
     .sidebar-mobile-open .app-sidebar .app-sidebar__inner ul.mm-show {
-        padding: 0.5em 0 0 2rem;
+        /* padding: 2px 0rem 1rem; */
     }
     .sidebar-mobile-open .app-sidebar .app-sidebar__inner ul.mm-show > li > a {
         height: 2rem;
