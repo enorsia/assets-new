@@ -8982,6 +8982,53 @@ button,
     display: flex;
     margin-left: auto;
 }
+#admin_profile_body .dropdown-menu-right{
+    background: #1F2937;
+    box-shadow: inset 0 0 15px rgb(255 254 254 / 10%), 0 0 18px 3px rgb(32 32 32 / 60%);
+}
+#admin_profile_body .dropdown-menu-right a{
+    color: #c9c9c9;
+}
+#admin_profile_body .dropdown-menu-right a:hover, #admin_profile_body .dropdown-menu-right a:focus {
+    color: #c9c9c9;
+    background-color: #111827;
+}
+#admin_profile_body .dropdown-menu-right button{
+    color: #c9c9c9;
+}
+#admin_profile_body .dropdown-menu-right button:hover, #admin_profile_body .dropdown-menu-right button:focus {
+    color: #c9c9c9;
+    background-color: #111827;
+}
+#profile_body .main-card{
+background: #1F2937;
+margin-top: 50px;
+    box-shadow: inset 0 0 15px rgb(255 254 254 / 20%), 0 0 18px 3px rgb(32 32 32 / 60%);
+}
+#profile_body label{
+    color: #c9c9c9;
+}
+#profile_body input {
+    background: #1F2937;
+    border: 1px solid #525252;
+    border-radius: 0px;
+    font-size: 14px;
+}
+#profile_body #current_password-error, #profile_body #password-error, #profile_body #password_confirmation-error{
+    color: #dd6a71;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#profile_body .main-card .table th, .table td {
+    padding: 0.55rem;
+    border-top: 1px solid #525252;
+     border-bottom: 1px solid #525252;
+    color: #c9c9c9;
+}
+
 .app-header .header-user-info > .widget-heading,
 .app-header .header-user-info > .widget-subheading {
     white-space: nowrap;
