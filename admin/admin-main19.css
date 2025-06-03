@@ -1847,6 +1847,7 @@ pre code {
     .table-responsive-sm > .table-bordered {
         border: 0;
     }
+    
 }
 @media (max-width: 767.98px) {
     .table-responsive-md {
@@ -8985,6 +8986,7 @@ button,
 #admin_profile_body .dropdown-menu-right{
     background: #1F2937;
     box-shadow: inset 0 0 15px rgb(255 254 254 / 10%), 0 0 18px 3px rgb(32 32 32 / 60%);
+    top:75% !important;
 }
 #admin_profile_body .dropdown-menu-right a{
     color: #c9c9c9;
@@ -9625,7 +9627,7 @@ margin-top: 50px;
 .closed-sidebar .app-sidebar .app-sidebar__inner .app-sidebar__heading::before {
     content: "";
     position: absolute;
-    top: -20%;
+    top: 20%;
     left: 0px;
     width: 100%;
     height: 1px;
@@ -20686,13 +20688,14 @@ a.fc-more:hover {
     border: 1px solid #565f6e;
     color: #fff;
     transition: 0.3s;
-    height: 45px;
+    height: 38px;
     background: transparent;
-    padding: 0px 15px;
+    padding: 0px 25px;
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 13px;
 }
 .export_import_button .export_button i {
     margin: 0 5px;
@@ -20716,4 +20719,25 @@ a.fc-more:hover {
 .swal2-styled.swal2-confirm,
 .swal2-styled.swal2-cancel {
     font-size: .8em !important;
+}
+@media (max-width: 991px) {
+    .vertical-nav-menu ul > li > a::before {
+        left: -17px;
+    }
+    .sidebar-mobile-open .app-sidebar .app-sidebar__inner ul ul li a {
+        margin-left: 30px;
+    }
+    #admin_profile_body .dropdown-menu-right {
+        top: 23% !important;
+    }
+}
+@media (max-width: 575px) {
+    #admin_profile_body .dropdown-menu-right {
+        top: 32% !important;
+    }
+}
+@media (max-width: 320px) {
+    #admin_profile_body .dropdown-menu-right {
+        top: 42% !important;
+    }
 }

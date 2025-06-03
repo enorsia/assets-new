@@ -20688,13 +20688,14 @@ a.fc-more:hover {
     border: 1px solid #565f6e;
     color: #fff;
     transition: 0.3s;
-    height: 45px;
+    height: 38px;
     background: transparent;
-    padding: 0px 15px;
+    padding: 0px 25px;
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 13px;
 }
 .export_import_button .export_button i {
     margin: 0 5px;
