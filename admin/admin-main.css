@@ -9619,7 +9619,7 @@ margin-top: 50px;
     width: 80px;
     min-width: 80px;
     flex: 0 0 80px;
-    z-index: 13;
+    z-index: 30;
 }
 .closed-sidebar .app-sidebar .app-sidebar__inner .app-sidebar__heading {
     text-indent: -999em;
