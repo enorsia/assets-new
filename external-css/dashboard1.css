@@ -1,0 +1,52 @@
+       .profile_new_btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .profile_new_btn a {
+            margin-left: 20px;
+        }
+
+        @media only screen and (max-width: 991px) {
+            .header-container button {
+                position: absolute;
+                z-index: 1;
+            }
+
+            .header-container .btn-close {
+                position: absolute;
+                right: 20px;
+            }
+
+            .header-container .offcanvas.show {
+                visibility: visible;
+                z-index: 999999;
+            }
+        }
+
+        @media only screen and (max-width: 575px) {
+            .header-container {
+
+                width: 90%;
+            }
+
+            .main-container {
+                width: 100%;
+                padding: 20px 10px;
+            }
+
+            .main-container h4 {
+                font-size: 20px;
+            }
+
+            #refer_part h5 {
+                font-size: 15px;
+            }
+
+            .profile_text {
+                font-size: 15px;
+            }
+        }
