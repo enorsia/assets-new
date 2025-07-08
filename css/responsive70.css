@@ -135,24 +135,19 @@
     /* .shop_item_top .img_part {
         height: 400px;
     } */
-}
 
-@media (max-width: 1430px) {
-    .video_body .video_text a {
-        margin: 0px 0px;
-        padding: 0px 0px;
-        font-size: 16px;
-    }
-    .video_text h1 {
-        font-size: 40px;
-    }
     .select_body #accordionFlushExample {
         grid-template-columns: repeat(1, 1fr);
         z-index: 999;
-        position: relative;
+        position: fixed;
         display: none;
-        top: -40px;
+        top: 0px;
         border: 1px solid #ddd !important;
+        background: #fff;
+        height: 100vh;
+        left: 0px;
+        max-width: 450px;
+        overflow-y: auto;
     }
 
     .filter_icon {
@@ -160,6 +155,8 @@
         height: 40px;
         justify-content: flex-start;
         align-items: center;
+        border: none;
+        background: none;
     }
 
     /* .select_body #accordionFlushExample {
@@ -174,16 +171,22 @@
     }
 
     .filter_icon i {
-        border: 1px solid #cbc7bf;
-        font-size: 18px;
+        /* border: 1px solid #cbc7bf; */
+        font-size: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
         height: 40px;
         font-style: normal;
+        text-transform: uppercase;
     }
-
+    .filter_text {
+        font-size: 13.5px;
+        letter-spacing: 0.5px;
+        color: #000000;
+        text-transform: uppercase;
+        margin-left: 3px;
+    }
     .filter_icon i span {
         font-size: 13px;
         margin-left: 7px;
@@ -191,6 +194,7 @@
 
     .select_body #accordionFlushExample .accordion-item button {
         border-bottom: 1px solid #ccc;
+        height: 45px;
     }
 
     .select_body #accordionFlushExample .accordion-item button::after {
@@ -217,11 +221,16 @@
 
     #show_filter_icon {
         cursor: pointer;
-        font-size: 16px;
+        font-size: 13.5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .select_body {
-        width: 60%;
+        width: auto;
+        left: 180px;
     }
 
     .select_part {
@@ -230,18 +239,18 @@
 
     .price_body {
         margin-left: -1px;
-        height: 41px !important;
         width: 100.1%;
         /* margin-right: -1px; */
     }
 
     .price_body .price_div {
-        width: 100.1%;
+        width: 95%;
+        left: 15px;
+        right: auto;
     }
 
     .price_body .price_id {
-        padding-left: 20px;
-        font-size: 15px;
+        padding-left: 17px;
     }
 
     .select_body #accordionFlushExample .accordion-item .accordion-body {
@@ -256,10 +265,6 @@
 
     .price_body {
         border-top: 1px solid #ddd;
-    }
-
-    .shop_items {
-        grid-template-columns: repeat(4, 1fr);
     }
 
     .dropdown-el {
@@ -290,15 +295,31 @@
         display: flex !important;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 15px 10px 22px;
+        padding: 10px 15px 10px 17px;
     }
 
     #phn_view_filter_head h2 {
-        font-size: 17px;
+        font-size: 16px;
+        text-transform: uppercase;
     }
 
     #flush-headingOne {
-        padding-left: 20px;
+        padding-left: 17px;
+    }
+}
+
+@media (max-width: 1430px) {
+    .video_body .video_text a {
+        margin: 0px 0px;
+        padding: 0px 0px;
+        font-size: 16px;
+    }
+    .video_text h1 {
+        font-size: 40px;
+    }
+
+    .shop_items {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -315,7 +336,8 @@
 
     #large_video {
         min-height: 400px;
-    }.video_text h1 {
+    }
+    .video_text h1 {
         font-size: 30px;
     }
 
@@ -409,7 +431,6 @@
     #with_animation #large_video {
         height: 530px !important;
     }
-
 }
 
 @media (max-width: 1199px) {
@@ -647,9 +668,8 @@
     .select_part {
         width: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        margin: 10px 0 20px;
+        margin: 10px 0 10px;
         flex-wrap: wrap;
     }
 
@@ -673,7 +693,7 @@
     .header-1ges7jt {
         right: 26px;
     }
-    .video_text{
+    .video_text {
         bottom: 0%;
     }
     #nav-slider .sub-nav-container .header_landing_url a {
@@ -970,7 +990,7 @@
     }
 
     .video_text h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .video_body .video_text .video_text_btn_grp {
         width: 340px;
@@ -1372,7 +1392,7 @@
     #main_content {
         min-height: 200px;
     }
-    .video_text{
+    .video_text {
         bottom: 0%;
     }
     /************ Header **************/
@@ -2109,9 +2129,9 @@
     #subscribe_body {
         margin-bottom: -15px !important;
     }
-.sme_logo{
-    margin: 0 auto;
-}
+    .sme_logo {
+        margin: 0 auto;
+    }
     .footer-signu-container {
         background-color: #000;
         padding-top: 25px !important;
@@ -2221,7 +2241,7 @@
         margin-top: 6px !important;
         margin-top: 6px !important;
         position: absolute;
-        right: 85px;
+        right: 0px;
         top: -20px;
     }
 
@@ -2527,6 +2547,32 @@
 
     .select_body {
         width: 100%;
+        left: 0px;
+    }
+    .shop_items_btn {
+        border: 1px solid #636363;
+        position: fixed;
+        right: 10px;
+        z-index: 22;
+        /* bottom: 261px; */
+        bottom: 45%;
+        background: #fff;
+        width: 11%;
+        align-items: center;
+        justify-content: center;
+        height: 5%;
+    }
+    #for_view_four,
+    #for_view_six,
+    #for_view_ten {
+        width: 25px;
+        height: 25px;
+    }
+    .shop_items_btn .change_view_text {
+        display: none;
+    }
+    .filter_icon i {
+        width: auto;
     }
 
     .dropdown-el {
@@ -2547,7 +2593,7 @@
 
     .filter_icon i {
         height: 35px;
-        font-size: 14px !important;
+        font-size: 18px !important;
         font-style: normal;
     }
 
@@ -2556,8 +2602,23 @@
     }
 
     .filter_icon {
-        height: 35px;
+        height: 5%;
         display: inline-block;
+        /* bottom: 300px; */
+        bottom: 50%;
+        z-index: 22;
+        border: 1px solid #636363;
+        position: fixed;
+        right: 10px;
+        background: #fff;
+        padding: 7px;
+        width: 11%;
+    }
+    .filter_icon i {
+        height: auto;
+    }
+    .filter_text {
+        display: none;
     }
 
     .select_body #accordionFlushExample #flush-headingOne button {
@@ -2614,6 +2675,13 @@
     }
 
     .shop_item_top .item_price p {
+        font-size: 13px;
+    }
+    .shop_item_top .item_price .now_price {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .shop_item_top .item_price .shop_discount p {
         font-size: 13px;
     }
 
@@ -2853,8 +2921,7 @@
     }
 
     .shop_item_top .item_name,
-    .shop_item_top .item_price,
-    .shop_item_bottom {
+    .shop_item_top .item_price {
         margin-left: 8px !important;
     }
 
@@ -2989,7 +3056,14 @@
     }
 }
 @media (max-width: 320px) {
-     .video_text h1 {
+    .filter_icon {
+        height: 8%;
+    }
+    .shop_items_btn {
+        height: 8%;
+        bottom: 42%;
+    }
+    .video_text h1 {
         font-size: 18px;
     }
     .verticalflip p {
