@@ -183,7 +183,9 @@ input[type="number"] {
 }
 
 /************************************************************************** End Header****************************************************/
-
+#show_otherpage_only{
+    display: none;
+}
 .flag-dropdown dd,
 .flag-dropdown dt,
 .flag-dropdown ul {
@@ -2153,7 +2155,7 @@ footer #contact_title {
 }
 #nav-slider {
     position: relative;
-    z-index: 1000;
+    z-index: 20;
     left: 25%;
     justify-content: center;
     align-items: center;
