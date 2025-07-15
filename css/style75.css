@@ -183,7 +183,9 @@ input[type="number"] {
 }
 
 /************************************************************************** End Header****************************************************/
-
+#show_otherpage_only{
+    display: none;
+}
 .flag-dropdown dd,
 .flag-dropdown dt,
 .flag-dropdown ul {
@@ -1102,8 +1104,7 @@ footer #contact_title {
     display: inline-block;
     text-decoration: none;
     margin-top: 10px;
-    transition: .2s ease-in-out;
-
+    transition: 0.2s ease-in-out;
 }
 .text_container .video_image_text_link {
     color: #fff !important;
@@ -1217,7 +1218,7 @@ footer #contact_title {
     text-transform: capitalize;
     padding: 13px 40px;
     transition: 0.3s;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     border: 1px solid #ffffff;
     /* text-shadow: 3px -1px 4px rgba(0, 0, 0, 1); */
 }
@@ -1790,11 +1791,12 @@ footer #contact_title {
 #product_price span {
     text-decoration: line-through;
     margin-right: 10px;
-    font-weight: bolder;
+    font-weight: 300;
 }
 .single_product_price #regular_price {
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 17px;
+    margin-right: 15px;
 }
 
 .right-side-product .single-product-form {
@@ -1806,9 +1808,9 @@ footer #contact_title {
     background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
-    color: green;
-    font-weight: bolder;
-    margin-left: 5px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    margin-left: 0px;
 }
 
 .ratings {
@@ -1874,7 +1876,7 @@ footer #contact_title {
     font-size: 15px;
     font-weight: 600;
 }
-.dbz_text .sme_logo img{
+.dbz_text .sme_logo img {
     width: 170px;
     height: auto;
     margin-top: 15px;
@@ -2154,7 +2156,7 @@ footer #contact_title {
 }
 #nav-slider {
     position: relative;
-    z-index: 1000;
+    z-index: 20;
     left: 25%;
     justify-content: center;
     align-items: center;
@@ -2689,24 +2691,24 @@ dl.flag-dropdown dt span:nth-child(3) {
 }
 
 .releted_products_text {
-    font-size: 12px;
-    font-weight: bold !important;
+    font-size: 13px;
+    font-weight: 700 !important;
 }
-.releted_products_text span {
+/* .releted_products_text span {
     font-weight: bold !important;
-}
+} */
 .related_pro_now_price {
     padding-right: 7px;
 }
 .related_item_offer {
-    font-size: 12px;
+    font-size: 13px;
     background: transparent;
     padding: 2px 0px;
     border-radius: 10px;
-    color: green;
-    font-weight: bolder;
+    color: rgb(26, 26, 26);
+    font-weight: 600;
     margin-left: 0px;
-    display: inline-block;
+    display: block;
 }
 
 .text-ellipsis {
@@ -4127,15 +4129,16 @@ dl.flag-dropdown dt span:nth-child(3) {
 }
 
 .select_part {
-    max-width: 1600px;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px auto 10px auto;
+    margin: 10px auto 25px auto;
     position: relative;
+    align-items: center;
 }
 
-.price_body,
+
 .select2.select2-container .select2-selection {
     margin-bottom: -1px;
     outline: 0 !important;
@@ -4293,7 +4296,6 @@ dl.flag-dropdown dt span:nth-child(3) {
     cursor: pointer;
     position: relative;
     margin-left: -1px;
-    height: 41px !important;
 }
 
 .price_body .price_id {
@@ -4306,6 +4308,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .price_body .price_div {
@@ -4316,7 +4319,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     flex-direction: column;
     align-items: center;
     width: 330px;
-    right: auto;
+    right: 20%;
     padding: 10px;
     cursor: auto;
     z-index: 9;
@@ -4386,19 +4389,25 @@ dl.flag-dropdown dt span:nth-child(3) {
 }
 
 .select_sort p {
-    font-size: 14px;
+    font-size: 13.5px;
     margin-right: 0px;
+    text-transform: uppercase;
 }
 
 .select_sort select {
     border: none;
-    font-size: 14px;
+    font-size: 13px;
     color: #333;
     cursor: pointer;
+    text-transform: uppercase;
+    padding: 0px 30px 0px 10px;
 }
 
 .select_sort select option {
     cursor: pointer;
+    font-size: 13px;
+    color: #333;
+    text-transform: uppercase;
 }
 #flush-headingOne button::after {
     display: none !important;
@@ -4419,7 +4428,8 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 .filter_clear button {
     border: none;
-    font-size: 14px;
+    font-size: 13.5px;
+    text-transform: uppercase;
     background: #fff;
     color: #333;
     text-decoration: underline;
@@ -4438,8 +4448,8 @@ dl.flag-dropdown dt span:nth-child(3) {
     background: #fff;
     margin-top: 0px;
     /* border: 1px solid #ccc; */
-    min-width: 250px;
-    padding: 10px 10px;
+    min-width: 320px;
+    padding: 15px 10px;
     -webkit-box-shadow: 0px 0px 4px 0px rgba(99, 97, 99, 0.09);
     -moz-box-shadow: 0px 0px 4px 0px rgba(99, 97, 99, 0.09);
     box-shadow: 0px 0px 4px 0px rgba(99, 97, 99, 0.09);
@@ -4449,10 +4459,37 @@ dl.flag-dropdown dt span:nth-child(3) {
 .filter_icon {
     display: none;
 }
-
+.select_body {
+    position: absolute;
+    left: 12%;
+}
 .select_body #accordionFlushExample .accordion-item .accordion-body ul {
     max-height: 300px;
     overflow-y: auto;
+}
+
+
+/* Hide default arrow */
+.select_body #accordionFlushExample .accordion-button::after {
+    display: none !important;
+}
+
+/* Style the custom icon */
+.select_body #accordionFlushExample .accordion-button .icon {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 3px;
+    transition: all 0.3s ease-in-out;
+    color: #333;
+    width: 16px;
+}
+
+/* Optional: When open, change color */
+.select_body #accordionFlushExample .accordion-button:not(.collapsed) .icon {
+    color: #0d6efd;
+}  
+.select_body #accordionFlushExample .accordion-item .accordion-body input{
+    width: 17px;
 }
 
 .select_body
@@ -4491,7 +4528,7 @@ dl.flag-dropdown dt span:nth-child(3) {
 }
 
 .select_body #accordionFlushExample .accordion-item .accordion-body ul li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     display: flex;
     cursor: pointer;
 }
@@ -4512,20 +4549,27 @@ dl.flag-dropdown dt span:nth-child(3) {
     ul
     li
     label {
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 5px;
     cursor: pointer;
     display: block;
     width: 100%;
     color: #333;
+    letter-spacing: .5px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .select_body #accordionFlushExample .accordion-item button {
     /* border-bottom: 1px solid #ccc; */
     margin-bottom: -1px;
-    font-size: 14px;
+    font-size: 13.5px;
     height: 40px;
     color: #333;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 13px;
 }
 .select_body #accordionFlushExample #flush-headingOne button {
     padding-left: 0px !important;
@@ -4655,11 +4699,39 @@ dl.flag-dropdown dt span:nth-child(3) {
 .shop_items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-    max-width: 1600px;
+    grid-gap: 7px;
+    max-width: 100%;
     margin: 0 auto;
 }
-
+.shop_items_btn {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+}
+.shop_items_btn .change_view_text {
+    margin-left: 3px;
+    font-size: 13.5px;
+    letter-spacing: .5px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.change_view_body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#for_view_four,
+#for_view_six,
+#for_view_ten {
+    display: none;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 2px;
+}
 .shop_items .shop_item {
     margin-bottom: 20px;
     overflow: hidden;
@@ -4758,9 +4830,9 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 .shop_item_top .item_price {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin: 0px 0px 8px 0px;
 }
 
@@ -4772,19 +4844,21 @@ dl.flag-dropdown dt span:nth-child(3) {
 }
 
 .shop_item_top .item_price p {
-    font-size: 13px;
-    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 300;
 }
 .shop_item_top .item_price .now_price {
     margin-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .shop_item_top .item_price .shop_discount p {
-    font-size: 13px;
+    font-size: 14px;
     background: transparent;
     padding: 2px 0px;
     border-radius: 10px;
-    color: green;
+    color: rgb(26, 26, 26);
     font-weight: bolder;
 }
 
@@ -4910,6 +4984,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .prev_price p {
@@ -4920,20 +4995,23 @@ dl.flag-dropdown dt span:nth-child(3) {
 .prev_price .previous_price {
     color: #000 !important;
     text-decoration: line-through;
-    margin-right: 15px !important;
+    margin-left: 15px !important;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .prev_price .now_price {
     color: #000;
-    font-weight: bolder;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .prev_price .discount {
-    font-size: 13px;
+    font-size: 14px;
     background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
-    color: green;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     margin-left: 15px;
 }
@@ -5026,6 +5104,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     padding: 6px 15px;
     background: transparent;
     cursor: auto;
+    color: #000;
 }
 
 .prev_size {
@@ -5069,6 +5148,35 @@ dl.flag-dropdown dt span:nth-child(3) {
     justify-content: center;
     font-size: 14px;
     margin-bottom: 5px;
+}
+.prev_size ul .out_of_stock {
+    background: #ebebeb;
+    /* cursor: not-allowed; */
+    position: relative;
+}
+.prev_size ul .out_of_stock::after {
+    position: absolute;
+    content: "";
+    height: 125%;
+    width: 0.5px;
+    background: #ccc;
+    transform: rotate(45deg);
+}
+/* .prev_size ul .out_of_stock::before{
+    position: absolute;
+    content: "";
+    height: 125%;
+    width: .5px;
+    background: #ccc;
+    transform: rotate(135deg);
+} */
+.out_of_stock.selected {
+    color: #000 !important;
+    /* cursor: not-allowed; */
+}
+.selected {
+    background-color: #000;
+    color: #fff;
 }
 
 .prev_btn {
@@ -5327,11 +5435,6 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 .fabrication_box small {
     font-size: 13px;
-}
-
-.selected {
-    background-color: #000;
-    color: #fff;
 }
 
 .custom-tooltip .tooltip-inner {

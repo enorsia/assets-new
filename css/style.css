@@ -1796,6 +1796,7 @@ footer #contact_title {
 .single_product_price #regular_price {
     font-weight: 700;
     font-size: 17px;
+    margin-right: 15px;
 }
 
 .right-side-product .single-product-form {
@@ -1807,9 +1808,9 @@ footer #contact_title {
     background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
-    color: green;
+    color: rgb(32, 32, 32);
     font-weight: 600;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .ratings {
@@ -2704,10 +2705,10 @@ dl.flag-dropdown dt span:nth-child(3) {
     background: transparent;
     padding: 2px 0px;
     border-radius: 10px;
-    color: green;
+    color: rgb(26, 26, 26);
     font-weight: 600;
     margin-left: 0px;
-    display: inline-block;
+    display: block;
 }
 
 .text-ellipsis {
@@ -4711,7 +4712,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     background: none;
 }
 .shop_items_btn .change_view_text {
-    margin-left: 5px;
+    margin-left: 3px;
     font-size: 13.5px;
     letter-spacing: .5px;
     color: #000000;
@@ -4727,10 +4728,9 @@ dl.flag-dropdown dt span:nth-child(3) {
 #for_view_six,
 #for_view_ten {
     display: none;
-    width: 15px;
-    height: 15px;
-    color: #525151;
-    fill: currentColor;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 2px;
 }
 .shop_items .shop_item {
     margin-bottom: 20px;
@@ -4830,9 +4830,9 @@ dl.flag-dropdown dt span:nth-child(3) {
 
 .shop_item_top .item_price {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin: 0px 0px 8px 0px;
 }
 
@@ -4858,7 +4858,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     background: transparent;
     padding: 2px 0px;
     border-radius: 10px;
-    color: green;
+    color: rgb(26, 26, 26);
     font-weight: bolder;
 }
 
@@ -4984,6 +4984,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .prev_price p {
@@ -4994,7 +4995,7 @@ dl.flag-dropdown dt span:nth-child(3) {
 .prev_price .previous_price {
     color: #000 !important;
     text-decoration: line-through;
-    margin-right: 15px !important;
+    margin-left: 15px !important;
     font-weight: 300;
     font-size: 14px;
 }
@@ -5010,7 +5011,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     background: transparent;
     padding: 2px 7px;
     border-radius: 10px;
-    color: green;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     margin-left: 15px;
 }

@@ -7,7 +7,7 @@
     align-items: center;
 }
 .favourite-grid .wishlist_item {
-    width: 32%;
+    width: 35%;
     margin: 0px 5px 30px 5px;
 }
 .if_wish_empty {
@@ -17,6 +17,10 @@
 .wishlist-img {
     width: 25%;
     height: 100%;
+}
+.loader_paginate img{
+    width: 40px;
+    height: 40px;
 }
 
 .wishlist-img img {
@@ -421,8 +425,8 @@
 }
 
 .shopping-item-name {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     color: #1b1b1b;
     margin-bottom: 10px;
 }
@@ -475,7 +479,7 @@
 }
 
 .shopping-total-price-contianer {
-    width: 30%;
+    width: 40%;
     margin-left: auto;
 }
 

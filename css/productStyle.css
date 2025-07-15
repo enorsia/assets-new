@@ -7,7 +7,7 @@
     align-items: center;
 }
 .favourite-grid .wishlist_item {
-    width: 32%;
+    width: 35%;
     margin: 0px 5px 30px 5px;
 }
 .if_wish_empty {
@@ -425,8 +425,8 @@
 }
 
 .shopping-item-name {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     color: #1b1b1b;
     margin-bottom: 10px;
 }
