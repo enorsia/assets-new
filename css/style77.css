@@ -1059,13 +1059,14 @@ footer #contact_title {
 #large_video {
     min-height: 640px;
 }
+
 .video_body {
     position: relative;
 }
 .video_image_text {
     position: absolute;
     z-index: 1;
-    bottom: 0px;
+    bottom: -10px;
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
@@ -1128,7 +1129,7 @@ footer #contact_title {
     width: 700px;
     text-align: center;
     color: #fff;
-    bottom: 4%;
+    bottom: 0%;
     height: auto;
     justify-content: center;
     display: flex;
@@ -1170,7 +1171,7 @@ footer #contact_title {
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 35px;
+    font-size: 30px;
     /* letter-spacing: 0.5rem; */
     color: #ffffff;
     font-weight: 500;

@@ -4880,7 +4880,7 @@ dl.flag-dropdown dt span:nth-child(3) {
 }
 
 .item_color ul li img {
-    width: 25px !important;
+    width: 25px;
     height: 25px;
     padding: 1px;
 }
