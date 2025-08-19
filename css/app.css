@@ -16314,7 +16314,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     padding: 0px 0px 8px 0px;
 }
 .outfit_body .shop_item_top .img_part {
-    min-height: 320px;
+    min-height: 270px;
 }
 .outfit_body .shop_item_top .item_price {
     margin: 0px 0px 5px 5px;
@@ -22313,7 +22313,9 @@ dl.flag-dropdown dt span:nth-child(3) {
     margin-bottom: 20px;
     overflow: hidden;
 }
-
+.outfit_body .shop_item a{
+    overflow: hidden;
+}
 .shop_item a {
     cursor: pointer;
     z-index: 9;
@@ -28899,7 +28901,7 @@ a {
         width: 95%;
     }
     .outfit_body .shop_item_top .img_part {
-        min-height: 230px;
+        min-height: 190px;
     }
     .outfit_title {
         font-size: 28px;
@@ -29177,13 +29179,16 @@ a {
     }
 
     .shop_item_top .img_part:hover .image_one {
-        display: inline-block;
+        display: none;
     }
     .shop_item_top .img_part:hover .image_two {
         display: none;
     }
 }
 @media (max-width: 1280px) {
+     .shop_item_top .img_part:hover .image_one {
+        display: inline-block;
+    }
 }
 @media (max-width: 1200px) {
     /******** landing page style**********/
