@@ -11992,8 +11992,8 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "bootstrap-icons";
-  src: url("https://cdn.jsdelivr.net/gh/enorsia/assets-new/fonts/bootstrap-icons.woff2") format("woff2"),
-       url("https://cdn.jsdelivr.net/gh/enorsia/assets-new/fonts/bootstrap-icons.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/enorsia/assets-new/css/bootstrap-icons.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/gh/enorsia/assets-new/css/bootstrap-icons.woff") format("woff");
 }
 
 .bi::before,
