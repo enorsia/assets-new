@@ -11993,8 +11993,8 @@ textarea.form-control-lg {
 @font-face {
   font-display: block;
   font-family: "bootstrap-icons";
-src: url("/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff2"),
-     url("/fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff");
+  src: url("./fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff2"),
+url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff");
 }
 
 .bi::before,
@@ -35288,10 +35288,25 @@ a {
     }
 }
 
-/* resources/css/app.css */
+/* =========================
+   Vendor CSS Imports
+========================= */
 
-/* import vendor CSS from node_modules */
+/* =========================
+   Your Project Styles
+========================= */
+/* @import "./partials/_variables.css"; */
 
-/* your project styles */
-/* @import "./partials/_variables.css";*/
+/* =========================
+   Override Bootstrap Icons font paths
+   (Ensure fonts load correctly from public/fonts)
+========================= */
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("/fonts/bootstrap-icons.woff2") format("woff2"),
+       url("/fonts/bootstrap-icons.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: block;
+}
 
