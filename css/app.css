@@ -14430,7 +14430,7 @@ url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("wof
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
-    *display: inline; }
+    display: inline; }
     .owl-theme .owl-dots .owl-dot span {
       width: 10px;
       height: 10px;
@@ -17590,6 +17590,184 @@ dl.flag-dropdown dt span:nth-child(2) {
     margin-top: 10px;
     display: block;
 }
+
+/********* Christmas Landing ***********/
+.christmas_text_body{
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+}
+.christmas_title{
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+.christmas_text{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.christmas_cat_body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 30px auto;
+}
+.christmas_cat_top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.christmas_cat_top_item, .christmas_cat_bottom{
+    text-align: center;
+}
+.christmas_cat_img img{
+    width: 100%;
+    height: auto;
+}
+.christmas_cat_desc{
+    margin-top: 15px;
+}
+.christmas_cat_desc_title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: #2b2b2b;
+}
+.christmas_cat_desc_text{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.christmas_cat_link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 1.5px solid #000000;
+    padding: 4px 15px;
+    font-size: 13px;
+    letter-spacing: 1.02px;
+    transition: .2s ease-in-out;
+    background: #070707;
+    display: inline-block;
+}
+.christmas_cat_link:hover{
+    background: #4b4b4b;
+}
+#christmas_cat_middle{
+    margin: 30px 0px;
+}
+#christmas_men_slider{
+    margin-top: 20px;
+}
+.christmas_slider_body{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.christmas_slider_body img {
+    width: 100%;
+    height: auto;
+}
+.christmas_slider_items_body{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.christmas_slider_title_body{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.christmas_slider_title{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.christmas_slider_items{
+    position: absolute !important;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80% !important;
+}
+.christmas_slider_item{
+    margin: 0px 10px;
+}
+.christmas_slider_item img{
+    width: 100%;
+    height: auto;
+}
+.christmas_slider .owl-carousel .owl-nav {
+    display: block !important;
+}
+.christmas_slider .owl-carousel .owl-nav button i{
+    color: #fff;
+    font-size: 40px;
+}
+.christmas_slider .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -50px;
+    bottom: 50%;
+}
+.christmas_slider .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -50px;
+    bottom: 50%;
+}
+.christmas_slider .owl-carousel .owl-dots{
+    display: block !important;
+    margin-top: 20px;
+}
+.christmas_slider .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+.christmas_slider .owl-theme .owl-dots .owl-dot span {
+    background: #8f8e8e;
+}
+.christmas_slider .owl-theme .owl-dots .owl-dot.active span {
+    width: 30px;
+    background: #ffffff;
+}
+.christmas_bottom_body{
+    width: 80%;
+    margin: 30px auto 30px auto;
+}
+.christmas_bottom_top{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.christmas_bottom_top_title{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+.christmas_bottom_same_text{
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.christmas_bottom_bottom_item{
+    margin-bottom: 30px;
+}
+.christmas_bottom_bottom_title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 3px;
+}
+/********* End Christmas Landing ***********/
+
 
 /***** Christmas Item********/
 .christmas_item_body {
@@ -26918,7 +27096,7 @@ a {
     height: -webkit-fill-available; /* Chrome, Safari, new Edge */
     height: -moz-available;         /* Firefox */
     height: fill-available;         /* Future standard */
-    height: 100%;                  /* fallback for others */
+    height: 90vh;                  /* fallback for others */
 
     /* width handling */
     width: max-content;             /* modern browsers */
@@ -29314,6 +29492,17 @@ a {
     .outfit_body .shop_item_top .img_part:hover .image_two {
         display: none;
     }
+    /********* Christmas Landing ***********/
+    .christmas_slider_items {
+        top: 60%;
+    }
+    .christmas_slider_title {
+        font-size: 30px;
+    }
+    .christmas_slider_title {
+        font-size: 22px;
+    }
+    /********* End Christmas Landing ***********/
 }
 @media (max-width: 1280px) {
     .shop_item_top .img_part:hover .image_one {
@@ -30392,6 +30581,25 @@ a {
         width: calc(100% - 90px);
     }
     /******** End landing page style**********/
+
+    /********* Christmas Landing ***********/
+    .christmas_text_body {
+        width: 95%;
+        margin: 30px auto;
+    }
+    .christmas_cat_body {
+        width: 90%;
+    }
+    .christmas_bottom_body {
+        width: 95%;
+    }
+    .christmas_slider_title {
+        font-size: 25px;
+    }
+    .christmas_slider_title_body {
+        top: 20%;
+    }
+    /********* End Christmas Landing ***********/
     /******** Layout july*************/
     .multiple_right_top {
         margin-bottom: 25px;
@@ -31404,6 +31612,52 @@ a {
         width: 45%;
     }
     /******** End landing page style**********/
+
+    /********* Christmas Landing ***********/
+    .christmas_title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .christmas_text {
+        font-size: 16px;
+        line-height: 27px;
+        text-align: justify;
+    }
+    .christmas_cat_body {
+        width: 95%;
+    }
+    .christmas_cat_desc_title {
+        font-size: 17px;
+    }
+    .christmas_cat_desc_text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    #christmas_cat_middle {
+        margin: 20px 0px 10px 0px;
+    }
+    .christmas_bottom_top_title {
+        font-size: 19px;
+    }
+    .christmas_bottom_same_text {
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+    }
+    .christmas_bottom_bottom_title {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .christmas_bottom_bottom_item {
+        margin-bottom: 20px;
+    }
+    .christmas_slider_title {
+        font-size: 20px;
+    }
+    /********* End Christmas Landing ***********/
+
     footer {
         padding: 0px 0px;
     }
@@ -32737,6 +32991,54 @@ a {
         font-size: 17px;
     }
     /******** End Layout july*************/
+
+    /********* Christmas Landing ***********/
+    .christmas_text_body {
+        margin: 20px auto;
+    }
+    .christmas_title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+    .christmas_text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .christmas_cat_top {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .christmas_slider_title {
+        font-size: 16px;
+    }
+    .christmas_slider_item {
+        margin: 0px 0px;
+    }
+    .christmas_slider .owl-carousel .owl-nav button i {
+        font-size: 30px;
+    }
+    #christmas_cat_middle {
+        margin: 10px 0px 5px 0px;
+    }
+    .christmas_bottom_body {
+        margin: 20px auto 0px auto;
+    }
+    .christmas_bottom_top_title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .christmas_bottom_same_text {
+        font-size: 15px;
+        line-height: 23px;
+        text-align: justify;
+    }
+    .christmas_bottom_bottom_title {
+        font-size: 16px;
+    }
+    .christmas_slider_title_body {
+        top: 11%;
+    }
+    /********* End Christmas Landing ***********/
     .banner_slider_title {
         font-size: 24px;
         margin-bottom: 5px;
@@ -35399,6 +35701,20 @@ a {
     #header_category_menu {
         top: 16px;
     }
+    /********* Christmas Landing ***********/
+    .christmas_slider .owl-carousel .owl-dots {
+        margin-top: 0px;
+    }
+    .christmas_slider_title {
+        font-size: 13px;
+    }
+    .christmas_slider .owl-carousel .owl-nav button.owl-prev {
+        left: -40px;
+    }
+    .christmas_slider .owl-carousel .owl-nav button.owl-next {
+        right: -40px;
+    }
+    /********* End Christmas Landing ***********/
 }
 
 @media (max-width: 350px) {
