@@ -14575,7 +14575,7 @@ input[type="number"] {
     justify-content: center;
     align-items: center;
 }
-#verticalflip_body{
+#verticalflip_body {
     text-align: center;
     justify-content: center;
     display: flex;
@@ -14587,7 +14587,7 @@ input[type="number"] {
     position: absolute;
     opacity: 0;
 }
-.verticalflip p span a{
+.verticalflip p span a {
     color: #dcb403;
 }
 
@@ -14951,8 +14951,12 @@ dl.flag-dropdown dt span:nth-child(2) {
     font-size: 15px;
 }
 .loader_paginate img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+}
+.loader_paginate .loading_img_text{
+    width: 100px;
+    height: auto;
 }
 
 .loader {
@@ -15927,6 +15931,132 @@ dl.flag-dropdown dt span:nth-child(2) {
 /************************************************************************** End Header****************************************************/
 
 /***************************/
+/*********========================================== August Layout css =================================***************/
+.banner_with_heading a,
+.discount_with_title a {
+    width: 100%;
+}
+.banner_with_heading_body,
+.discount_with_body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner_with_heading img,
+.discount_with_body img {
+    width: 100%;
+    height: auto;
+}
+.banner_with_heading_title_part {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.banner_with_heading_title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-shadow: 3px -1px 4px #454545;
+}
+.discount_with_title {
+    margin: 10px 0px -4px 0px;
+}
+.discount_with_title_part {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    text-align: center;
+    max-width: 300px;
+}
+.discount_with_title {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-shadow: 3px -1px 4px #454545;
+    font-size: 35px;
+}
+
+.img_with_product {
+    margin: 10px 0px 0px 0px;
+    overflow: hidden;
+}
+.img_with_product_body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.img_with_product_img img {
+    width: 100%;
+    height: auto;
+}
+.img_with_product_items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img_with_product_item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.img_with_product_item a {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+.img_with_product_item a:hover img {
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+}
+.img_with_product_item img {
+    width: 82%;
+    height: auto;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+.img_with_product_item:last-child a{
+   margin: 0px 5%; 
+   height: 100%;
+}
+.img_with_product_item:last-child img {
+    width: 67%;
+    height: auto;
+}
+#img_with_product_item_big img{
+    width: 60%;
+}
+.img_with_product_item:last-child a:first-child {
+    text-align: end;
+}
+.img_with_product_item:last-child a:last-child {
+    text-align: left;
+}
+.img_with_product_text_part {
+    margin: 10px 0px;
+}
+.img_with_product_text {
+    color: #313131;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1.02px;
+    text-shadow: 1px -1px 2px #454545;
+}
+/***************************/
+/*********========================================== End August Layout css =================================***************/
+
+/***************************/
 /*********========================================== July Layout css =================================***************/
 /******* banner with slider **********/
 .banner_slider {
@@ -16255,7 +16385,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 /******** End Grid images *******/
 /******* image grid two **********/
 .img_grid {
-    padding: 10px;
+    padding: 0px;
 }
 .img_grid_body {
     display: grid;
@@ -16280,19 +16410,35 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 .img_grid_title_part {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img_grid_title {
+    color: #313131;
     text-transform: uppercase;
-    font-size: 20px;
     font-weight: 500;
+    border: 1.5px solid #fff;
+    padding: 4px 15px;
+    font-size: 13px;
     letter-spacing: 1.02px;
-    color: #fff;
-    text-shadow: 3px -1px 4px #454545;
+    transition: 0.2s ease-in-out;
+    background: #fff;
+    display: inline-block;
 }
-.img_grid_item:last-child .img_grid_title {
-    color: rgb(255, 255, 255);
+.img_grid_title:hover {
+    background: #c9c9c9;
+}
+.discount_with_title_part .img_grid_title {
+    background: #272727;
+    color: #fff;
+    border: 1.5px solid #272727;
+}
+.discount_with_title_part .img_grid_title:hover {
+    background: #3b3b3b;
+    border: 1.5px solid #c9c9c9;
 }
 /******* Outfit ************/
 .outfit_body {
@@ -17097,6 +17243,21 @@ dl.flag-dropdown dt span:nth-child(2) {
     font-size: 25px;
     margin-bottom: 5px;
 }
+.discount_two {
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+.discount_two_body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.discount_two_body a {
+    width: 100%;
+}
+.discount_two_body a img {
+    width: 100%;
+    height: auto;
+}
 .discount_banner_btn {
     padding: 6px 15px;
     font-size: 14px;
@@ -17592,24 +17753,24 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 /********* Christmas Landing ***********/
-.christmas_text_body{
+.christmas_text_body {
     text-align: center;
     width: 90%;
     margin: 30px auto;
 }
-.christmas_title{
+.christmas_title {
     font-size: 27px;
     text-transform: uppercase;
     font-weight: 600;
     color: #2b2b2b;
     margin-bottom: 15px;
 }
-.christmas_text{
+.christmas_text {
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
 }
-.christmas_cat_body{
+.christmas_cat_body {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -17617,29 +17778,30 @@ dl.flag-dropdown dt span:nth-child(2) {
     align-items: center;
     margin: 10px auto 30px auto;
 }
-.christmas_cat_top{
+.christmas_cat_top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
-.christmas_cat_top_item, .christmas_cat_bottom{
+.christmas_cat_top_item,
+.christmas_cat_bottom {
     text-align: center;
 }
-.christmas_cat_img img{
+.christmas_cat_img img {
     width: 100%;
     height: auto;
 }
-.christmas_cat_desc{
+.christmas_cat_desc {
     margin-top: 15px;
 }
-.christmas_cat_desc_title{
+.christmas_cat_desc_title {
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0px;
     color: #2b2b2b;
 }
-.christmas_cat_desc_text{
+.christmas_cat_desc_text {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -17653,20 +17815,20 @@ dl.flag-dropdown dt span:nth-child(2) {
     padding: 4px 15px;
     font-size: 13px;
     letter-spacing: 1.02px;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     background: #070707;
     display: inline-block;
 }
-.christmas_cat_link:hover{
+.christmas_cat_link:hover {
     background: #4b4b4b;
 }
-#christmas_cat_middle{
+#christmas_cat_middle {
     margin: 30px 0px;
 }
-#christmas_men_slider{
+#christmas_men_slider {
     margin-top: 20px;
 }
-.christmas_slider_body{
+.christmas_slider_body {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -17675,42 +17837,42 @@ dl.flag-dropdown dt span:nth-child(2) {
     width: 100%;
     height: auto;
 }
-.christmas_slider_items_body{
+.christmas_slider_items_body {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
 }
-.christmas_slider_title_body{
+.christmas_slider_title_body {
     position: absolute;
     top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
 }
-.christmas_slider_title{
+.christmas_slider_title {
     text-align: center;
     color: #fff;
     font-size: 35px;
     text-transform: uppercase;
 }
-.christmas_slider_items{
+.christmas_slider_items {
     position: absolute !important;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80% !important;
 }
-.christmas_slider_item{
+.christmas_slider_item {
     margin: 0px 10px;
 }
-.christmas_slider_item img{
+.christmas_slider_item img {
     width: 100%;
     height: auto;
 }
 .christmas_slider .owl-carousel .owl-nav {
     display: block !important;
 }
-.christmas_slider .owl-carousel .owl-nav button i{
+.christmas_slider .owl-carousel .owl-nav button i {
     color: #fff;
     font-size: 40px;
 }
@@ -17724,11 +17886,11 @@ dl.flag-dropdown dt span:nth-child(2) {
     right: -50px;
     bottom: 50%;
 }
-.christmas_slider .owl-carousel .owl-dots{
+.christmas_slider .owl-carousel .owl-dots {
     display: block !important;
     margin-top: 20px;
 }
-.christmas_slider .owl-theme .owl-nav [class*=owl-]:hover {
+.christmas_slider .owl-theme .owl-nav [class*="owl-"]:hover {
     background: transparent;
 }
 .christmas_slider .owl-theme .owl-dots .owl-dot span {
@@ -17738,36 +17900,35 @@ dl.flag-dropdown dt span:nth-child(2) {
     width: 30px;
     background: #ffffff;
 }
-.christmas_bottom_body{
+.christmas_bottom_body {
     width: 80%;
     margin: 30px auto 30px auto;
 }
-.christmas_bottom_top{
+.christmas_bottom_top {
     text-align: center;
     margin-bottom: 30px;
 }
-.christmas_bottom_top_title{
+.christmas_bottom_top_title {
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 600;
     color: #2b2b2b;
 }
-.christmas_bottom_same_text{
+.christmas_bottom_same_text {
     font-size: 17px;
     line-height: 30px;
     font-weight: 300;
 }
-.christmas_bottom_bottom_item{
+.christmas_bottom_bottom_item {
     margin-bottom: 30px;
 }
-.christmas_bottom_bottom_title{
+.christmas_bottom_bottom_title {
     font-size: 20px;
     font-weight: 600;
     color: #2b2b2b;
     margin-bottom: 3px;
 }
 /********* End Christmas Landing ***********/
-
 
 /***** Christmas Item********/
 .christmas_item_body {
@@ -18496,11 +18657,6 @@ dl.flag-dropdown dt span:nth-child(2) {
     font-size: 15px;
 }
 
-.loader_paginate img {
-    width: 40px;
-    height: 40px;
-}
-
 #productViewModal .modal-content .modal-body {
     display: flex;
 }
@@ -18873,10 +19029,6 @@ video {
 .wishlist-img {
     width: 25%;
     height: 100%;
-}
-.loader_paginate img {
-    width: 40px;
-    height: 40px;
 }
 
 .wishlist-img img {
@@ -20091,9 +20243,20 @@ footer #contact_title {
 #large_video {
     min-height: 640px;
 }
-
+.video_main_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.video_top{
+    width: 25%;
+}
 .video_body {
     position: relative;
+    width: 50%;
+}
+.video_text_body{
+    width: 25%;
 }
 .video_image_text {
     position: absolute;
@@ -20303,6 +20466,9 @@ footer #contact_title {
     letter-spacing: 0.7px;
     text-shadow: 3px -1px 4px rgba(0, 0, 0, 1);
 }
+#discount_banner a {
+    width: 100%;
+}
 #discount_banner img {
     width: 100%;
     height: 100%;
@@ -20404,7 +20570,7 @@ footer #contact_title {
 .single-products-name {
     font-size: 19px;
 }
-.slider_part{
+.slider_part {
     width: 100%;
 }
 .single_product_price {
@@ -20761,27 +20927,27 @@ footer #contact_title {
     position: relative;
     padding: 0;
     margin: 0;
-    list-style: none;                /* mask the overflow */
-    transition: transform .3s ease;   /* smooth slide */
+    list-style: none; /* mask the overflow */
+    transition: transform 0.3s ease; /* smooth slide */
     will-change: transform;
 }
 
 .single-product-img li {
-    flex: 0 0 auto; 
+    flex: 0 0 auto;
 }
 /* Hide scrollbar for WebKit browsers */
 .single-product-img::-webkit-scrollbar {
     display: none;
 }
 .single-product-img::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 /* Style each item inside */
 .single-product-img .item {
-    flex: 0 0 auto; 
-    width: 200px; 
-    height: 300px; 
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
     background: #eee;
     border-radius: 8px;
 }
@@ -20970,7 +21136,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     -ms-overflow-style: none; /* IE 10+ */
 }
 .zoom_wrapper.zoomed .zoom_image {
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 /* Chrome, Safari, Edge */
@@ -20986,7 +21152,7 @@ dl.flag-dropdown dt span:nth-child(3) {
     transition: transform 0.3s ease;
     pointer-events: none;
 }
-.zoom_wrapper.zoomed .zoom_image img{
+.zoom_wrapper.zoomed .zoom_image img {
     height: auto;
     padding-top: 0%;
 }
@@ -21048,7 +21214,8 @@ dl.flag-dropdown dt span:nth-child(3) {
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
 }
-#product_sm_image_left_btn , #product_sm_image_right_btn {
+#product_sm_image_left_btn,
+#product_sm_image_right_btn {
     background: #fff;
     width: 100%;
     z-index: 2;
@@ -26859,10 +27026,6 @@ a {
     font-size: 15px;
     margin-top: 10px;
 }
-.loader_paginate img {
-    width: 100px;
-    height: auto;
-}
 
 .loader {
     border: 4px solid #f57a1f;
@@ -27094,19 +27257,18 @@ a {
 
     /* cross-browser height */
     height: -webkit-fill-available; /* Chrome, Safari, new Edge */
-    height: -moz-available;         /* Firefox */
-    height: fill-available;         /* Future standard */
-    height: 90vh;                  /* fallback for others */
+    height: -moz-available; /* Firefox */
+    height: fill-available; /* Future standard */
+    height: 90vh; /* fallback for others */
 
     /* width handling */
-    width: max-content;             /* modern browsers */
-    width: -moz-max-content;        /* Firefox older support */
-    width: -webkit-max-content;     /* Safari/WebKit fallback */
+    width: max-content; /* modern browsers */
+    width: -moz-max-content; /* Firefox older support */
+    width: -webkit-max-content; /* Safari/WebKit fallback */
     width: 100%;
     margin: 0 auto;
     padding: 0px 20px 20px;
 }
-
 
 #videoModal .modal-body {
     height: auto;
@@ -28866,7 +29028,6 @@ a {
         margin-left: 20px;
     }
     /******** End Layout july*************/
-
 }
 @media (max-width: 1599px) {
     /******** landing page style**********/
@@ -29146,8 +29307,7 @@ a {
     }
 
     /************* Product details *********/
-   
-   
+
     #product_top_based_header .container .single-products {
         max-width: 100%;
     }
@@ -29163,6 +29323,15 @@ a {
     /************* End Product details *********/
 }
 @media (max-width: 1430px) {
+    /******** August landing page style**********/
+    .banner_with_heading_title_part {
+        bottom: 20px;
+    }
+    .banner_with_heading_title {
+        font-size: 35px;
+    }
+    /******** End August landing page style**********/
+
     /******** landing page style**********/
     #girl #men .vdo_img_img_items .image_three img {
         width: 100%;
@@ -29259,7 +29428,6 @@ a {
         font-size: 17px;
     }
     /********** End About us ***********/
-    
 }
 
 @media (max-width: 1350px) {
@@ -29510,6 +29678,19 @@ a {
     }
 }
 @media (max-width: 1200px) {
+    /******** August landing page style**********/
+    .banner_with_heading_title {
+        font-size: 30px;
+    }
+    .discount_with_title {
+        font-size: 25px;
+    }
+    .img_with_product_text {
+        font-size: 20px;
+        text-shadow: none;
+    }
+    /******** End August landing page style**********/
+
     /******** landing page style**********/
     .banner_txt_title {
         font-size: 30px;
@@ -29710,7 +29891,8 @@ a {
         font-size: 30px !important;
     }
 
-    .product-btn-next, .product-btn-prev {
+    .product-btn-next,
+    .product-btn-prev {
         opacity: 1;
     }
     .custom-modal-width {
@@ -30097,7 +30279,7 @@ a {
         font-size: 30px;
     }
     .img_grid_title {
-        font-size: 18px;
+        font-size: 14px;
     }
     .outfit_item_part {
         padding: 20px 0px 10px 0px;
@@ -30264,6 +30446,18 @@ a {
         margin: 0;
         padding: 0 !important;
     }
+    /******** August landing page style**********/
+    .banner_with_heading_title_part {
+        bottom: 15px;
+    }
+    .img_grid_title {
+        font-size: 13px;
+    }
+    .img_with_product_text {
+        font-size: 15px;
+    }
+    /******** End August landing page style**********/
+
     /******** landing page style**********/
     .text_container .slick-slide {
         margin: 0 0px;
@@ -30275,7 +30469,7 @@ a {
     .banner_txt_title {
         font-size: 25px;
         line-height: 25px;
-        text-shadow: 2px 2px 2px #707070;
+        text-shadow: none;
     }
     .banner_txt_mid_title {
         font-size: 18px;
@@ -30404,6 +30598,9 @@ a {
     }
     .multi_image_body_btn {
         padding: 5px 10px;
+    }
+    #name-slider-women{
+        margin: 5px 0px 10px 0px;
     }
 
     #special_middle {
@@ -30567,7 +30764,7 @@ a {
         -o-object-fit: contain;
         object-fit: contain;
     }
-   
+
     .single-product-img {
         max-height: 590px;
     }
@@ -31433,6 +31630,27 @@ a {
     }
 }
 @media only screen and (max-width: 767px) {
+    /******** August landing page style**********/
+    .banner_with_heading_title {
+        font-size: 27px;
+    }
+    .img_with_product_body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img_with_product_item img {
+        width: 100%;
+    }
+    .img_with_product_item:last-child img {
+        width: 85%;
+    }
+    #img_with_product_item_big img {
+        width: 75%;
+    }
+    .img_with_product_items {
+        padding: 15px 0px 10px 0px;
+    }
+    /******** End August landing page style**********/
+
     /******** landing page style**********/
     .banner_txt_title {
         font-size: 21px;
@@ -31611,6 +31829,18 @@ a {
     #girl #men .vdo_img_img_items .image_three img {
         width: 45%;
     }
+    .video_main_body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .video_body {
+        position: relative;
+        width: 100%;
+    }
+    .video_text_body{
+        width: 100%;
+    }
     /******** End landing page style**********/
 
     /********* Christmas Landing ***********/
@@ -31784,8 +32014,7 @@ a {
     #product_top_based_header .container {
         max-width: 100%;
     }
-   
-    
+
     .rel-prod-section {
         width: 100%;
     }
@@ -31798,7 +32027,7 @@ a {
         top: 0;
     }
     #supur_zoom_sm_img {
-                background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.4);
         border: 1px solid rgb(238, 238, 238);
         padding: 10px 8px;
         border-radius: 10px;
@@ -31820,19 +32049,19 @@ a {
         z-index: 2;
         height: 100vh;
     }
-     .zoom_wrapper {
-        touch-action: none;    
+    .zoom_wrapper {
+        touch-action: none;
     }
 
     .zoom_wrapper img {
         display: block;
-        max-width: none;  
-        height: 100%;       
+        max-width: none;
+        height: 100%;
     }
-    .zoom_wrapper.zoomed .zoom_image{
+    .zoom_wrapper.zoomed .zoom_image {
         overflow-x: auto;
     }
-    .zoom_wrapper.zoomed .zoom_image img{
+    .zoom_wrapper.zoomed .zoom_image img {
         transform: scale(2) !important;
         height: 100vh;
         -o-object-fit: contain;
@@ -31843,8 +32072,8 @@ a {
         padding-top: 24%;
     }
 
- /***********************/
-/* #mobileZoomModal {
+    /***********************/
+    /* #mobileZoomModal {
     display: none;
     position: fixed;
     top: 0;
@@ -31891,9 +32120,7 @@ a {
     border: none;
     z-index: 10;
 } */
- /***********************/
-
-
+    /***********************/
 
     .shopping-bag-count span {
         font-size: 12px;
@@ -32474,11 +32701,11 @@ a {
     /******* End Contact us **********/
 
     /***** Shop details style ******/
-   #videoModal .modal-content {
-    height: 90vh;
-    padding: 0px 10px 10px;
-    width: 90vw;
-}
+    #videoModal .modal-content {
+        height: 90vh;
+        padding: 0px 10px 10px;
+        width: 90vw;
+    }
     #videoModal h1 {
         font-size: 15px !important;
     }
@@ -32552,11 +32779,42 @@ a {
     }
 }
 @media (max-width: 575px) {
+    /******** August landing page style**********/
+    .banner_with_heading_title_part {
+        bottom: 10px;
+    }
+    .banner_with_heading_title {
+        font-size: 23px;
+    }
+    .discount_with_title_part {
+        max-width: 230px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .discount_with_title {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    .discount_two {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .img_with_product_text {
+        font-size: 18px;
+    }
+    #name-slider-women {
+        margin: 0px 0px 3px 0px;
+    }
+    /******** End August landing page style**********/
+
     /******** landing page style**********/
     .flag-dropdown .uk_flag {
         margin: 5px 5px 5px 5px;
     }
-
+    .img_with_product {
+        margin: 0px 0px 0px 0px;
+    }
     .black-friday-msg p {
         font-size: 13px;
         padding: 5px;
@@ -32572,8 +32830,16 @@ a {
     .all_product_top h1 {
         font-size: 25px;
     }
+    .landing_discount_image {
+        margin-top: 0px;
+    }
+    .banner_txt_part {
+        width: 56%;
+        right: 5px;
+    }
     .banner_txt_title {
         font-size: 16px;
+        font-weight: 500;
     }
     .banner_txt_mid_title {
         font-size: 14px;
@@ -35801,6 +36067,16 @@ a {
     }
     /******** End Layout july*************/
     /******** landing page style**********/
+    .banner_with_heading_title {
+        font-size: 20px;
+    }
+    .discount_with_title {
+        font-size: 18px;
+    }
+    .img_with_product_text {
+        font-size: 17px;
+        text-align: center;
+    }
     #many_list_women .list-inline {
         width: 100%;
     }

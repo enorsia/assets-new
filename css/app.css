@@ -17244,7 +17244,8 @@ dl.flag-dropdown dt span:nth-child(2) {
     margin-bottom: 5px;
 }
 .discount_two {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+    margin-top: 0px;
 }
 .discount_two_body {
     display: grid;
@@ -20242,9 +20243,20 @@ footer #contact_title {
 #large_video {
     min-height: 640px;
 }
-
+.video_main_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.video_top{
+    width: 25%;
+}
 .video_body {
     position: relative;
+    width: 50%;
+}
+.video_text_body{
+    width: 25%;
 }
 .video_image_text {
     position: absolute;
@@ -30457,7 +30469,7 @@ a {
     .banner_txt_title {
         font-size: 25px;
         line-height: 25px;
-        text-shadow: 2px 2px 2px #707070;
+        text-shadow: none;
     }
     .banner_txt_mid_title {
         font-size: 18px;
@@ -31817,6 +31829,18 @@ a {
     #girl #men .vdo_img_img_items .image_three img {
         width: 45%;
     }
+    .video_main_body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .video_body {
+        position: relative;
+        width: 100%;
+    }
+    .video_text_body{
+        width: 100%;
+    }
     /******** End landing page style**********/
 
     /********* Christmas Landing ***********/
@@ -32772,8 +32796,15 @@ a {
         font-size: 20px;
         margin-bottom: 3px;
     }
+    .discount_two {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
     .img_with_product_text {
         font-size: 18px;
+    }
+    #name-slider-women {
+        margin: 0px 0px 3px 0px;
     }
     /******** End August landing page style**********/
 
@@ -32781,7 +32812,9 @@ a {
     .flag-dropdown .uk_flag {
         margin: 5px 5px 5px 5px;
     }
-
+    .img_with_product {
+        margin: 0px 0px 0px 0px;
+    }
     .black-friday-msg p {
         font-size: 13px;
         padding: 5px;
@@ -32797,8 +32830,16 @@ a {
     .all_product_top h1 {
         font-size: 25px;
     }
+    .landing_discount_image {
+        margin-top: 0px;
+    }
+    .banner_txt_part {
+        width: 56%;
+        right: 5px;
+    }
     .banner_txt_title {
         font-size: 16px;
+        font-weight: 500;
     }
     .banner_txt_mid_title {
         font-size: 14px;
