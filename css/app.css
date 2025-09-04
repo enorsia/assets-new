@@ -15982,7 +15982,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 .img_with_product {
-    margin: 10px 0px 0px 0px;
+    margin: 6px 0px 0px 0px;
     overflow: hidden;
 }
 .img_with_product_body {
@@ -20248,16 +20248,51 @@ footer #contact_title {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 10px;
 }
-.video_top{
-    width: 25%;
+.video_main_body img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+.video_main_body img:hover{
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
 }
 .video_body {
     position: relative;
     width: 50%;
 }
-.video_text_body{
-    width: 25%;
+.video_text_body a, .video_top a{
+    width: 100%;
+    overflow: hidden;
+}
+.video_img_body{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.video_image_body_text{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+}
+.video_image_body_text h2{
+    color: #fff;
+    letter-spacing: 1.4px;
+    text-shadow: 3px -1px 4px #454545;
+    text-transform: uppercase;
+}
+.video_text_body, .video_top{
+    width: 50%;
+    padding: 0px;
+    overflow: hidden;
 }
 .video_image_text {
     position: absolute;
@@ -30463,6 +30498,11 @@ a {
     .text_container .slick-slide {
         margin: 0 0px;
     }
+    .video_image_body_text {
+        bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }
     .banner_txt_part {
         width: 56%;
         right: 10px;
@@ -31830,17 +31870,27 @@ a {
     #girl #men .vdo_img_img_items .image_three img {
         width: 45%;
     }
+    .discount_two {
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+.img_with_product {
+    margin: 4px 0px 0px 0px;
+}
     .video_main_body{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
+        flex-wrap: wrap;
     }
     .video_body {
         position: relative;
         width: 100%;
     }
-    .video_text_body{
-        width: 100%;
+   .video_text_body, .video_top {
+        width: 50%;
+        padding: 0px;
+        overflow: hidden;
     }
     /******** End landing page style**********/
 
@@ -32793,6 +32843,28 @@ a {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .video_img_body {
+        width: 100%;
+    }
+    .video_main_body {
+        margin-top: 0px;
+    }
+    .video_main_body .video_body{
+        order: 3;
+        margin: 3px 0px 5px 0px;
+    }
+    .video_image_body_text {
+        bottom: 15px;
+    }
+    .video_image_body_text h2 {
+        font-size: 20px;
+    }
+    .video_main_body .video_top{
+        order: 1;
+    }
+    .video_main_body .video_text_body{
+        order: 2;
+    }
     .discount_with_title {
         font-size: 20px;
         margin-bottom: 3px;
@@ -32814,7 +32886,7 @@ a {
         margin: 5px 5px 5px 5px;
     }
     .img_with_product {
-        margin: 0px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
     }
     .black-friday-msg p {
         font-size: 13px;
