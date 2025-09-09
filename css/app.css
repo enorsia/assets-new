@@ -17929,15 +17929,15 @@ dl.flag-dropdown dt span:nth-child(2) {
     color: #2b2b2b;
     margin-bottom: 3px;
 }
-/********* End Christmas Landing ***********/
 
-/***** Christmas Item********/
 .christmas_item_body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
 }
-
+.christmas_bottom_bottom .accordion-header button{
+    text-transform: uppercase;
+}
 .christmas_item_item {
     cursor: pointer;
 }
@@ -17946,6 +17946,9 @@ dl.flag-dropdown dt span:nth-child(2) {
     width: 100%;
     height: auto;
 }
+
+/********* End Christmas Landing ***********/
+
 
 /***** Best seller**********/
 .best_seller_category_item {
@@ -33375,6 +33378,7 @@ a {
     }
     .christmas_bottom_body {
         margin: 20px auto 0px auto;
+        width: 100%;
     }
     .christmas_bottom_top_title {
         font-size: 18px;

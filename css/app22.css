@@ -15982,7 +15982,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 .img_with_product {
-    margin: 10px 0px 0px 0px;
+    margin: 6px 0px 0px 0px;
     overflow: hidden;
 }
 .img_with_product_body {
@@ -17929,15 +17929,15 @@ dl.flag-dropdown dt span:nth-child(2) {
     color: #2b2b2b;
     margin-bottom: 3px;
 }
-/********* End Christmas Landing ***********/
 
-/***** Christmas Item********/
 .christmas_item_body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
 }
-
+.christmas_bottom_bottom .accordion-header button{
+    text-transform: uppercase;
+}
 .christmas_item_item {
     cursor: pointer;
 }
@@ -17946,6 +17946,9 @@ dl.flag-dropdown dt span:nth-child(2) {
     width: 100%;
     height: auto;
 }
+
+/********* End Christmas Landing ***********/
+
 
 /***** Best seller**********/
 .best_seller_category_item {
@@ -19693,7 +19696,16 @@ a:link {
 .right_bar .accordion-header {
     border-bottom: 1px solid #eee;
 }
-
+.tab-content.right_bar .accordion-body p{
+    font-family: "Poppins", sans-serif !important;
+    text-align: justify !important;
+    line-height: 26px !important;
+}
+.tab-content.right_bar .accordion-body p span{
+    font-family: "Poppins", sans-serif !important;
+    text-align: justify !important;
+    line-height: 26px !important;
+}
 .right_bar .accordion-item:last-of-type {
     padding-bottom: 30px;
 }
@@ -20248,16 +20260,51 @@ footer #contact_title {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 10px;
 }
-.video_top{
-    width: 25%;
+.video_main_body img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+.video_main_body img:hover{
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
 }
 .video_body {
     position: relative;
     width: 50%;
 }
-.video_text_body{
-    width: 25%;
+.video_text_body a, .video_top a{
+    width: 100%;
+    overflow: hidden;
+}
+.video_img_body{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.video_image_body_text{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+}
+.video_image_body_text h2{
+    color: #fff;
+    letter-spacing: 1.4px;
+    text-shadow: 3px -1px 4px #454545;
+    text-transform: uppercase;
+}
+.video_text_body, .video_top{
+    width: 50%;
+    padding: 0px;
+    overflow: hidden;
 }
 .video_image_text {
     position: absolute;
@@ -26590,11 +26637,16 @@ select.error {
 }
 .accordion_body {
     margin: 13px 0px 30px 0px;
+    background: #f3f3f3;
+    padding: 20px
 }
 
 .accordion_body .accordion-flush .accordion-item {
-    border-bottom: 1px solid #ddd;
     padding: 5px 0px;
+    margin-bottom: 15px;
+}
+.accordion_body .accordion-flush .accordion-item:last-child{
+    margin-bottom: 0px;
 }
 
 .accordion_body .accordion-button {
@@ -26604,9 +26656,8 @@ select.error {
 }
 
 .accordion_body .accordion-button::after {
-    width: 25px !important;
-    height: 15px !important;
-    background-size: 15px !important;
+ 
+    background-size: 17px !important;
 }
 
 .accordion_body .accordion-body {
@@ -26617,6 +26668,7 @@ select.error {
 .accordion_body .accordion-body p {
     padding: 0px 0px 15px 0px;
     font-size: 16px;
+    text-align: justify;
 }
 
 .accordion_body .accordion-body ul {
@@ -30463,6 +30515,11 @@ a {
     .text_container .slick-slide {
         margin: 0 0px;
     }
+    .video_image_body_text {
+        bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }
     .banner_txt_part {
         width: 56%;
         right: 10px;
@@ -31830,17 +31887,27 @@ a {
     #girl #men .vdo_img_img_items .image_three img {
         width: 45%;
     }
+    .discount_two {
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+.img_with_product {
+    margin: 4px 0px 0px 0px;
+}
     .video_main_body{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
+        flex-wrap: wrap;
     }
     .video_body {
         position: relative;
         width: 100%;
     }
-    .video_text_body{
-        width: 100%;
+   .video_text_body, .video_top {
+        width: 50%;
+        padding: 0px;
+        overflow: hidden;
     }
     /******** End landing page style**********/
 
@@ -32793,6 +32860,28 @@ a {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .video_img_body {
+        width: 100%;
+    }
+    .video_main_body {
+        margin-top: 0px;
+    }
+    .video_main_body .video_body{
+        order: 3;
+        margin: 3px 0px 5px 0px;
+    }
+    .video_image_body_text {
+        bottom: 15px;
+    }
+    .video_image_body_text h2 {
+        font-size: 20px;
+    }
+    .video_main_body .video_top{
+        order: 1;
+    }
+    .video_main_body .video_text_body{
+        order: 2;
+    }
     .discount_with_title {
         font-size: 20px;
         margin-bottom: 3px;
@@ -32814,7 +32903,7 @@ a {
         margin: 5px 5px 5px 5px;
     }
     .img_with_product {
-        margin: 0px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
     }
     .black-friday-msg p {
         font-size: 13px;
@@ -33289,6 +33378,7 @@ a {
     }
     .christmas_bottom_body {
         margin: 20px auto 0px auto;
+        width: 100%;
     }
     .christmas_bottom_top_title {
         font-size: 18px;
@@ -35407,7 +35497,7 @@ a {
         margin-bottom: 10px;
     }
     .right_bar .accordion-button {
-        font-size: 14px;
+        font-size: 15px;
     }
     .shopping-cart-items-container {
         overflow-x: scroll !important;
@@ -35516,10 +35606,19 @@ a {
     .blog_items {
         grid-template-columns: repeat(1, 1fr);
     }
+    .blog_details_body_txt p{
+        text-align: justify;
+    }
     .blog_body {
         margin: 20px 0px 30px 0px;
     }
-
+   .blog_body table {
+    width: 100% !important;
+}
+    .blog_body img{
+        width: 100%;
+        height: auto;
+    }
     .category_all_margin {
         margin: 25px 0px 0px 0px;
     }
@@ -35786,8 +35885,20 @@ a {
     .contact_right {
         padding: 20px 5px;
     }
+    .accordion_body {
+        padding: 10px;
+    }
+    .accordion_body .accordion-flush .accordion-item {
+        margin-bottom: 10px;
+    }
     .accordion_body .accordion-body p {
         font-size: 15px;
+    }
+    .tab-content.right_bar .accordion-body p  {
+        font-size: 15px !important;
+    }
+.tab-content.right_bar .accordion-body p span {
+        font-size: 15px !important;
     }
     /******* End Contact us **********/
     /******* Influencer css *******/
