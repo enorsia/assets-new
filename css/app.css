@@ -17791,6 +17791,12 @@ dl.flag-dropdown dt span:nth-child(2) {
 .christmas_text a:hover{
     text-decoration:  none !important;
 }
+#black_cat_body{
+    max-width: 900px;
+}
+#black_cat_body .christmas_cat_top{
+grid-gap: 100px;
+}
 .christmas_cat_body {
     width: 80%;
     display: flex;
@@ -33423,6 +33429,9 @@ a {
     .christmas_text {
         font-size: 15px;
         line-height: 25px;
+    }
+    #black_cat_body .christmas_cat_top {
+        grid-gap: 30px;
     }
     .christmas_cat_top {
         grid-template-columns: repeat(1, 1fr);

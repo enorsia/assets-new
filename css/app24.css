@@ -15932,6 +15932,12 @@ dl.flag-dropdown dt span:nth-child(2) {
 
 /***************************/
 /*********========================================== August Layout css =================================***************/
+.banner_with_heading{
+    min-height: 500px;
+}
+.discount_with_title{
+    min-height: 200px;
+}
 .banner_with_heading a,
 .discount_with_title a {
     width: 100%;
@@ -15984,6 +15990,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 .img_with_product {
     margin: 6px 0px 0px 0px;
     overflow: hidden;
+    min-height: 300px;
 }
 .img_with_product_body {
     display: grid;
@@ -16387,6 +16394,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 /******* image grid two **********/
 .img_grid {
     padding: 0px;
+    min-height: 500px;
 }
 .img_grid_body {
     display: grid;
@@ -16728,6 +16736,9 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 /***** Magazine ********/
+.magazine_body{
+    min-height: 250px;
+}
 .magazine_title {
     text-transform: uppercase;
     color: #000;
@@ -17247,6 +17258,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 .discount_two {
     margin-bottom: 2px;
     margin-top: 0px;
+    min-height: 100px;
 }
 .discount_two_body {
     display: grid;
@@ -17771,6 +17783,20 @@ dl.flag-dropdown dt span:nth-child(2) {
     line-height: 30px;
     font-weight: 300;
 }
+.christmas_text a{
+    text-decoration: underline !important;
+    font-weight: 500;
+    text-underline-offset: 4px;
+}
+.christmas_text a:hover{
+    text-decoration:  none !important;
+}
+#black_cat_body{
+    max-width: 900px;
+}
+#black_cat_body .christmas_cat_top{
+grid-gap: 100px;
+}
 .christmas_cat_body {
     width: 80%;
     display: flex;
@@ -17795,6 +17821,33 @@ dl.flag-dropdown dt span:nth-child(2) {
 .christmas_cat_desc {
     margin-top: 15px;
 }
+#black_cat_body .christmas_cat_desc {
+    margin-bottom: 10px;
+}
+.black_banner_title{
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin: 30px 0px 20px 0px;
+}
+.black_banner_body{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.black_banner_txt{
+    color: #fff;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.black_banner_img_part img{
+    width: 100%;
+    height: auto;
+}
 .christmas_cat_desc_title {
     font-size: 20px;
     font-weight: 600;
@@ -17807,6 +17860,10 @@ dl.flag-dropdown dt span:nth-child(2) {
     line-height: 30px;
     font-weight: 400;
     margin-bottom: 10px;
+}
+#black_cat_link .christmas_cat_link {
+    min-width: 150px;
+    margin: 0px 5px;
 }
 .christmas_cat_link {
     color: #ffffff;
@@ -20261,6 +20318,7 @@ footer #contact_title {
     flex-direction: row;
     width: 100%;
     margin-top: 10px;
+    min-height: 300px;
 }
 .video_main_body img{
     width: 100%;
@@ -32848,6 +32906,9 @@ a {
 }
 @media (max-width: 575px) {
     /******** August landing page style**********/
+    .banner_with_heading{
+    min-height: 300px;
+}
     .banner_with_heading_title_part {
         bottom: 10px;
     }
@@ -32885,6 +32946,7 @@ a {
     .discount_with_title {
         font-size: 20px;
         margin-bottom: 3px;
+        min-height: 100px;
     }
     .discount_two {
         margin-bottom: 10px;
@@ -33352,6 +33414,13 @@ a {
     .christmas_text_body {
         margin: 20px auto;
     }
+    .black_banner_title {
+        font-size: 19px;
+        margin: 20px 0px 15px 0px;
+    }
+    #black_cat_link .christmas_cat_link {
+        min-width: 135px;
+    }
     .christmas_title {
         font-size: 18px;
         margin-bottom: 10px;
@@ -33360,6 +33429,9 @@ a {
     .christmas_text {
         font-size: 15px;
         line-height: 25px;
+    }
+    #black_cat_body .christmas_cat_top {
+        grid-gap: 30px;
     }
     .christmas_cat_top {
         grid-template-columns: repeat(1, 1fr);
@@ -33399,6 +33471,9 @@ a {
     .banner_slider_title {
         font-size: 24px;
         margin-bottom: 5px;
+    }
+    .img_grid {
+        min-height: 200px;
     }
     .img_grid_body {
         grid-template-columns: repeat(1, 1fr);
