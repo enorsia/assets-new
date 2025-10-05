@@ -14673,6 +14673,245 @@ input[type="number"] {
     }
 }
 /************************************************************************** End Header Top Scrolling Text ****************************************************/
+
+/************************************************************************** Sign up Popup
+****************************************************/
+/* Overlay */
+#popupModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+#popupModal .modal-box {
+    background: #f2f2f2;
+    padding: 20px;
+    max-width: 900px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#popupModal .modal-close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+.animation_popup_show {
+    animation: popupShow 0.4s ease-in-out forwards;
+}
+
+@keyframes popupShow {
+    from {
+        transform: translateX(calc(50vw - 20px)) translateY(calc(50vh - 65px))
+            scale(0.01);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+.animation_popup_hide {
+    animation: popupHide 0.4s ease-in-out forwards;
+}
+
+@keyframes popupHide {
+    from {
+        transform: translateX(0) translateY(0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(calc(50vw - 20px)) translateY(calc(50vh - 65px))
+            scale(0.01);
+        opacity: 0;
+    }
+}
+
+.signup_popup_body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.signup_popup_img img {
+    width: 100%;
+    height: auto;
+}
+.signup_popup_form_top {
+    text-align: start;
+}
+.signup_popup_title {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.signup_popup_text {
+    font-weight: 400;
+    font-size: 15px;
+}
+.signup_popup_form_top {
+    margin: 20px 0px 30px 0px;
+}
+
+.form_name_grp input.error,
+.form_email input.error,
+.form_category_phone_number input.error {
+    border-bottom: 1px solid red !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+}
+.form_category {
+    margin-bottom: 20px;
+}
+.form_name_grp,
+.form_email,
+.form_phone_grp,
+.form_submit_grp {
+    margin-bottom: 20px;
+}
+.form_category {
+    display: flex;
+}
+.form_category .form-check {
+    text-align: start;
+}
+.form_category .form-check:first-child {
+    margin-right: 15px;
+}
+.form_category .form-check label {
+    font-size: 14px;
+}
+.form_category .form-check input {
+    border-radius: 0px !important;
+}
+.form_name_grp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.form_name_grp div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.form_name_grp div input {
+    width: 100%;
+}
+.signup_popup_form_body input::-moz-placeholder {
+    font-size: 14px;
+}
+.signup_popup_form_body input::placeholder {
+    font-size: 14px;
+}
+.signup_popup_form_body input {
+    padding: 5px 0px 5px 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.form_name_grp input,
+.form_email input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+.form_email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.form_email div {
+    width: 100%;
+}
+.form_email input {
+    width: 100%;
+}
+.signup_popup_body .text-danger {
+    color: red !important;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 2px 0 6px 0px;
+}
+.form_phone_grp {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    align-items: flex-start;
+}
+.form_phone_grp div {
+    width: 70%;
+}
+.form_phone_grp p {
+    border-bottom: 1px solid #000;
+    width: 30%;
+    margin-right: 10px;
+    text-align: start;
+    font-size: 14px;
+    /* line-height: 9px; */
+    /* height: 33px; */
+    margin-top: 10px;
+}
+.form_phone_grp input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+.form_submit_grp {
+    margin: 35px 0px 30px 0px;
+    text-align: center;
+}
+.form_submit_grp button {
+    background: #000;
+    color: #fff;
+    border-radius: 0px;
+    padding: 7px 35px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+}
+.form_submit_grp button:hover {
+    background: #333333;
+    transition: 0.2s ease-in-out;
+}
+.signup_popup_form_bottom small {
+    display: block;
+    text-align: start;
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.signup_popup_form_bottom small a {
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 13px;
+}
+.signup_popup_form_bottom small a:hover {
+    text-decoration: none;
+}
+
+/************************************************************************** End Popup
+****************************************************/
+
 /************************************************************************** Header
 ****************************************************/
 #fresh {
@@ -14693,7 +14932,56 @@ input[type="number"] {
 
 #btn-back-to-top {
     z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border: 0px !important;
 }
+#btn-back-to-top i {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+#discount_popup_show {
+    z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border: 0px !important;
+}
+#discount_popup_show i {
+    background: #fff;
+    color: #000;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+#discount_popup_show span {
+    background: #000;
+    color: #fff;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    border: 1px solid #fff;
+    font-style: oblique;
+    line-height: 12px;
+}
+
 .black-friday-msg p {
     background: #efdcae;
     padding: 5px;
@@ -14954,7 +15242,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     width: 50px;
     height: 50px;
 }
-.loader_paginate .loading_img_text{
+.loader_paginate .loading_img_text {
     width: 100px;
     height: auto;
 }
@@ -15932,10 +16220,10 @@ dl.flag-dropdown dt span:nth-child(2) {
 
 /***************************/
 /*********========================================== August Layout css =================================***************/
-.banner_with_heading{
+.banner_with_heading {
     min-height: 500px;
 }
-.discount_with_title{
+.discount_with_title {
     min-height: 200px;
 }
 .banner_with_heading a,
@@ -16033,15 +16321,15 @@ dl.flag-dropdown dt span:nth-child(2) {
     padding: 10px;
     transition: 0.2s ease-in-out;
 }
-.img_with_product_item:last-child a{
-   margin: 0px 5%; 
-   height: 100%;
+.img_with_product_item:last-child a {
+    margin: 0px 5%;
+    height: 100%;
 }
 .img_with_product_item:last-child img {
     width: 67%;
     height: auto;
 }
-#img_with_product_item_big img{
+#img_with_product_item_big img {
     width: 60%;
 }
 .img_with_product_item:last-child a:first-child {
@@ -16736,7 +17024,7 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 /***** Magazine ********/
-.magazine_body{
+.magazine_body {
     min-height: 250px;
 }
 .magazine_title {
@@ -17765,6 +18053,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     display: block;
 }
 
+
 /********* Christmas Landing ***********/
 .christmas_text_body {
     text-align: center;
@@ -17790,6 +18079,12 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 .christmas_text a:hover{
     text-decoration:  none !important;
+}
+#black_cat_body{
+    max-width: 900px;
+}
+#black_cat_body .christmas_cat_top{
+grid-gap: 100px;
 }
 .christmas_cat_body {
     width: 80%;
@@ -17999,7 +18294,6 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 
 /********* End Christmas Landing ***********/
-
 
 /***** Best seller**********/
 .best_seller_category_item {
@@ -19747,12 +20041,12 @@ a:link {
 .right_bar .accordion-header {
     border-bottom: 1px solid #eee;
 }
-.tab-content.right_bar .accordion-body p{
+.tab-content.right_bar .accordion-body p {
     font-family: "Poppins", sans-serif !important;
     text-align: justify !important;
     line-height: 26px !important;
 }
-.tab-content.right_bar .accordion-body p span{
+.tab-content.right_bar .accordion-body p span {
     font-family: "Poppins", sans-serif !important;
     text-align: justify !important;
     line-height: 26px !important;
@@ -20307,20 +20601,20 @@ footer #contact_title {
 #large_video {
     min-height: 640px;
 }
-.video_main_body{
+.video_main_body {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-top: 10px;
     min-height: 300px;
 }
-.video_main_body img{
+.video_main_body img {
     width: 100%;
     height: auto;
     overflow: hidden;
     transition: 0.2s ease-in-out;
 }
-.video_main_body img:hover{
+.video_main_body img:hover {
     transform: scale(1.03);
     transition: 0.2s ease-in-out;
 }
@@ -20328,17 +20622,18 @@ footer #contact_title {
     position: relative;
     width: 50%;
 }
-.video_text_body a, .video_top a{
+.video_text_body a,
+.video_top a {
     width: 100%;
     overflow: hidden;
 }
-.video_img_body{
+.video_img_body {
     width: 50%;
     display: flex;
     flex-direction: row;
     position: relative;
 }
-.video_image_body_text{
+.video_image_body_text {
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -20347,13 +20642,14 @@ footer #contact_title {
     width: 100%;
     z-index: 3;
 }
-.video_image_body_text h2{
+.video_image_body_text h2 {
     color: #fff;
     letter-spacing: 1.4px;
     text-shadow: 3px -1px 4px #454545;
     text-transform: uppercase;
 }
-.video_text_body, .video_top{
+.video_text_body,
+.video_top {
     width: 50%;
     padding: 0px;
     overflow: hidden;
@@ -23851,6 +24147,10 @@ dl.flag-dropdown dt span:nth-child(3) {
     align-items: center;
     margin-top: 20px;
 }
+.purshase_offer_title {
+    font-size: 18px;
+    font-weight: 600;
+}
 
 .profile_new_btn a {
     margin-left: 20px;
@@ -24919,21 +25219,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .popup_body img {
     width: 503px;
     height: 377px;
-}
-
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    border: 0px !important;
-}
-#btn-back-to-top i {
-    background-color: #fff;
-    color: #000000;
-    border: 1px solid #000000;
-    padding: 6px 10px;
-    border-radius: 50%;
 }
 
 /*****/
@@ -26690,14 +26975,14 @@ select.error {
 .accordion_body {
     margin: 13px 0px 30px 0px;
     background: #f3f3f3;
-    padding: 20px
+    padding: 20px;
 }
 
 .accordion_body .accordion-flush .accordion-item {
     padding: 5px 0px;
     margin-bottom: 15px;
 }
-.accordion_body .accordion-flush .accordion-item:last-child{
+.accordion_body .accordion-flush .accordion-item:last-child {
     margin-bottom: 0px;
 }
 
@@ -26708,7 +26993,6 @@ select.error {
 }
 
 .accordion_body .accordion-button::after {
- 
     background-size: 17px !important;
 }
 
@@ -30531,6 +30815,17 @@ a {
     /********** End About us ***********/
 }
 @media (max-width: 991px) {
+    /************ Sign up Popup *************/
+    .signup_popup_img {
+        align-content: center;
+    }
+
+    .signup_popup_title {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+
+    /************ End Sign up Popup *************/
     .nav-subList .offcanvas.show {
         visibility: visible;
         z-index: 10003;
@@ -30709,7 +31004,7 @@ a {
     .multi_image_body_btn {
         padding: 5px 10px;
     }
-    #name-slider-women{
+    #name-slider-women {
         margin: 5px 0px 10px 0px;
     }
 
@@ -31740,26 +32035,25 @@ a {
     }
 }
 @media only screen and (max-width: 767px) {
-    /******** August landing page style**********/
-    .banner_with_heading_title {
-        font-size: 27px;
+    /************ Sign up Popup *************/
+    .signup_popup_form_top {
+        margin: 15px 0px 15px 0px;
     }
-    .img_with_product_body {
+    .signup_popup_title {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+    .form_name_grp {
         grid-template-columns: repeat(1, 1fr);
     }
-    .img_with_product_item img {
-        width: 100%;
+    .form_category {
+        margin-bottom: 15px;
     }
-    .img_with_product_item:last-child img {
-        width: 85%;
+    .form_submit_grp {
+        margin: 30px 0px 20px 0px;
     }
-    #img_with_product_item_big img {
-        width: 75%;
-    }
-    .img_with_product_items {
-        padding: 15px 0px 10px 0px;
-    }
-    /******** End August landing page style**********/
+
+    /************ End Sign up Popup *************/
 
     /******** landing page style**********/
     .banner_txt_title {
@@ -31940,13 +32234,13 @@ a {
         width: 45%;
     }
     .discount_two {
-    margin-bottom: 0px;
-    margin-top: 2px;
-}
-.img_with_product {
-    margin: 4px 0px 0px 0px;
-}
-    .video_main_body{
+        margin-bottom: 0px;
+        margin-top: 2px;
+    }
+    .img_with_product {
+        margin: 4px 0px 0px 0px;
+    }
+    .video_main_body {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -31956,7 +32250,8 @@ a {
         position: relative;
         width: 100%;
     }
-   .video_text_body, .video_top {
+    .video_text_body,
+    .video_top {
         width: 50%;
         padding: 0px;
         overflow: hidden;
@@ -32216,7 +32511,7 @@ a {
     transform: translate(-50%, -50%);
     width: 90%;
     max-height: 90%;
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32899,60 +33194,51 @@ a {
     }
 }
 @media (max-width: 575px) {
-    /******** August landing page style**********/
-    .banner_with_heading{
-    min-height: 300px;
-}
-    .banner_with_heading_title_part {
-        bottom: 10px;
+    /************ Sign up Popup ************/
+    #popupModal .modal-close {
+        top: 5px;
+        right: 20px;
+        font-size: 30px;
     }
-    .banner_with_heading_title {
-        font-size: 23px;
+    #popupModal .modal-box {
+        padding: 15px;
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        top: 45%;
     }
-    .discount_with_title_part {
-        max-width: 230px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+  @keyframes popupShow {
+        from {
+            transform: translateX(100%) translateY(-50%) scale(0.01);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0) translateY(-50%) scale(1);
+            opacity: 1;
+        }
     }
-    .video_img_body {
-        width: 100%;
+
+    @keyframes popupHide {
+        from {
+            transform: translateX(0) translateY(-50%) scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%) translateY(-50%) scale(0.01);
+            opacity: 0;
+        }
     }
-    .video_main_body {
-        margin-top: 0px;
+    .signup_popup_img {
+        display: none;
     }
-    .video_main_body .video_body{
-        order: 3;
-        margin: 3px 0px 5px 0px;
+    .signup_popup_body {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .video_image_body_text {
-        bottom: 15px;
-    }
-    .video_image_body_text h2 {
+    .signup_popup_title {
         font-size: 20px;
+        font-weight: 600;
     }
-    .video_main_body .video_top{
-        order: 1;
-    }
-    .video_main_body .video_text_body{
-        order: 2;
-    }
-    .discount_with_title {
-        font-size: 20px;
-        margin-bottom: 3px;
-        min-height: 100px;
-    }
-    .discount_two {
-        margin-bottom: 10px;
-        margin-top: 0px;
-    }
-    .img_with_product_text {
-        font-size: 18px;
-    }
-    #name-slider-women {
-        margin: 0px 0px 3px 0px;
-    }
-    /******** End August landing page style**********/
+    /************ End Sign up Popup ************/
 
     /******** landing page style**********/
     .flag-dropdown .uk_flag {
@@ -33424,6 +33710,9 @@ a {
         font-size: 15px;
         line-height: 25px;
     }
+    #black_cat_body .christmas_cat_top {
+        grid-gap: 30px;
+    }
     .christmas_cat_top {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -33695,7 +33984,10 @@ a {
     .my-account {
         font-size: 20px;
     }
-
+    .coupon-section {
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
     .profile_text {
         font-size: 15px;
     }
@@ -33962,6 +34254,22 @@ a {
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+    #discount_popup_show {
+        bottom: 50%;
+        padding: 0px;
+        right: 10px;
+    }
+    #discount_popup_show span {
+        width: 35px;
+        height: 35px;
+        border-radius: 0px;
+        display: flex;
+        font-size: 12px;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: 600;
+        align-items: center;
     }
     #main_content {
         min-height: 200px;
@@ -35672,16 +35980,16 @@ a {
     .blog_items {
         grid-template-columns: repeat(1, 1fr);
     }
-    .blog_details_body_txt p{
+    .blog_details_body_txt p {
         text-align: justify;
     }
     .blog_body {
         margin: 20px 0px 30px 0px;
     }
-   .blog_body table {
-    width: 100% !important;
-}
-    .blog_body img{
+    .blog_body table {
+        width: 100% !important;
+    }
+    .blog_body img {
         width: 100%;
         height: auto;
     }
@@ -35960,10 +36268,10 @@ a {
     .accordion_body .accordion-body p {
         font-size: 15px;
     }
-    .tab-content.right_bar .accordion-body p  {
+    .tab-content.right_bar .accordion-body p {
         font-size: 15px !important;
     }
-.tab-content.right_bar .accordion-body p span {
+    .tab-content.right_bar .accordion-body p span {
         font-size: 15px !important;
     }
     /******* End Contact us **********/
@@ -36162,6 +36470,9 @@ a {
 }
 
 @media (max-width: 350px) {
+    #popupModal .modal-box {
+        top: 42%;
+    }
     /******** landing page style**********/
     .men_multi_item_name {
         overflow: hidden;

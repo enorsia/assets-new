@@ -18053,6 +18053,7 @@ dl.flag-dropdown dt span:nth-child(2) {
     display: block;
 }
 
+
 /********* Christmas Landing ***********/
 .christmas_text_body {
     text-align: center;
@@ -18070,6 +18071,20 @@ dl.flag-dropdown dt span:nth-child(2) {
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
+}
+.christmas_text a{
+    text-decoration: underline !important;
+    font-weight: 500;
+    text-underline-offset: 4px;
+}
+.christmas_text a:hover{
+    text-decoration:  none !important;
+}
+#black_cat_body{
+    max-width: 900px;
+}
+#black_cat_body .christmas_cat_top{
+grid-gap: 100px;
 }
 .christmas_cat_body {
     width: 80%;
@@ -18094,6 +18109,33 @@ dl.flag-dropdown dt span:nth-child(2) {
 }
 .christmas_cat_desc {
     margin-top: 15px;
+}
+#black_cat_body .christmas_cat_desc {
+    margin-bottom: 10px;
+}
+.black_banner_title{
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin: 30px 0px 20px 0px;
+}
+.black_banner_body{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.black_banner_txt{
+    color: #fff;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.black_banner_img_part img{
+    width: 100%;
+    height: auto;
 }
 .christmas_cat_desc_title {
     font-size: 20px;
@@ -18234,13 +18276,12 @@ dl.flag-dropdown dt span:nth-child(2) {
     margin-bottom: 3px;
 }
 
-/***** Christmas Item********/
 .christmas_item_body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
 }
-.christmas_bottom_bottom .accordion-header button {
+.christmas_bottom_bottom .accordion-header button{
     text-transform: uppercase;
 }
 .christmas_item_item {
@@ -33164,7 +33205,7 @@ a {
         width: 90%;
         max-height: 90vh;
         overflow-y: auto;
-        top: 35%;
+        top: 45%;
     }
   @keyframes popupShow {
         from {
@@ -36429,6 +36470,9 @@ a {
 }
 
 @media (max-width: 350px) {
+    #popupModal .modal-box {
+        top: 42%;
+    }
     /******** landing page style**********/
     .men_multi_item_name {
         overflow: hidden;
